@@ -1,0 +1,21 @@
+{
+  "_fv": 5,
+  "_type": "fluid",
+  "definition": {
+    "name": "Sada",
+    "textureStill": "dersa",
+    "textureFlowing": "redflow",
+    "luminosity": 0,
+    "density": 1000,
+    "viscosity": 800,
+    "isGas": false,
+    "type": "WATER",
+    "generateBucket": true,
+    "creativeTab": {
+      "value": "CUSTOM:RWE"
+    },
+    "spawnWorldTypes": [
+      "Surface"
+    ]
+  }
+}

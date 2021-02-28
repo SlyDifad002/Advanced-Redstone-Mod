@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "sly_adnanced_redstone:blocks/cobbleredston",
+    "up": "sly_adnanced_redstone:blocks/cobbleredston",
+    "north": "sly_adnanced_redstone:blocks/cobbleredston",
+    "east": "sly_adnanced_redstone:blocks/cobbleredston",
+    "south": "sly_adnanced_redstone:blocks/cobbleredston",
+    "west": "sly_adnanced_redstone:blocks/cobbleredston",
+    "particle": "sly_adnanced_redstone:blocks/cobbleredston"
+  }
+}

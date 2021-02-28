@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "sly_adnanced_redstone:block/redsa_portal_ew"
+    },
+    "axis=x": {
+      "model": "sly_adnanced_redstone:block/redsa_portal_ns"
+    }
+  }
+}

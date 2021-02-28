@@ -1,0 +1,94 @@
+{
+  "_fv": 4,
+  "_type": "block",
+  "definition": {
+    "texture": "litreds",
+    "textureTop": "litreds",
+    "textureLeft": "nothing",
+    "textureFront": "nothing",
+    "textureRight": "nothing",
+    "textureBack": "nothing",
+    "renderType": 10,
+    "customModelName": "Normal",
+    "rotationMode": 0,
+    "oreDictionaryName": "",
+    "hasTransparency": true,
+    "transparencyType": "CUTOUT",
+    "mx": 0.0,
+    "my": 0.0,
+    "mz": 0.0,
+    "Mx": 1.0,
+    "My": 0.1,
+    "Mz": 1.0,
+    "faceShape": "UNDEFINED",
+    "name": "advanced on dust",
+    "specialInfo": [],
+    "hardness": 1.0,
+    "resistance": 10.0,
+    "hasGravity": false,
+    "creativeTab": {
+      "value": "No creative tab entry"
+    },
+    "destroyTool": "Not specified",
+    "affectedBySilkTouch": false,
+    "hasCustomDrop": true,
+    "customDrop": {
+      "value": "CUSTOM:Adc"
+    },
+    "dropAmount": 1,
+    "isBeaconBase": false,
+    "enchantPowerBonus": 0.0,
+    "plantsGrowOn": false,
+    "canProvidePower": true,
+    "lightOpacity": 255,
+    "material": {
+      "value": "CIRCUITS"
+    },
+    "tickRate": 10,
+    "isReplaceable": false,
+    "isFlammable": false,
+    "colorOnMap": "DEFAULT",
+    "creativePickItem": {
+      "value": ""
+    },
+    "isNotColidable": true,
+    "soundOnStep": {
+      "value": "METAL"
+    },
+    "luminance": 0.0,
+    "unbreakable": false,
+    "breakHarvestLevel": 1,
+    "spawnParticles": false,
+    "particleToSpawn": {
+      "value": "EXPLOSION_NORMAL"
+    },
+    "particleSpawningShape": "Spread",
+    "particleSpawningRadious": 0.5,
+    "particleAmount": 4,
+    "particleSpawningCondition": "ALWAYS",
+    "hasInventory": false,
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "inventoryDropWhenDestroyed": true,
+    "inventoryComparatorPower": true,
+    "inventoryOutSlotIDs": [],
+    "onRedstoneOn": {
+      "name": "OnredRedstoneOn"
+    },
+    "onRedstoneOff": {
+      "name": "OnredRedstoneOff"
+    },
+    "spawnWorldTypes": [],
+    "restricPerBiome": false,
+    "restrictionBiomes": [],
+    "blocksToReplace": [
+      {
+        "value": "Blocks.STONE"
+      }
+    ],
+    "frequencyPerChunks": 10,
+    "frequencyOnChunk": 16,
+    "minGenerateHeight": 10,
+    "maxGenerateHeight": 110
+  }
+}

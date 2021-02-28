@@ -1,0 +1,29 @@
+{
+  "slytube": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "sly_adnanced_redstone:slytube",
+        "stream": false
+      }
+    ]
+  },
+  "fragile": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "sly_adnanced_redstone:glass_break_sound",
+        "stream": false
+      }
+    ]
+  },
+  "portalspawn": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "sly_adnanced_redstone:ontiva.com-portal_gun_-_sound_effect-hq",
+        "stream": false
+      }
+    ]
+  }
+}

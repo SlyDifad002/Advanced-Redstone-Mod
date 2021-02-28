@@ -1,0 +1,45 @@
+{
+  "_fv": 5,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "recipeShapeless": false,
+    "recipeReturnStack": {
+      "value": "CUSTOM:TODimention"
+    },
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Advancedredstone"
+      },
+      {
+        "value": "CUSTOM:Advancedredstone"
+      },
+      {
+        "value": "CUSTOM:Advancedredstone"
+      },
+      {
+        "value": "CUSTOM:Advancedredstone"
+      },
+      {
+        "value": "CUSTOM:Mulred"
+      },
+      {
+        "value": "CUSTOM:Advancedredstone"
+      },
+      {
+        "value": "CUSTOM:Advancedredstone"
+      },
+      {
+        "value": "CUSTOM:Advancedredstone"
+      },
+      {
+        "value": "CUSTOM:Advancedredstone"
+      }
+    ],
+    "smeltingXPReward": 0.0,
+    "smeltingRetstackSize": 1,
+    "name": "tpo",
+    "namespace": "mod"
+  }
+}

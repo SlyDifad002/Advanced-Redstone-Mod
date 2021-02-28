@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_inventory",
+  "textures": {
+    "texture": "sly_adnanced_redstone:blocks/advas",
+    "particle": "sly_adnanced_redstone:blocks/advas"
+  }
+}

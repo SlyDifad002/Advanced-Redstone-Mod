@@ -1,0 +1,45 @@
+{
+  "_fv": 5,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "recipeShapeless": false,
+    "recipeReturnStack": {
+      "value": "CUSTOM:RedstoneArmor.boots"
+    },
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Adc"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Adc"
+      },
+      {
+        "value": "CUSTOM:Adc"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Adc"
+      }
+    ],
+    "smeltingXPReward": 0.0,
+    "smeltingRetstackSize": 1,
+    "name": "redstonearmorbootsrecipe",
+    "namespace": "mod"
+  }
+}

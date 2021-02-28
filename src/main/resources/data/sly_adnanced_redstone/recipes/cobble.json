@@ -1,0 +1,11 @@
+{
+  "group": "sly_adnanced_redstone",
+  "type": "minecraft:smelting",
+  "experience": 1,
+  "ingredient": {
+    "item": "sly_adnanced_redstone:cobbleredston"
+  },
+  "result": {
+    "item": "sly_adnanced_redstone:redston"
+  }
+}

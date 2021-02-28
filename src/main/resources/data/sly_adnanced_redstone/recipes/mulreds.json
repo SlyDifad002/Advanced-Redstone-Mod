@@ -1,0 +1,30 @@
+{
+  "group": "sly_adnanced_redstone",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "sly_adnanced_redstone:advancedredstone"
+    },
+    "1": {
+      "item": "sly_adnanced_redstone:advancedredstone"
+    },
+    "2": {
+      "item": "sly_adnanced_redstone:advancedredstone"
+    },
+    "4": {
+      "item": "minecraft:nether_star"
+    },
+    "7": {
+      "item": "sly_adnanced_redstone:advancedredstone"
+    }
+  },
+  "result": {
+    "item": "sly_adnanced_redstone:mulred",
+    "count": 1
+  }
+}

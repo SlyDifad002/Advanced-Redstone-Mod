@@ -1,0 +1,13 @@
+{
+  "group": "sly_adnanced_redstone",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "sly_adnanced_redstone:advancedredstone"
+    }
+  ],
+  "result": {
+    "item": "sly_adnanced_redstone:adc",
+    "count": 9
+  }
+}

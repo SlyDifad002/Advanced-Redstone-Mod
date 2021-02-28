@@ -1,0 +1,45 @@
+{
+  "_fv": 5,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "recipeShapeless": false,
+    "recipeReturnStack": {
+      "value": "CUSTOM:Advancedredstone"
+    },
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Adc"
+      },
+      {
+        "value": "CUSTOM:Adc"
+      },
+      {
+        "value": "CUSTOM:Adc"
+      },
+      {
+        "value": "CUSTOM:Adc"
+      },
+      {
+        "value": "CUSTOM:Adc"
+      },
+      {
+        "value": "CUSTOM:Adc"
+      },
+      {
+        "value": "CUSTOM:Adc"
+      },
+      {
+        "value": "CUSTOM:Adc"
+      },
+      {
+        "value": "CUSTOM:Adc"
+      }
+    ],
+    "smeltingXPReward": 0.0,
+    "smeltingRetstackSize": 1,
+    "name": "advancedoreblockrecipe",
+    "namespace": "mod"
+  }
+}

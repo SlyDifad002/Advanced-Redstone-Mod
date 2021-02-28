@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "sly_adnanced_redstone:blocks/uncraftible",
+    "up": "sly_adnanced_redstone:blocks/uncraftible",
+    "north": "sly_adnanced_redstone:blocks/uncraftible",
+    "east": "sly_adnanced_redstone:blocks/uncraftible",
+    "south": "sly_adnanced_redstone:blocks/uncraftible",
+    "west": "sly_adnanced_redstone:blocks/uncraftible",
+    "particle": "sly_adnanced_redstone:blocks/uncraftible"
+  }
+}

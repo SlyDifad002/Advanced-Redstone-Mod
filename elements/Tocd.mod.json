@@ -1,0 +1,45 @@
+{
+  "_fv": 5,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "recipeShapeless": false,
+    "recipeReturnStack": {
+      "value": "CUSTOM:Tos"
+    },
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Adc"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Adc"
+      },
+      {
+        "value": "CUSTOM:Adc"
+      },
+      {
+        "value": "CUSTOM:Adc"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Adc"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "smeltingXPReward": 0.0,
+    "smeltingRetstackSize": 1,
+    "name": "tocd",
+    "namespace": "mod"
+  }
+}

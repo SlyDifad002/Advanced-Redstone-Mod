@@ -1,0 +1,26 @@
+{
+  "group": "sly_adnanced_redstone",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "sly_adnanced_redstone:adc"
+    },
+    "2": {
+      "item": "sly_adnanced_redstone:adc"
+    },
+    "3": {
+      "item": "sly_adnanced_redstone:adc"
+    },
+    "5": {
+      "item": "sly_adnanced_redstone:adc"
+    }
+  },
+  "result": {
+    "item": "sly_adnanced_redstone:redstonearmorboots",
+    "count": 1
+  }
+}

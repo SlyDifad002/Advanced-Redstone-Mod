@@ -1,0 +1,11 @@
+{
+  "group": "sly_adnanced_redstone",
+  "type": "minecraft:smelting",
+  "experience": 0.7,
+  "ingredient": {
+    "item": "sly_adnanced_redstone:advancedore"
+  },
+  "result": {
+    "item": "sly_adnanced_redstone:adc"
+  }
+}

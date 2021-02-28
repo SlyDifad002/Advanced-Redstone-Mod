@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "sly_adnanced_redstone:blocks/redportal",
+    "up": "sly_adnanced_redstone:blocks/redportal",
+    "north": "sly_adnanced_redstone:blocks/redportal",
+    "east": "sly_adnanced_redstone:blocks/redportal",
+    "south": "sly_adnanced_redstone:blocks/redportal",
+    "west": "sly_adnanced_redstone:blocks/redportal",
+    "particle": "sly_adnanced_redstone:blocks/redportal"
+  }
+}

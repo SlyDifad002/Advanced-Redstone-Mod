@@ -1,0 +1,61 @@
+{
+  "_fv": 5,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 353,
+    "height": 332,
+    "renderBgLayer": true,
+    "containerBlock": "Furn",
+    "components": [
+      {
+        "type": "outputslot",
+        "data": {
+          "inventory": "inherited",
+          "color": {
+            "value": -10092544,
+            "falpha": 0.0
+          },
+          "id": 1,
+          "name": "Slot #1",
+          "x": 530,
+          "y": 143
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "inventory": "inherited",
+          "color": {
+            "value": -10092544,
+            "falpha": 0.0
+          },
+          "id": 0,
+          "onSlotChanged": {
+            "name": "Input"
+          },
+          "name": "Slot #0",
+          "x": 282,
+          "y": 147
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Instant redstone furnace",
+          "color": {
+            "value": -10092544,
+            "falpha": 0.0
+          },
+          "name": "Instant redstone furnace",
+          "x": 304,
+          "y": 97
+        }
+      }
+    ],
+    "inventories": []
+  }
+}

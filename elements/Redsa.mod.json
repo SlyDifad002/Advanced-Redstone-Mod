@@ -1,0 +1,59 @@
+{
+  "_fv": 5,
+  "_type": "dimension",
+  "definition": {
+    "portalFrame": {
+      "value": "CUSTOM:Uncraftable"
+    },
+    "portalParticles": {
+      "value": "PORTAL"
+    },
+    "portalLuminance": 0.0,
+    "portalSound": {
+      "value": "block.note_block.bit"
+    },
+    "igniterName": "Redstone Igniter",
+    "igniterTab": {
+      "value": "CUSTOM:RWE"
+    },
+    "texture": "r",
+    "portalTexture": "advas",
+    "enablePortal": true,
+    "biomesInDimension": [
+      {
+        "value": "CUSTOM:Resda"
+      }
+    ],
+    "worldGenType": "Normal world gen",
+    "mainFillerBlock": {
+      "value": "CUSTOM:Redston"
+    },
+    "secondaryFillerBlock": {
+      "value": "CUSTOM:Redgars"
+    },
+    "tertiaryFillerBlock": {
+      "value": "CUSTOM:AdvancedOre"
+    },
+    "fluidBlock": {
+      "value": "CUSTOM:Sada"
+    },
+    "airColor": {
+      "value": -2162688,
+      "falpha": 0.0
+    },
+    "canRespawnHere": true,
+    "hasFog": false,
+    "hasWeather": false,
+    "isDark": false,
+    "doesWaterVaporize": false,
+    "sleepResult": "ALLOW",
+    "hasSkyLight": true,
+    "imitateOverworldBehaviour": false,
+    "dimensionMusic": {
+      "value": "CUSTOM:slytube"
+    },
+    "whenPortaTriggerlUsed": {
+      "name": "SadaPortalTriggerUsed"
+    }
+  }
+}
