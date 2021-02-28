@@ -63,6 +63,12 @@ public class sly_adnanced_redstoneVariables {
 		public double Location121 = 0;
 		public double Location122 = 0;
 		public double Location123 = 0;
+		public double Location211 = 0;
+		public double Location212 = 0;
+		public double Location213 = 0;
+		public double Location221 = 0;
+		public double Location222 = 0;
+		public double Location223 = 0;
 
 		public MapVariables() {
 			super(DATA_NAME);
@@ -80,6 +86,12 @@ public class sly_adnanced_redstoneVariables {
 			Location121 = nbt.getDouble("Location121");
 			Location122 = nbt.getDouble("Location122");
 			Location123 = nbt.getDouble("Location123");
+			Location211 = nbt.getDouble("Location211");
+			Location212 = nbt.getDouble("Location212");
+			Location213 = nbt.getDouble("Location213");
+			Location221 = nbt.getDouble("Location221");
+			Location222 = nbt.getDouble("Location222");
+			Location223 = nbt.getDouble("Location223");
 		}
 
 		@Override
@@ -90,6 +102,12 @@ public class sly_adnanced_redstoneVariables {
 			nbt.putDouble("Location121", Location121);
 			nbt.putDouble("Location122", Location122);
 			nbt.putDouble("Location123", Location123);
+			nbt.putDouble("Location211", Location211);
+			nbt.putDouble("Location212", Location212);
+			nbt.putDouble("Location213", Location213);
+			nbt.putDouble("Location221", Location221);
+			nbt.putDouble("Location222", Location222);
+			nbt.putDouble("Location223", Location223);
 			return nbt;
 		}
 

@@ -54,6 +54,20 @@
           "x": 304,
           "y": 97
         }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Activate",
+          "onClick": {
+            "name": "ComCommandExecuted"
+          },
+          "width": 160,
+          "height": 40,
+          "name": "Activate",
+          "x": 338,
+          "y": 185
+        }
       }
     ],
     "inventories": []

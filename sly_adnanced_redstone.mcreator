@@ -1429,6 +1429,182 @@
           }
         ]
       }
+    },
+    {
+      "name": "Teleblock2BlockIsPlacedBy",
+      "type": "procedure",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Teleblock2OnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Teleblock2BlockDestroyedByPlayer",
+      "type": "procedure",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Teleblock2BlockDestroyedByExplosion",
+      "type": "procedure",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Teleblock2",
+      "type": "block",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Teleblock21BlockIsPlacedBy",
+      "type": "procedure",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Teleblock21OnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Teleblock21BlockDestroyedByPlayer",
+      "type": "procedure",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Teleblock21BlockDestroyedByExplosion",
+      "type": "procedure",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Teleblock21",
+      "type": "block",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [
@@ -1467,6 +1643,42 @@
       "type": "number",
       "scope": "map",
       "value": "0"
+    },
+    {
+      "name": "Location211",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "Location212",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "Location213",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "Location221",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "Location222",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "Location223",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
     }
   ],
   "sound_elements": [
@@ -1498,8 +1710,8 @@
       "biome.sly_adnanced_redstone.resda": "Resda",
       "item.sly_advnanced_redstone.redstonearmorlegs": "Redstone Leggings",
       "block.sly_adnanced_redstone.uncraftable": "Uncraftable",
-      "item.sly_adnanced_redstone.adc": "Advanced redstone dust",
       "item.sly_adnanced_redstone.mulred": "Mulred",
+      "item.sly_adnanced_redstone.adc": "Advanced redstone dust",
       "item.sly_adnanced_redstone.sada_bucket": "Sada Bucket",
       "item.sly_adnanced_redstone.redstonearmorboots": "Redstone Boots",
       "tile.advancedredstone.name": "Advanced redstone block",
@@ -1517,9 +1729,11 @@
       "block.sly_advnanced_redstone.redgars": "Redstone grass block",
       "block.sly_adnanced_redstone.litred": "Redstone dust block",
       "block.sly_adnanced_redstone.todimention": "Redstone Dimention Portal Spawner",
+      "block.sly_adnanced_redstone.teleblock2": "Teleblock 2-1",
       "biome.sly_advnanced_redstone.resda": "Resda",
       "block.sly_advnanced_redstone.advancedredstone": "Advanced wireless redstone 1",
       "block.sly_advnanced_redstone.advancedore": "Advanced Ore",
+      "block.sly_adnanced_redstone.teleblock21": "Teleblock 2-1",
       "block.sly_adnanced_redstone.dirter": "Redstone dirt block",
       "block.sly_adnanced_redstone.teleblock1": "Teleblock1-1",
       "item.adc.name": "Advanced redstone dust",
@@ -1548,8 +1762,8 @@
       "biome.sly_adnanced_redstone.resda": "Resda",
       "item.sly_advnanced_redstone.redstonearmorlegs": "Redstone Leggings",
       "block.sly_adnanced_redstone.uncraftable": "Uncraftable",
-      "item.sly_adnanced_redstone.adc": "Advanced redstone dust",
       "item.sly_adnanced_redstone.mulred": "Ultimate redstone multitool",
+      "item.sly_adnanced_redstone.adc": "Advanced redstone dust",
       "item.sly_adnanced_redstone.sada_bucket": "Sada Bucket",
       "item.sly_adnanced_redstone.redstonearmorboots": "Redstone Boots",
       "tile.advancedredstone.name": "Advanced redstone block",
@@ -1567,9 +1781,11 @@
       "block.sly_advnanced_redstone.redgars": "Redstone grass block",
       "block.sly_adnanced_redstone.litred": "Redstone dust block",
       "block.sly_adnanced_redstone.todimention": "Redstone Dimention Portal Spawner",
+      "block.sly_adnanced_redstone.teleblock2": "Teleblock 2-1",
       "biome.sly_advnanced_redstone.resda": "Resda",
       "block.sly_advnanced_redstone.advancedredstone": "Advanced wireless redstone 1",
       "block.sly_advnanced_redstone.advancedore": "Advanced Ore",
+      "block.sly_adnanced_redstone.teleblock21": "Teleblock 2-1",
       "block.sly_adnanced_redstone.dirter": "Redstone dirt block",
       "block.sly_adnanced_redstone.teleblock1": "Teleblock1-1",
       "item.adc.name": "Advanced redstone dust",

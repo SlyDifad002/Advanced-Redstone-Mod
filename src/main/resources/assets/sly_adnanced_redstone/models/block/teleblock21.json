@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "sly_adnanced_redstone:blocks/tele21",
+    "up": "sly_adnanced_redstone:blocks/tele21",
+    "north": "sly_adnanced_redstone:blocks/tele21",
+    "east": "sly_adnanced_redstone:blocks/tele21",
+    "south": "sly_adnanced_redstone:blocks/tele21",
+    "west": "sly_adnanced_redstone:blocks/tele21",
+    "particle": "sly_adnanced_redstone:blocks/tele21"
+  }
+}
