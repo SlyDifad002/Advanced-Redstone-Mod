@@ -745,14 +745,6 @@
       "ids": {}
     },
     {
-      "name": "Sada",
-      "type": "fluid",
-      "sortid": 38,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
-    },
-    {
       "name": "SadaPortalTriggerUsed",
       "type": "procedure",
       "sortid": 39,
@@ -1753,6 +1745,122 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "Redstone_Fluid",
+      "type": "fluid",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "RoadconcreteOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Roadline",
+      "type": "block",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "WhiteroadpaintRightClickedOnBlock",
+      "type": "procedure",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Whiteroadpaint",
+      "type": "item",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Paint",
+      "type": "recipe",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Roadcorner",
+      "type": "block",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Roadthreeway",
+      "type": "block",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Roadfourway",
+      "type": "block",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [
@@ -1827,6 +1935,30 @@
       "type": "number",
       "scope": "map",
       "value": "0"
+    },
+    {
+      "name": "Dim1",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "Dim11",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "Dim2",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "Dim21",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
     }
   ],
   "sound_elements": [
@@ -1862,20 +1994,22 @@
       "block.sly_adnanced_redstone.uncraftable": "Uncraftable",
       "item.sly_adnanced_redstone.adc": "Advanced redstone dust",
       "item.sly_adnanced_redstone.mulred": "Mulred",
-      "item.sly_adnanced_redstone.sada_bucket": "Sada Bucket",
+      "item.sly_adnanced_redstone.redstone_fluid_bucket": "Sada Bucket",
       "item.sly_adnanced_redstone.redstonearmorboots": "Redstone Boots",
       "tile.advancedredstone.name": "Advanced redstone block",
       "block.sly_adnanced_redstone.redsc": "Redstone dust block",
       "item.sly_advnanced_redstone.redstonearmorbody": "Redstone Chestplate",
       "item.sly_adnanced_redstone.redsa": "Redstone Igniter",
-      "fluid.sada": "Sada",
       "block.sly_adnanced_redstone.advancedredstone": "Advanced redstone block",
       "block.sly_adnanced_redstone.advancedore": "Advanced Ore",
+      "item.sly_adnanced_redstone.whiteroadpaint": "White Road Paint",
+      "block.sly_adnanced_redstone.roadfourway": "Roadline",
       "item.sly_advnanced_redstone.mulred": "Ultimate redstone multitool",
       "tile.litred.name": "Redstone dust block",
       "item.sly_adnanced_redstone.multarmix": "Multar",
       "block.sly_adnanced_redstone.sotre": "Sotre",
       "block.sly_advnanced_redstone.litred": "Redstone dust block",
+      "block.sly_adnanced_redstone.roadline": "Roadline",
       "block.sly_advnanced_redstone.dirter": "Redstone dirt block",
       "block.sly_advnanced_redstone.redgars": "Redstone grass block",
       "block.sly_adnanced_redstone.litred": "Redstone dust block",
@@ -1895,13 +2029,15 @@
       "block.sly_adnanced_redstone.redgars": "Redstone grass block",
       "block.sly_adnanced_redstone.cobbleredston": "Cobbleredstone",
       "item.sly_adnanced_redstone.redstonearmorbody": "Redstone Chestplate",
+      "block.sly_adnanced_redstone.roadcorner": "Roadline",
       "block.sly_adnanced_redstone.furn": "Instant redstone furnace",
       "item.sly_advnanced_redstone.redstonearmorhelmet": "Redstone Helmet",
       "item.sly_advnanced_redstone.redsa": "Redstone Igniter",
       "block.sly_advnanced_redstone.furn": "Instant redstone furnace",
       "block.sly_adnanced_redstone.teleblock11": "Teleblock 1-2",
       "item.sly_adnanced_redstone.redstonearmorlegs": "Redstone Leggings",
-      "item.sly_advnanced_redstone.sada_bucket": "Sada Bucket"
+      "item.sly_advnanced_redstone.sada_bucket": "Sada Bucket",
+      "block.sly_adnanced_redstone.roadthreeway": "Roadline"
     },
     "en_us": {
       "block.sly_advnanced_redstone.redsc": "Redstone dust block",
@@ -1918,32 +2054,34 @@
       "block.sly_adnanced_redstone.uncraftable": "Uncraftable",
       "item.sly_adnanced_redstone.adc": "Advanced redstone dust",
       "item.sly_adnanced_redstone.mulred": "Ultimate redstone multitool",
-      "item.sly_adnanced_redstone.sada_bucket": "Sada Bucket",
+      "item.sly_adnanced_redstone.redstone_fluid_bucket": "Redstone_Fluid Bucket",
       "item.sly_adnanced_redstone.redstonearmorboots": "Redstone Boots",
       "tile.advancedredstone.name": "Advanced redstone block",
       "block.sly_adnanced_redstone.redsc": "Redstone dust block",
       "item.sly_advnanced_redstone.redstonearmorbody": "Redstone Chestplate",
       "item.sly_adnanced_redstone.redsa": "Redstone Igniter",
-      "fluid.sada": "Sada",
       "block.sly_adnanced_redstone.advancedredstone": "Advanced redstone block",
       "block.sly_adnanced_redstone.advancedore": "Advanced Ore",
+      "item.sly_adnanced_redstone.whiteroadpaint": "White Road Paint",
+      "block.sly_adnanced_redstone.roadfourway": "Roadline",
       "item.sly_advnanced_redstone.mulred": "Ultimate redstone multitool",
       "tile.litred.name": "Redstone dust block",
       "item.sly_adnanced_redstone.multarmix": "Multar",
       "block.sly_adnanced_redstone.sotre": "Sotre",
       "block.sly_advnanced_redstone.litred": "Redstone dust block",
+      "block.sly_adnanced_redstone.roadline": "Roadline",
       "block.sly_advnanced_redstone.dirter": "Redstone dirt block",
       "block.sly_advnanced_redstone.redgars": "Redstone grass block",
       "block.sly_adnanced_redstone.litred": "Redstone dust block",
       "item.sly_adnanced_redstone.restick": "Redstick",
       "block.sly_adnanced_redstone.todimention": "Redstone Dimention Portal Spawner",
-      "block.sly_adnanced_redstone.teleblock2": "Teleblock 2-1",
+      "block.sly_adnanced_redstone.teleblock2": "Teleblock 1-1",
       "biome.sly_advnanced_redstone.resda": "Resda",
       "block.sly_advnanced_redstone.advancedredstone": "Advanced wireless redstone 1",
       "block.sly_advnanced_redstone.advancedore": "Advanced Ore",
-      "block.sly_adnanced_redstone.teleblock21": "Teleblock 2-1",
+      "block.sly_adnanced_redstone.teleblock21": "Teleblock 1-2",
       "block.sly_adnanced_redstone.dirter": "Redstone dirt block",
-      "block.sly_adnanced_redstone.teleblock1": "Teleblock1-1",
+      "block.sly_adnanced_redstone.teleblock1": "Dimension Teleblock 1-1",
       "item.adc.name": "Advanced redstone dust",
       "block.sly_advnanced_redstone.cobbleredston": "Cobbleredstone",
       "tile.redsc.name": "Redstone dust block",
@@ -1951,13 +2089,15 @@
       "block.sly_adnanced_redstone.redgars": "Redstone grass block",
       "block.sly_adnanced_redstone.cobbleredston": "Cobbleredstone",
       "item.sly_adnanced_redstone.redstonearmorbody": "Redstone Chestplate",
+      "block.sly_adnanced_redstone.roadcorner": "Roadline",
       "block.sly_adnanced_redstone.furn": "Instant redstone furnace",
       "item.sly_advnanced_redstone.redstonearmorhelmet": "Redstone Helmet",
       "item.sly_advnanced_redstone.redsa": "Redstone Igniter",
       "block.sly_advnanced_redstone.furn": "Instant redstone furnace",
-      "block.sly_adnanced_redstone.teleblock11": "Teleblock 1-2",
+      "block.sly_adnanced_redstone.teleblock11": "Dimension Teleblock 1-2",
       "item.sly_adnanced_redstone.redstonearmorlegs": "Redstone Leggings",
-      "item.sly_advnanced_redstone.sada_bucket": "Sada Bucket"
+      "item.sly_advnanced_redstone.sada_bucket": "Sada Bucket",
+      "block.sly_adnanced_redstone.roadthreeway": "Roadline"
     }
   },
   "workspaceSettings": {

@@ -34,7 +34,7 @@ public class MCreatorRoadconcrete extends Elementssly_adnanced_redstone.ModEleme
 
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.GROUND).hardnessAndResistance(1f, 10f).lightValue(0).harvestLevel(100)
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.GROUND).hardnessAndResistance(6f, 10f).lightValue(0).harvestLevel(100)
 					.harvestTool(ToolType.PICKAXE));
 			setRegistryName("roadconcrete");
 		}

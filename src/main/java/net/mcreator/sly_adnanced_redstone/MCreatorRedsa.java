@@ -819,7 +819,7 @@ public class MCreatorRedsa extends Elementssly_adnanced_redstone.ModElement {
 				}
 
 				public BlockState getDefaultFluid() {
-					return MCreatorSada.block.getDefaultState();
+					return MCreatorRedstone_Fluid.block.getDefaultState();
 				}
 			});
 			this.randomSeed.skip(5349);

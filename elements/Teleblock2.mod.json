@@ -20,7 +20,7 @@
     "My": 1.0,
     "Mz": 1.0,
     "faceShape": "SOLID",
-    "name": "Teleblock 2-1",
+    "name": "Teleblock 1-1",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
@@ -78,9 +78,6 @@
     },
     "onDestroyedByExplosion": {
       "name": "Teleblock2BlockDestroyedByExplosion"
-    },
-    "onEntityWalksOn": {
-      "name": "Teleblock2OnBlockRightClicked"
     },
     "onBlockPlayedBy": {
       "name": "Teleblock2BlockIsPlacedBy"

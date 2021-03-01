@@ -24,7 +24,7 @@ public class MCreatorConcretebreaker extends Elementssly_adnanced_redstone.ModEl
 			}
 
 			public float getEfficiency() {
-				return 4f;
+				return 100f;
 			}
 
 			public float getAttackDamage() {
@@ -42,7 +42,7 @@ public class MCreatorConcretebreaker extends Elementssly_adnanced_redstone.ModEl
 			public Ingredient getRepairMaterial() {
 				return null;
 			}
-		}, 1, -3F, new Item.Properties().group(MCreatorRWE.tab)) {
+		}, 1, 26F, new Item.Properties().group(MCreatorRWE.tab)) {
 		}.setRegistryName("concretebreaker"));
 	}
 }

@@ -20,5 +20,7 @@ public class MCreatorTeleblock1BlockDestroyedByExplosion extends Elementssly_adn
 		sly_adnanced_redstoneVariables.MapVariables.get(world).syncData(world);
 		sly_adnanced_redstoneVariables.MapVariables.get(world).Location113 = (double) 0;
 		sly_adnanced_redstoneVariables.MapVariables.get(world).syncData(world);
+		sly_adnanced_redstoneVariables.MapVariables.get(world).Dim1 = (double) 0;
+		sly_adnanced_redstoneVariables.MapVariables.get(world).syncData(world);
 	}
 }

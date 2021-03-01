@@ -32,17 +32,17 @@ import net.minecraft.block.Block;
 import java.util.Random;
 
 @Elementssly_adnanced_redstone.ModElement.Tag
-public class MCreatorSada extends Elementssly_adnanced_redstone.ModElement {
-	@ObjectHolder("sly_adnanced_redstone:sada")
+public class MCreatorRedstone_Fluid extends Elementssly_adnanced_redstone.ModElement {
+	@ObjectHolder("sly_adnanced_redstone:redstone_fluid")
 	public static final FlowingFluidBlock block = null;
-	@ObjectHolder("sly_adnanced_redstone:sada_bucket")
+	@ObjectHolder("sly_adnanced_redstone:redstone_fluid_bucket")
 	public static final Item bucket = null;
 	private FlowingFluid flowing = null;
 	private FlowingFluid still = null;
 	private ForgeFlowingFluid.Properties fluidproperties = null;
 
-	public MCreatorSada(Elementssly_adnanced_redstone instance) {
-		super(instance, 38);
+	public MCreatorRedstone_Fluid(Elementssly_adnanced_redstone instance) {
+		super(instance, 93);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
@@ -57,12 +57,12 @@ public class MCreatorSada extends Elementssly_adnanced_redstone.ModElement {
 		fluidproperties = new ForgeFlowingFluid.Properties(() -> still, () -> flowing, FluidAttributes
 				.builder(new ResourceLocation("sly_adnanced_redstone:blocks/dersa"), new ResourceLocation("sly_adnanced_redstone:blocks/redflow"))
 				.luminosity(0).density(1000).viscosity(800)).bucket(() -> bucket).block(() -> block);
-		still = (FlowingFluid) new ForgeFlowingFluid.Source(fluidproperties).setRegistryName("sada");
-		flowing = (FlowingFluid) new ForgeFlowingFluid.Flowing(fluidproperties).setRegistryName("sada_flowing");
+		still = (FlowingFluid) new ForgeFlowingFluid.Source(fluidproperties).setRegistryName("redstone_fluid");
+		flowing = (FlowingFluid) new ForgeFlowingFluid.Flowing(fluidproperties).setRegistryName("redstone_fluid_flowing");
 		elements.blocks.add(() -> new FlowingFluidBlock(still, Block.Properties.create(Material.WATER)) {
-		}.setRegistryName("sada"));
+		}.setRegistryName("redstone_fluid"));
 		elements.items.add(() -> new BucketItem(still, new Item.Properties().containerItem(Items.BUCKET).maxStackSize(1).group(MCreatorRWE.tab))
-				.setRegistryName("sada_bucket"));
+				.setRegistryName("redstone_fluid_bucket"));
 	}
 
 	@Override

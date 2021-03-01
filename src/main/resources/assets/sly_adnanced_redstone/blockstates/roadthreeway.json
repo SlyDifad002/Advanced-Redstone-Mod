@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "sly_adnanced_redstone:block/roadthreeway"
+    },
+    "facing=east": {
+      "model": "sly_adnanced_redstone:block/roadthreeway",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "sly_adnanced_redstone:block/roadthreeway",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "sly_adnanced_redstone:block/roadthreeway",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "sly_adnanced_redstone:block/roadthreeway",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "sly_adnanced_redstone:block/roadthreeway",
+      "x": 90
+    }
+  }
+}

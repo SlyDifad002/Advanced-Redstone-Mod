@@ -20,5 +20,7 @@ public class MCreatorTeleblock11BlockDestroyedByPlayer extends Elementssly_adnan
 		sly_adnanced_redstoneVariables.MapVariables.get(world).syncData(world);
 		sly_adnanced_redstoneVariables.MapVariables.get(world).Location123 = (double) 0;
 		sly_adnanced_redstoneVariables.MapVariables.get(world).syncData(world);
+		sly_adnanced_redstoneVariables.MapVariables.get(world).Dim11 = (double) 0;
+		sly_adnanced_redstoneVariables.MapVariables.get(world).syncData(world);
 	}
 }

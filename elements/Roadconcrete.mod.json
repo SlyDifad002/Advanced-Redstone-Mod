@@ -22,7 +22,7 @@
     "faceShape": "SOLID",
     "name": "Road Concrete",
     "specialInfo": [],
-    "hardness": 1.0,
+    "hardness": 6.0,
     "resistance": 10.0,
     "hasGravity": false,
     "creativeTab": {
