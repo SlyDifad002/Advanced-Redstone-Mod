@@ -10,31 +10,31 @@
     },
     "recipeSlots": [
       {
-        "value": "CUSTOM:Advancedredstone"
+        "value": "Blocks.REDSTONE_BLOCK"
       },
       {
-        "value": "CUSTOM:Advancedredstone"
+        "value": "Blocks.REDSTONE_BLOCK"
       },
       {
-        "value": "CUSTOM:Advancedredstone"
+        "value": "Blocks.REDSTONE_BLOCK"
       },
       {
-        "value": "CUSTOM:Advancedredstone"
+        "value": "Blocks.REDSTONE_BLOCK"
       },
       {
-        "value": "CUSTOM:Mulred"
+        "value": "Items.ENDER_PEARL"
       },
       {
-        "value": "CUSTOM:Advancedredstone"
+        "value": "Blocks.REDSTONE_BLOCK"
       },
       {
-        "value": "CUSTOM:Advancedredstone"
+        "value": "Blocks.REDSTONE_BLOCK"
       },
       {
-        "value": "CUSTOM:Advancedredstone"
+        "value": "Blocks.REDSTONE_BLOCK"
       },
       {
-        "value": "CUSTOM:Advancedredstone"
+        "value": "Blocks.REDSTONE_BLOCK"
       }
     ],
     "smeltingXPReward": 0.0,

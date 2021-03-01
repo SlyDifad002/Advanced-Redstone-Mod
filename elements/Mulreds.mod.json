@@ -10,13 +10,13 @@
     },
     "recipeSlots": [
       {
-        "value": "CUSTOM:Advancedredstone"
+        "value": "Blocks.REDSTONE_BLOCK"
       },
       {
-        "value": "CUSTOM:Advancedredstone"
+        "value": "Blocks.REDSTONE_BLOCK"
       },
       {
-        "value": "CUSTOM:Advancedredstone"
+        "value": "Blocks.REDSTONE_BLOCK"
       },
       {
         "value": ""
@@ -31,7 +31,7 @@
         "value": ""
       },
       {
-        "value": "CUSTOM:Advancedredstone"
+        "value": "Blocks.REDSTONE_BLOCK"
       },
       {
         "value": ""

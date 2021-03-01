@@ -8,19 +8,19 @@
   ],
   "key": {
     "0": {
-      "item": "sly_adnanced_redstone:advancedredstone"
+      "item": "minecraft:redstone_block"
     },
     "1": {
-      "item": "sly_adnanced_redstone:advancedredstone"
+      "item": "minecraft:redstone_block"
     },
     "2": {
-      "item": "sly_adnanced_redstone:advancedredstone"
+      "item": "minecraft:redstone_block"
     },
     "4": {
       "item": "minecraft:nether_star"
     },
     "7": {
-      "item": "sly_adnanced_redstone:advancedredstone"
+      "item": "minecraft:redstone_block"
     }
   },
   "result": {

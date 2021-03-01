@@ -8,31 +8,31 @@
   ],
   "key": {
     "0": {
-      "item": "sly_adnanced_redstone:advancedredstone"
+      "item": "minecraft:redstone_block"
     },
     "1": {
-      "item": "sly_adnanced_redstone:advancedredstone"
+      "item": "minecraft:redstone_block"
     },
     "2": {
-      "item": "sly_adnanced_redstone:advancedredstone"
+      "item": "minecraft:redstone_block"
     },
     "3": {
-      "item": "sly_adnanced_redstone:advancedredstone"
+      "item": "minecraft:redstone_block"
     },
     "4": {
-      "item": "sly_adnanced_redstone:mulred"
+      "item": "minecraft:ender_pearl"
     },
     "5": {
-      "item": "sly_adnanced_redstone:advancedredstone"
+      "item": "minecraft:redstone_block"
     },
     "6": {
-      "item": "sly_adnanced_redstone:advancedredstone"
+      "item": "minecraft:redstone_block"
     },
     "7": {
-      "item": "sly_adnanced_redstone:advancedredstone"
+      "item": "minecraft:redstone_block"
     },
     "8": {
-      "item": "sly_adnanced_redstone:advancedredstone"
+      "item": "minecraft:redstone_block"
     }
   },
   "result": {
