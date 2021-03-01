@@ -22,5 +22,10 @@ Here i will update you with the mod and Crafting Recipes
 ![Concrete braker](https://user-images.githubusercontent.com/65361791/109518542-3eb0d900-7aa2-11eb-9cd7-793d3c7c1a18.png)
 ![Mult Tool](https://user-images.githubusercontent.com/65361791/109518570-43758d00-7aa2-11eb-9f2e-f0385cdbb6b0.png)
 ![Fuel](https://user-images.githubusercontent.com/65361791/109518583-45d7e700-7aa2-11eb-900e-4a8918b4ca2c.png)
+![Sword](https://user-images.githubusercontent.com/65361791/109519869-8d12a780-7aa3-11eb-830e-abbf45d0d97e.png)
+![Shovel](https://user-images.githubusercontent.com/65361791/109519907-96037900-7aa3-11eb-817f-4cb18c22ef53.png)
+![Axe](https://user-images.githubusercontent.com/65361791/109519935-9c91f080-7aa3-11eb-81c5-042f64118086.png)
+![Hoe](https://user-images.githubusercontent.com/65361791/109519945-9ef44a80-7aa3-11eb-98c2-621e555136a2.png)
+![Pick](https://user-images.githubusercontent.com/65361791/109519976-a61b5880-7aa3-11eb-9f49-38a41148a989.png)
 
 
