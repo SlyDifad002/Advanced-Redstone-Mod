@@ -4,6 +4,7 @@ import net.minecraftforge.registries.ObjectHolder;
 
 import net.minecraft.world.storage.loot.LootContext;
 import net.minecraft.world.World;
+import net.minecraft.world.IBlockReader;
 import net.minecraft.world.Explosion;
 import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.util.math.BlockPos;
@@ -15,6 +16,7 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.fluid.IFluidState;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.Entity;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.BlockState;
@@ -39,9 +41,26 @@ public class MCreatorTeleblock11 extends Elementssly_adnanced_redstone.ModElemen
 	}
 
 	public static class CustomBlock extends Block {
+		private boolean red = false;
+
 		public CustomBlock() {
 			super(Block.Properties.create(Material.ROCK).sound(SoundType.GROUND).hardnessAndResistance(1f, 10f).lightValue(0));
 			setRegistryName("teleblock11");
+		}
+
+		@Override
+		public int getWeakPower(BlockState state, IBlockReader world, BlockPos pos, Direction side) {
+			return red ? 15 : 0;
+		}
+
+		@Override
+		public int getStrongPower(BlockState state, IBlockReader world, BlockPos pos, Direction side) {
+			return red ? 15 : 0;
+		}
+
+		@Override
+		public boolean canConnectRedstone(BlockState state, IBlockReader world, BlockPos pos, Direction side) {
+			return true;
 		}
 
 		@Override
@@ -78,6 +97,21 @@ public class MCreatorTeleblock11 extends Elementssly_adnanced_redstone.ModElemen
 				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
 				$_dependencies.put("world", world);
 				MCreatorTeleblock11BlockDestroyedByExplosion.executeProcedure($_dependencies);
+			}
+		}
+
+		@Override
+		public void onEntityWalk(World world, BlockPos pos, Entity entity) {
+			super.onEntityWalk(world, pos, entity);
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			Block block = this;
+			{
+				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("world", world);
+				MCreatorTeleblock1OnBlockRightClicked.executeProcedure($_dependencies);
 			}
 		}
 

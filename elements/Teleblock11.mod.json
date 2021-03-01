@@ -37,7 +37,7 @@
     "isBeaconBase": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
-    "canProvidePower": false,
+    "canProvidePower": true,
     "lightOpacity": 255,
     "material": {
       "value": "ROCK"
@@ -78,6 +78,9 @@
     },
     "onDestroyedByExplosion": {
       "name": "Teleblock11BlockDestroyedByExplosion"
+    },
+    "onEntityWalksOn": {
+      "name": "Teleblock1OnBlockRightClicked"
     },
     "onBlockPlayedBy": {
       "name": "Teleblock11BlockIsPlacedBy"

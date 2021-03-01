@@ -79,6 +79,9 @@
     "onDestroyedByExplosion": {
       "name": "Teleblock21BlockDestroyedByExplosion"
     },
+    "onEntityWalksOn": {
+      "name": "Teleblock21OnBlockRightClicked"
+    },
     "onBlockPlayedBy": {
       "name": "Teleblock21BlockIsPlacedBy"
     },

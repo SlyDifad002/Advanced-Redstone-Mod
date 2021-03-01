@@ -15,6 +15,7 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.fluid.IFluidState;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.Entity;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.BlockState;
@@ -78,6 +79,21 @@ public class MCreatorTeleblock1 extends Elementssly_adnanced_redstone.ModElement
 				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
 				$_dependencies.put("world", world);
 				MCreatorTeleblock1BlockDestroyedByExplosion.executeProcedure($_dependencies);
+			}
+		}
+
+		@Override
+		public void onEntityWalk(World world, BlockPos pos, Entity entity) {
+			super.onEntityWalk(world, pos, entity);
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			Block block = this;
+			{
+				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("world", world);
+				MCreatorTeleblock1OnBlockRightClicked.executeProcedure($_dependencies);
 			}
 		}
 
