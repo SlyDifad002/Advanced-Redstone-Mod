@@ -1,0 +1,45 @@
+{
+  "_fv": 5,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "recipeShapeless": false,
+    "recipeReturnStack": {
+      "value": "CUSTOM:Concretebreaker"
+    },
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Cobbleredston"
+      },
+      {
+        "value": "CUSTOM:Cobbleredston"
+      },
+      {
+        "value": "CUSTOM:Cobbleredston"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Restick"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Restick"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "smeltingXPReward": 0.0,
+    "smeltingRetstackSize": 1,
+    "name": "recon",
+    "namespace": "mod"
+  }
+}

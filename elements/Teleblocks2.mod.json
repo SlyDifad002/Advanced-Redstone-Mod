@@ -1,0 +1,45 @@
+{
+  "_fv": 5,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "recipeShapeless": false,
+    "recipeReturnStack": {
+      "value": "CUSTOM:Teleblock11"
+    },
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Adc"
+      },
+      {
+        "value": "Items.DYE#18"
+      },
+      {
+        "value": "CUSTOM:Adc"
+      },
+      {
+        "value": "CUSTOM:Redston"
+      },
+      {
+        "value": "Items.ENDER_PEARL"
+      },
+      {
+        "value": "CUSTOM:Redston"
+      },
+      {
+        "value": "CUSTOM:Adc"
+      },
+      {
+        "value": "CUSTOM:Redston"
+      },
+      {
+        "value": "CUSTOM:Adc"
+      }
+    ],
+    "smeltingXPReward": 0.0,
+    "smeltingRetstackSize": 1,
+    "name": "teleblocks2",
+    "namespace": "mod"
+  }
+}

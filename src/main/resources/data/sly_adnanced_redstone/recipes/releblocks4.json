@@ -1,0 +1,42 @@
+{
+  "group": "sly_adnanced_redstone",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:diamond"
+    },
+    "1": {
+      "item": "minecraft:red_dye"
+    },
+    "2": {
+      "item": "minecraft:diamond"
+    },
+    "3": {
+      "item": "sly_adnanced_redstone:redston"
+    },
+    "4": {
+      "item": "minecraft:ender_pearl"
+    },
+    "5": {
+      "item": "sly_adnanced_redstone:redston"
+    },
+    "6": {
+      "item": "minecraft:diamond"
+    },
+    "7": {
+      "item": "sly_adnanced_redstone:redston"
+    },
+    "8": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "item": "sly_adnanced_redstone:teleblock21",
+    "count": 1
+  }
+}

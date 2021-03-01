@@ -1,0 +1,42 @@
+{
+  "group": "sly_adnanced_redstone",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "sly_adnanced_redstone:adc"
+    },
+    "1": {
+      "item": "minecraft:brown_dye"
+    },
+    "2": {
+      "item": "sly_adnanced_redstone:adc"
+    },
+    "3": {
+      "item": "sly_adnanced_redstone:redston"
+    },
+    "4": {
+      "item": "minecraft:ender_pearl"
+    },
+    "5": {
+      "item": "sly_adnanced_redstone:redston"
+    },
+    "6": {
+      "item": "sly_adnanced_redstone:adc"
+    },
+    "7": {
+      "item": "sly_adnanced_redstone:redston"
+    },
+    "8": {
+      "item": "sly_adnanced_redstone:adc"
+    }
+  },
+  "result": {
+    "item": "sly_adnanced_redstone:teleblock1",
+    "count": 1
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "group": "sly_adnanced_redstone",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "tag": "minecraft:sand"
+    },
+    "1": {
+      "item": "minecraft:light_gray_concrete_powder"
+    },
+    "2": {
+      "item": "minecraft:water_bucket"
+    }
+  },
+  "result": {
+    "item": "sly_adnanced_redstone:multarmix",
+    "count": 5
+  }
+}

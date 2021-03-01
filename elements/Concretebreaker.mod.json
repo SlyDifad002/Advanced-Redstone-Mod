@@ -1,0 +1,23 @@
+{
+  "_fv": 5,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "coneritebrake",
+    "customModelName": "Normal",
+    "name": "Concrete Breaker",
+    "creativeTab": {
+      "value": "CUSTOM:RWE"
+    },
+    "toolType": "Pickaxe",
+    "harvestLevel": 100,
+    "efficiency": 4.0,
+    "attackSpeed": 1.0,
+    "enchantability": 2,
+    "damageVsEntity": 0.0,
+    "usageCount": 100000,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": []
+  }
+}
