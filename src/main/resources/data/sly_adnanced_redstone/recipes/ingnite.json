@@ -1,0 +1,30 @@
+{
+  "group": "sly_adnanced_redstone",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:redstone_block"
+    },
+    "1": {
+      "item": "minecraft:redstone_block"
+    },
+    "2": {
+      "item": "minecraft:redstone_block"
+    },
+    "4": {
+      "item": "minecraft:flint_and_steel"
+    },
+    "7": {
+      "item": "minecraft:redstone_block"
+    }
+  },
+  "result": {
+    "item": "sly_adnanced_redstone:redsa",
+    "count": 1
+  }
+}

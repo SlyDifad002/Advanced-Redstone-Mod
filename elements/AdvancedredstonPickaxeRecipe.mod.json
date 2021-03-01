@@ -6,32 +6,32 @@
     "recipeRetstackSize": 1,
     "recipeShapeless": false,
     "recipeReturnStack": {
-      "value": "CUSTOM:Mulred"
+      "value": "CUSTOM:AdvancedredstonPickaxe"
     },
     "recipeSlots": [
       {
-        "value": "CUSTOM:Advancedredstone"
+        "value": "CUSTOM:Adc"
       },
       {
-        "value": "CUSTOM:Advancedredstone"
+        "value": "CUSTOM:Adc"
       },
       {
-        "value": "CUSTOM:Advancedredstone"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.NETHER_STAR"
+        "value": "CUSTOM:Adc"
       },
       {
         "value": ""
       },
       {
+        "value": "Items.STICK"
+      },
+      {
         "value": ""
       },
       {
-        "value": "CUSTOM:Advancedredstone"
+        "value": ""
+      },
+      {
+        "value": "Items.STICK"
       },
       {
         "value": ""
@@ -39,7 +39,7 @@
     ],
     "smeltingXPReward": 0.0,
     "smeltingRetstackSize": 1,
-    "name": "mulreds",
+    "name": "advancedredstonpickaxerecipe",
     "namespace": "mod"
   }
 }

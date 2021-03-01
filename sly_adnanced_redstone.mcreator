@@ -1861,6 +1861,94 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "Ingnite",
+      "type": "recipe",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "AdvancedredstonPickaxe",
+      "type": "tool",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "AdvancedredstonAxe",
+      "type": "tool",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "AdvancedredstonSword",
+      "type": "tool",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "AdvancedredstonShovel",
+      "type": "tool",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "AdvancedredstonHoe",
+      "type": "tool",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "AdvancedredstonPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "AdvancedredstonAxeRecipe",
+      "type": "recipe",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "AdvancedredstonSwordRecipe",
+      "type": "recipe",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "AdvancedredstonShovelRecipe",
+      "type": "recipe",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "AdvancedredstonHoeRecipe",
+      "type": "recipe",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [
@@ -1986,6 +2074,7 @@
       "item.sly_adnanced_redstone.redstonearmorhelmet": "Redstone Helmet",
       "item.sly_adnanced_redstone.concretebreaker": "Concretebreaker",
       "item.sly_advnanced_redstone.redstonearmorboots": "Redstone Boots",
+      "item.sly_adnanced_redstone.advancedredstonhoe": "Advancedredston Hoe",
       "item.sly_advnanced_redstone.adc": "Advanced redstone dust",
       "itemGroup.tabrwe": "Advanced redstone",
       "block.sly_adnanced_redstone.roadconcrete": "Road Concrete",
@@ -2017,9 +2106,12 @@
       "block.sly_adnanced_redstone.todimention": "Redstone Dimention Portal Spawner",
       "block.sly_adnanced_redstone.teleblock2": "Teleblock 2-1",
       "biome.sly_advnanced_redstone.resda": "Resda",
+      "item.sly_adnanced_redstone.advancedredstonsword": "Advancedredston Sword",
       "block.sly_advnanced_redstone.advancedredstone": "Advanced wireless redstone 1",
       "block.sly_advnanced_redstone.advancedore": "Advanced Ore",
       "block.sly_adnanced_redstone.teleblock21": "Teleblock 2-1",
+      "item.sly_adnanced_redstone.advancedredstonaxe": "Advancedredston Axe",
+      "item.sly_adnanced_redstone.advancedredstonshovel": "Advancedredston Shovel",
       "block.sly_adnanced_redstone.dirter": "Redstone dirt block",
       "block.sly_adnanced_redstone.teleblock1": "Teleblock1-1",
       "item.adc.name": "Advanced redstone dust",
@@ -2037,6 +2129,7 @@
       "block.sly_adnanced_redstone.teleblock11": "Teleblock 1-2",
       "item.sly_adnanced_redstone.redstonearmorlegs": "Redstone Leggings",
       "item.sly_advnanced_redstone.sada_bucket": "Sada Bucket",
+      "item.sly_adnanced_redstone.advancedredstonpickaxe": "Advancedredston Pickaxe",
       "block.sly_adnanced_redstone.roadthreeway": "Roadline"
     },
     "en_us": {
@@ -2046,6 +2139,7 @@
       "item.sly_adnanced_redstone.redstonearmorhelmet": "Redstone Helmet",
       "item.sly_adnanced_redstone.concretebreaker": "Concrete Breaker",
       "item.sly_advnanced_redstone.redstonearmorboots": "Redstone Boots",
+      "item.sly_adnanced_redstone.advancedredstonhoe": "Advanced Redstone Hoe",
       "item.sly_advnanced_redstone.adc": "Advanced redstone dust",
       "itemGroup.tabrwe": "Advanced redstone",
       "block.sly_adnanced_redstone.roadconcrete": "Road Concrete",
@@ -2077,9 +2171,12 @@
       "block.sly_adnanced_redstone.todimention": "Redstone Dimention Portal Spawner",
       "block.sly_adnanced_redstone.teleblock2": "Teleblock 1-1",
       "biome.sly_advnanced_redstone.resda": "Resda",
+      "item.sly_adnanced_redstone.advancedredstonsword": "Advanced Redstone Sword",
       "block.sly_advnanced_redstone.advancedredstone": "Advanced wireless redstone 1",
       "block.sly_advnanced_redstone.advancedore": "Advanced Ore",
       "block.sly_adnanced_redstone.teleblock21": "Teleblock 1-2",
+      "item.sly_adnanced_redstone.advancedredstonaxe": "Advanced Redstone Axe",
+      "item.sly_adnanced_redstone.advancedredstonshovel": "Advanced Redstone Shovel",
       "block.sly_adnanced_redstone.dirter": "Redstone dirt block",
       "block.sly_adnanced_redstone.teleblock1": "Dimension Teleblock 1-1",
       "item.adc.name": "Advanced redstone dust",
@@ -2097,6 +2194,7 @@
       "block.sly_adnanced_redstone.teleblock11": "Dimension Teleblock 1-2",
       "item.sly_adnanced_redstone.redstonearmorlegs": "Redstone Leggings",
       "item.sly_advnanced_redstone.sada_bucket": "Sada Bucket",
+      "item.sly_adnanced_redstone.advancedredstonpickaxe": "Advanced Redstone Pickaxe",
       "block.sly_adnanced_redstone.roadthreeway": "Roadline"
     }
   },

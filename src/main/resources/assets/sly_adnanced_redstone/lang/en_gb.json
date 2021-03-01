@@ -5,6 +5,7 @@
   "item.sly_adnanced_redstone.redstonearmorhelmet": "Redstone Helmet",
   "item.sly_adnanced_redstone.concretebreaker": "Concretebreaker",
   "item.sly_advnanced_redstone.redstonearmorboots": "Redstone Boots",
+  "item.sly_adnanced_redstone.advancedredstonhoe": "Advancedredston Hoe",
   "item.sly_advnanced_redstone.adc": "Advanced redstone dust",
   "itemGroup.tabrwe": "Advanced redstone",
   "block.sly_adnanced_redstone.roadconcrete": "Road Concrete",
@@ -36,9 +37,12 @@
   "block.sly_adnanced_redstone.todimention": "Redstone Dimention Portal Spawner",
   "block.sly_adnanced_redstone.teleblock2": "Teleblock 2-1",
   "biome.sly_advnanced_redstone.resda": "Resda",
+  "item.sly_adnanced_redstone.advancedredstonsword": "Advancedredston Sword",
   "block.sly_advnanced_redstone.advancedredstone": "Advanced wireless redstone 1",
   "block.sly_advnanced_redstone.advancedore": "Advanced Ore",
   "block.sly_adnanced_redstone.teleblock21": "Teleblock 2-1",
+  "item.sly_adnanced_redstone.advancedredstonaxe": "Advancedredston Axe",
+  "item.sly_adnanced_redstone.advancedredstonshovel": "Advancedredston Shovel",
   "block.sly_adnanced_redstone.dirter": "Redstone dirt block",
   "block.sly_adnanced_redstone.teleblock1": "Teleblock1-1",
   "item.adc.name": "Advanced redstone dust",
@@ -56,5 +60,6 @@
   "block.sly_adnanced_redstone.teleblock11": "Teleblock 1-2",
   "item.sly_adnanced_redstone.redstonearmorlegs": "Redstone Leggings",
   "item.sly_advnanced_redstone.sada_bucket": "Sada Bucket",
+  "item.sly_adnanced_redstone.advancedredstonpickaxe": "Advancedredston Pickaxe",
   "block.sly_adnanced_redstone.roadthreeway": "Roadline"
 }

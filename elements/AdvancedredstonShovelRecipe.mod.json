@@ -6,23 +6,14 @@
     "recipeRetstackSize": 1,
     "recipeShapeless": false,
     "recipeReturnStack": {
-      "value": "CUSTOM:Mulred"
+      "value": "CUSTOM:AdvancedredstonShovel"
     },
     "recipeSlots": [
       {
-        "value": "CUSTOM:Advancedredstone"
-      },
-      {
-        "value": "CUSTOM:Advancedredstone"
-      },
-      {
-        "value": "CUSTOM:Advancedredstone"
-      },
-      {
         "value": ""
       },
       {
-        "value": "Items.NETHER_STAR"
+        "value": "CUSTOM:Adc"
       },
       {
         "value": ""
@@ -31,7 +22,16 @@
         "value": ""
       },
       {
-        "value": "CUSTOM:Advancedredstone"
+        "value": "Items.STICK"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.STICK"
       },
       {
         "value": ""
@@ -39,7 +39,7 @@
     ],
     "smeltingXPReward": 0.0,
     "smeltingRetstackSize": 1,
-    "name": "mulreds",
+    "name": "advancedredstonshovelrecipe",
     "namespace": "mod"
   }
 }
