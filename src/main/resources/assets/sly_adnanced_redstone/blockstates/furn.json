@@ -14,14 +14,6 @@
     "facing=west": {
       "model": "sly_adnanced_redstone:block/furn",
       "y": 270
-    },
-    "facing=up": {
-      "model": "sly_adnanced_redstone:block/furn",
-      "x": 270
-    },
-    "facing=down": {
-      "model": "sly_adnanced_redstone:block/furn",
-      "x": 90
     }
   }
 }

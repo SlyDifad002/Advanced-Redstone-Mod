@@ -47,7 +47,7 @@ import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
-import net.minecraft.block.DirectionalBlock;
+import net.minecraft.block.HorizontalBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
@@ -88,7 +88,7 @@ public class FurnBlock extends SlyAdnancedRedstoneModElements.ModElement {
 		event.getRegistry().register(TileEntityType.Builder.create(CustomTileEntity::new, block).build(null).setRegistryName("furn"));
 	}
 	public static class CustomBlock extends Block {
-		public static final DirectionProperty FACING = DirectionalBlock.FACING;
+		public static final DirectionProperty FACING = HorizontalBlock.HORIZONTAL_FACING;
 		public CustomBlock() {
 			super(Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(1f, 10f).lightValue(0));
 			this.setDefaultState(this.stateContainer.getBaseState().with(FACING, Direction.NORTH));
@@ -110,8 +110,10 @@ public class FurnBlock extends SlyAdnancedRedstoneModElements.ModElement {
 
 		@Override
 		public BlockState getStateForPlacement(BlockItemUseContext context) {
-			Direction facing = context.getFace();;
-			return this.getDefaultState().with(FACING, facing);
+			;
+			if (context.getFace() == Direction.UP || context.getFace() == Direction.DOWN)
+				return this.getDefaultState().with(FACING, Direction.NORTH);
+			return this.getDefaultState().with(FACING, context.getFace());
 		}
 
 		@Override
