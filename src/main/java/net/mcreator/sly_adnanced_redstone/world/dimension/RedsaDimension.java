@@ -59,7 +59,6 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.Direction;
 import net.minecraft.util.CachedBlockInfo;
 import net.minecraft.potion.EffectInstance;
-import net.minecraft.particles.ParticleTypes;
 import net.minecraft.network.play.server.SPlayerAbilitiesPacket;
 import net.minecraft.network.play.server.SPlaySoundEventPacket;
 import net.minecraft.network.play.server.SPlayEntityEffectPacket;
@@ -75,9 +74,10 @@ import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
+import net.mcreator.sly_adnanced_redstone.particle.RedParticle;
 import net.mcreator.sly_adnanced_redstone.item.RedsaItem;
 import net.mcreator.sly_adnanced_redstone.block.UncraftableBlock;
-import net.mcreator.sly_adnanced_redstone.block.Redstone_FluidBlock;
+import net.mcreator.sly_adnanced_redstone.block.RedstoneBlock;
 import net.mcreator.sly_adnanced_redstone.block.RedstonBlock;
 import net.mcreator.sly_adnanced_redstone.SlyAdnancedRedstoneModElements;
 
@@ -245,7 +245,7 @@ public class RedsaDimension extends SlyAdnancedRedstoneModElements.ModElement {
 					pz = pos.getZ() + 0.5 + 0.25 * j;
 					vz = random.nextFloat() * 2 * j;
 				}
-				world.addParticle(ParticleTypes.PORTAL, px, py, pz, vx, vy, vz);
+				world.addParticle(RedParticle.particle, px, py, pz, vx, vy, vz);
 			}
 			if (random.nextInt(110) == 0)
 				world.playSound(pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5,
@@ -790,7 +790,7 @@ public class RedsaDimension extends SlyAdnancedRedstoneModElements.ModElement {
 				}
 
 				public BlockState getDefaultFluid() {
-					return Redstone_FluidBlock.block.getDefaultState();
+					return RedstoneBlock.block.getDefaultState();
 				}
 			});
 			this.randomSeed.skip(5349);

@@ -1611,14 +1611,6 @@
       "ids": {}
     },
     {
-      "name": "Redstone_Fluid",
-      "type": "fluid",
-      "sortid": 93,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
-    },
-    {
       "name": "RoadconcreteOnBlockRightClicked",
       "type": "procedure",
       "sortid": 94,
@@ -1893,6 +1885,51 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "Difad002",
+      "type": "painting",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "difad_002"
+    },
+    {
+      "name": "Difad",
+      "type": "painting",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "difad"
+    },
+    {
+      "name": "Diafd",
+      "type": "painting",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "diafd"
+    },
+    {
+      "name": "Red",
+      "type": "particle",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "red"
+    },
+    {
+      "name": "Redstone",
+      "type": "fluid",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "redstone"
     }
   ],
   "variable_elements": [
@@ -2018,11 +2055,11 @@
   ],
   "language_map": {
     "en_gb": {
-      "block.sly_adnanced_redstone.tococ": "To convertable",
-      "block.sly_adnanced_redstone.redston": "Redstone",
       "block.sly_advnanced_redstone.redsc": "Redstone dust block",
-      "item.sly_adnanced_redstone.concretebreaker": "Concretebreaker",
+      "block.sly_adnanced_redstone.redston": "Redstone",
+      "block.sly_adnanced_redstone.tococ": "To convertable",
       "item.sly_adnanced_redstone.redstonearmorhelmet": "Redstone Helmet",
+      "item.sly_adnanced_redstone.concretebreaker": "Concretebreaker",
       "item.sly_advnanced_redstone.redstonearmorboots": "Redstone Boots",
       "item.sly_adnanced_redstone.advancedredstonhoe": "Advancedredston Hoe",
       "item.sly_advnanced_redstone.adc": "Advanced redstone dust",
@@ -2032,9 +2069,8 @@
       "biome.sly_adnanced_redstone.resda": "Resda",
       "item.sly_advnanced_redstone.redstonearmorlegs": "Redstone Leggings",
       "block.sly_adnanced_redstone.uncraftable": "Uncraftable",
-      "item.sly_adnanced_redstone.mulred": "Mulred",
       "item.sly_adnanced_redstone.adc": "Advanced redstone dust",
-      "item.sly_adnanced_redstone.redstone_fluid_bucket": "Sada Bucket",
+      "item.sly_adnanced_redstone.mulred": "Mulred",
       "item.sly_adnanced_redstone.redstonearmorboots": "Redstone Boots",
       "tile.advancedredstone.name": "Advanced redstone block",
       "block.sly_adnanced_redstone.redsc": "Redstone dust block",
@@ -2052,8 +2088,8 @@
       "block.sly_adnanced_redstone.sotre": "Sotre",
       "block.sly_advnanced_redstone.litred": "Redstone dust block",
       "block.sly_adnanced_redstone.roadline": "Roadline",
-      "fluid.redstone_fluid": "Redstone_Fluid",
       "block.sly_advnanced_redstone.dirter": "Redstone dirt block",
+      "item.sly_adnanced_redstone.redstone_bucket": "Redstone_Fluid Bucket",
       "block.sly_advnanced_redstone.redgars": "Redstone grass block",
       "block.sly_adnanced_redstone.litred": "Redstone dust block",
       "item.sly_adnanced_redstone.restick": "Redstick",
@@ -2083,6 +2119,7 @@
       "block.sly_adnanced_redstone.furn": "Instant redstone furnace",
       "item.sly_advnanced_redstone.redstonearmorhelmet": "Redstone Helmet",
       "item.sly_advnanced_redstone.redsa": "Redstone Igniter",
+      "fluid.redstone": "Redstone_Fluid",
       "block.sly_advnanced_redstone.furn": "Instant redstone furnace",
       "block.sly_adnanced_redstone.teleblock11": "Teleblock 1-2",
       "item.sly_adnanced_redstone.redstonearmorlegs": "Redstone Leggings",
@@ -2091,11 +2128,11 @@
       "block.sly_adnanced_redstone.roadthreeway": "Roadline"
     },
     "en_us": {
-      "block.sly_adnanced_redstone.tococ": "To convertable",
-      "block.sly_adnanced_redstone.redston": "Redstone",
       "block.sly_advnanced_redstone.redsc": "Redstone dust block",
-      "item.sly_adnanced_redstone.concretebreaker": "Concrete Breaker",
+      "block.sly_adnanced_redstone.redston": "Redstone",
+      "block.sly_adnanced_redstone.tococ": "To convertable",
       "item.sly_adnanced_redstone.redstonearmorhelmet": "Redstone Helmet",
+      "item.sly_adnanced_redstone.concretebreaker": "Concrete Breaker",
       "item.sly_advnanced_redstone.redstonearmorboots": "Redstone Boots",
       "item.sly_adnanced_redstone.advancedredstonhoe": "Advanced Redstone Hoe",
       "item.sly_advnanced_redstone.adc": "Advanced redstone dust",
@@ -2105,9 +2142,8 @@
       "biome.sly_adnanced_redstone.resda": "Resda",
       "item.sly_advnanced_redstone.redstonearmorlegs": "Redstone Leggings",
       "block.sly_adnanced_redstone.uncraftable": "Uncraftable",
-      "item.sly_adnanced_redstone.mulred": "Ultimate redstone multitool",
       "item.sly_adnanced_redstone.adc": "Advanced redstone dust",
-      "item.sly_adnanced_redstone.redstone_fluid_bucket": "Redstone_Fluid Bucket",
+      "item.sly_adnanced_redstone.mulred": "Ultimate redstone multitool",
       "item.sly_adnanced_redstone.redstonearmorboots": "Redstone Boots",
       "tile.advancedredstone.name": "Advanced redstone block",
       "block.sly_adnanced_redstone.redsc": "Redstone dust block",
@@ -2125,8 +2161,8 @@
       "block.sly_adnanced_redstone.sotre": "Sotre",
       "block.sly_advnanced_redstone.litred": "Redstone dust block",
       "block.sly_adnanced_redstone.roadline": "Roadline",
-      "fluid.redstone_fluid": "Redstone_Fluid",
       "block.sly_advnanced_redstone.dirter": "Redstone dirt block",
+      "item.sly_adnanced_redstone.redstone_bucket": "Redstone_Fluid Bucket",
       "block.sly_advnanced_redstone.redgars": "Redstone grass block",
       "block.sly_adnanced_redstone.litred": "Redstone dust block",
       "item.sly_adnanced_redstone.restick": "Redstick",
@@ -2156,6 +2192,7 @@
       "block.sly_adnanced_redstone.furn": "Instant redstone furnace",
       "item.sly_advnanced_redstone.redstonearmorhelmet": "Redstone Helmet",
       "item.sly_advnanced_redstone.redsa": "Redstone Igniter",
+      "fluid.redstone": "Redstone_Fluid",
       "block.sly_advnanced_redstone.furn": "Instant redstone furnace",
       "block.sly_adnanced_redstone.teleblock11": "Dimension Teleblock 1-2",
       "item.sly_adnanced_redstone.redstonearmorlegs": "Redstone Leggings",

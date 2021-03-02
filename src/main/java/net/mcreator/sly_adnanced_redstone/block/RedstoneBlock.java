@@ -30,22 +30,23 @@ import net.minecraft.block.material.Material;
 import net.minecraft.block.FlowingFluidBlock;
 import net.minecraft.block.Block;
 
+import net.mcreator.sly_adnanced_redstone.world.dimension.RedsaDimension;
 import net.mcreator.sly_adnanced_redstone.itemgroup.RWEItemGroup;
 import net.mcreator.sly_adnanced_redstone.SlyAdnancedRedstoneModElements;
 
 import java.util.Random;
 
 @SlyAdnancedRedstoneModElements.ModElement.Tag
-public class Redstone_FluidBlock extends SlyAdnancedRedstoneModElements.ModElement {
-	@ObjectHolder("sly_adnanced_redstone:redstone_fluid")
+public class RedstoneBlock extends SlyAdnancedRedstoneModElements.ModElement {
+	@ObjectHolder("sly_adnanced_redstone:redstone")
 	public static final FlowingFluidBlock block = null;
-	@ObjectHolder("sly_adnanced_redstone:redstone_fluid_bucket")
+	@ObjectHolder("sly_adnanced_redstone:redstone_bucket")
 	public static final Item bucket = null;
 	public static FlowingFluid flowing = null;
 	public static FlowingFluid still = null;
 	private ForgeFlowingFluid.Properties fluidproperties = null;
-	public Redstone_FluidBlock(SlyAdnancedRedstoneModElements instance) {
-		super(instance, 93);
+	public RedstoneBlock(SlyAdnancedRedstoneModElements instance) {
+		super(instance, 119);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
@@ -59,13 +60,13 @@ public class Redstone_FluidBlock extends SlyAdnancedRedstoneModElements.ModEleme
 	public void initElements() {
 		fluidproperties = new ForgeFlowingFluid.Properties(() -> still, () -> flowing, FluidAttributes
 				.builder(new ResourceLocation("sly_adnanced_redstone:blocks/dersa"), new ResourceLocation("sly_adnanced_redstone:blocks/redflow"))
-				.luminosity(0).density(1000).viscosity(800)).bucket(() -> bucket).block(() -> block);
-		still = (FlowingFluid) new ForgeFlowingFluid.Source(fluidproperties).setRegistryName("redstone_fluid");
-		flowing = (FlowingFluid) new ForgeFlowingFluid.Flowing(fluidproperties).setRegistryName("redstone_fluid_flowing");
+				.luminosity(10).density(1000).viscosity(800)).bucket(() -> bucket).block(() -> block);
+		still = (FlowingFluid) new ForgeFlowingFluid.Source(fluidproperties).setRegistryName("redstone");
+		flowing = (FlowingFluid) new ForgeFlowingFluid.Flowing(fluidproperties).setRegistryName("redstone_flowing");
 		elements.blocks.add(() -> new FlowingFluidBlock(still, Block.Properties.create(Material.WATER)) {
-		}.setRegistryName("redstone_fluid"));
+		}.setRegistryName("redstone"));
 		elements.items.add(() -> new BucketItem(still, new Item.Properties().containerItem(Items.BUCKET).maxStackSize(1).group(RWEItemGroup.tab))
-				.setRegistryName("redstone_fluid_bucket"));
+				.setRegistryName("redstone_bucket"));
 	}
 
 	@Override
@@ -76,7 +77,7 @@ public class Redstone_FluidBlock extends SlyAdnancedRedstoneModElements.ModEleme
 				public boolean place(IWorld world, ChunkGenerator generator, Random rand, BlockPos pos, LakesConfig config) {
 					DimensionType dimensionType = world.getDimension().getType();
 					boolean dimensionCriteria = false;
-					if (dimensionType == DimensionType.OVERWORLD)
+					if (dimensionType == RedsaDimension.type)
 						dimensionCriteria = true;
 					if (!dimensionCriteria)
 						return false;

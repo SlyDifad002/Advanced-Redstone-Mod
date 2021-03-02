@@ -17,6 +17,7 @@ import net.minecraft.world.biome.Biome;
 import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
 import net.minecraft.world.DifficultyInstance;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
 import net.minecraft.network.IPacket;
@@ -30,8 +31,8 @@ import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.ai.goal.TemptGoal;
 import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
-import net.minecraft.entity.ai.goal.PanicGoal;
 import net.minecraft.entity.ai.goal.OpenDoorGoal;
+import net.minecraft.entity.ai.goal.NearestAttackableTargetGoal;
 import net.minecraft.entity.ai.goal.LookRandomlyGoal;
 import net.minecraft.entity.ai.goal.LeapAtTargetGoal;
 import net.minecraft.entity.ai.goal.HurtByTargetGoal;
@@ -45,14 +46,16 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.client.renderer.entity.model.CreeperModel;
 import net.minecraft.client.renderer.entity.MobRenderer;
+import net.minecraft.block.BlockState;
 
-import net.mcreator.sly_adnanced_redstone.procedures.RedstonedPlayerCollidesWithThisEntityProcedure;
 import net.mcreator.sly_adnanced_redstone.procedures.RedstonedOnInitialEntitySpawnProcedure;
 import net.mcreator.sly_adnanced_redstone.procedures.RedstonedEntityDiesProcedure;
+import net.mcreator.sly_adnanced_redstone.particle.RedParticle;
 import net.mcreator.sly_adnanced_redstone.itemgroup.RWEItemGroup;
 import net.mcreator.sly_adnanced_redstone.item.AdcItem;
 import net.mcreator.sly_adnanced_redstone.SlyAdnancedRedstoneModElements;
 
+import java.util.Random;
 import java.util.Map;
 import java.util.HashMap;
 
@@ -122,8 +125,8 @@ public class RedstonedEntity extends SlyAdnancedRedstoneModElements.ModElement {
 			this.goalSelector.addGoal(2, new LookRandomlyGoal(this));
 			this.goalSelector.addGoal(3, new SwimGoal(this));
 			this.goalSelector.addGoal(4, new LeapAtTargetGoal(this, (float) 0.8));
-			this.goalSelector.addGoal(5, new PanicGoal(this, 1.2));
-			this.targetSelector.addGoal(6, new HurtByTargetGoal(this).setCallsForHelp(this.getClass()));
+			this.targetSelector.addGoal(5, new HurtByTargetGoal(this).setCallsForHelp(this.getClass()));
+			this.targetSelector.addGoal(6, new NearestAttackableTargetGoal(this, PlayerEntity.class, true, true));
 			this.goalSelector.addGoal(7, new OpenDoorGoal(this, true));
 			this.goalSelector.addGoal(8, new TemptGoal(this, 5, Ingredient.fromItems(new ItemStack(AdcItem.block, (int) (1)).getItem()), false));
 		}
@@ -131,6 +134,17 @@ public class RedstonedEntity extends SlyAdnancedRedstoneModElements.ModElement {
 		@Override
 		public CreatureAttribute getCreatureAttribute() {
 			return CreatureAttribute.UNDEFINED;
+		}
+
+		@Override
+		public net.minecraft.util.SoundEvent getAmbientSound() {
+			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.note_block.bass"));
+		}
+
+		@Override
+		public void playStepSound(BlockPos pos, BlockState blockIn) {
+			this.playSound((net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.piston.extend")), 0.15f,
+					1);
 		}
 
 		@Override
@@ -189,20 +203,6 @@ public class RedstonedEntity extends SlyAdnancedRedstoneModElements.ModElement {
 		}
 
 		@Override
-		public void onCollideWithPlayer(PlayerEntity sourceentity) {
-			super.onCollideWithPlayer(sourceentity);
-			Entity entity = this;
-			double x = this.posX;
-			double y = this.posY;
-			double z = this.posZ;
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				RedstonedPlayerCollidesWithThisEntityProcedure.executeProcedure($_dependencies);
-			}
-		}
-
-		@Override
 		protected void registerAttributes() {
 			super.registerAttributes();
 			if (this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED) != null)
@@ -214,6 +214,26 @@ public class RedstonedEntity extends SlyAdnancedRedstoneModElements.ModElement {
 			if (this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE) == null)
 				this.getAttributes().registerAttribute(SharedMonsterAttributes.ATTACK_DAMAGE);
 			this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(3);
+		}
+
+		public void livingTick() {
+			super.livingTick();
+			double x = this.posX;
+			double y = this.posY;
+			double z = this.posZ;
+			Random random = this.rand;
+			Entity entity = this;
+			if (true)
+				for (int l = 0; l < 4; ++l) {
+					double d0 = (x + random.nextFloat());
+					double d1 = (y + random.nextFloat());
+					double d2 = (z + random.nextFloat());
+					int i1 = random.nextInt(2) * 2 - 1;
+					double d3 = (random.nextFloat() - 0.5D) * 0.5D;
+					double d4 = (random.nextFloat() - 0.5D) * 0.5D;
+					double d5 = (random.nextFloat() - 0.5D) * 0.5D;
+					world.addParticle(RedParticle.particle, d0, d1, d2, d3, d4, d5);
+				}
 		}
 	}
 }

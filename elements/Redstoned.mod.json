@@ -6,6 +6,7 @@
     "mobLabel": "",
     "mobModelName": "Creeper",
     "mobModelTexture": "mob.png",
+    "mobModelGlowTexture": "",
     "modelWidth": 0.6,
     "modelHeight": 1.7,
     "modelShadowSize": 0.5,
@@ -55,6 +56,7 @@
     "xpAmount": 5,
     "waterMob": false,
     "flyingMob": false,
+    "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "disableCollisions": false,
@@ -73,7 +75,7 @@
       "value": ""
     },
     "livingSound": {
-      "value": ""
+      "value": "block.note.bass"
     },
     "hurtSound": {
       "value": "block.redstone_torch.burnout"
@@ -81,9 +83,12 @@
     "deathSound": {
       "value": "block.metal_pressureplate.click_off"
     },
-    "spawnParticles": false,
+    "stepSound": {
+      "value": "block.piston.extend"
+    },
+    "spawnParticles": true,
     "particleToSpawn": {
-      "value": "EXPLOSION_NORMAL"
+      "value": "CUSTOM:Red"
     },
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.5,
@@ -91,15 +96,12 @@
     "whenMobDies": {
       "name": "RedstonedEntityDies"
     },
-    "onPlayerCollidesWith": {
-      "name": "RedstonedPlayerCollidesWithThisEntity"
-    },
     "onInitialSpawn": {
       "name": "RedstonedOnInitialEntitySpawn"
     },
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"wander\"><field name=\"speed\">1</field><next><block type=\"look_around\"><next><block type=\"swim_in_water\"><next><block type=\"leap_at_target\"><field name=\"speed\">0.8</field><next><block type=\"panic_when_attacked\"><field name=\"speed\">1.2</field><next><block type=\"attack_action\"><field name=\"callhelp\">TRUE</field><next><block type=\"doors_open\"><next><block type=\"follow_item_in_hands\"><field name=\"speed\">5</field><field name=\"scared\">FALSE</field><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">CUSTOM:Adc</field></block></value></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field><next><block type=\"leap_at_target\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">TRUE</field><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">TRUE</field><field name=\"nearby\">TRUE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">null,null</field><next><block type=\"doors_open\"><field name=\"condition\">null,null</field><next><block type=\"follow_item_in_hands\"><field name=\"speed\">5</field><field name=\"scared\">FALSE</field><field name=\"condition\">null,null</field><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">CUSTOM:Adc</field></block></value></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
     "breedable": false,
     "tameable": false,
     "breedTriggerItems": [],

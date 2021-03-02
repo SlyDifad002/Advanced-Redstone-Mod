@@ -6,7 +6,7 @@
       "value": "CUSTOM:Uncraftable"
     },
     "portalParticles": {
-      "value": "PORTAL"
+      "value": "CUSTOM:Red"
     },
     "portalLuminance": 0.0,
     "portalSound": {
@@ -29,7 +29,7 @@
       "value": "CUSTOM:Redston"
     },
     "fluidBlock": {
-      "value": "CUSTOM:Redstone_Fluid"
+      "value": "CUSTOM:Redstone"
     },
     "airColor": {
       "value": -2162688,

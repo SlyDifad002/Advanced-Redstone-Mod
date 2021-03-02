@@ -5,7 +5,7 @@
     "name": "Redstone_Fluid",
     "textureStill": "dersa",
     "textureFlowing": "redflow",
-    "luminosity": 0,
+    "luminosity": 10,
     "density": 1000,
     "viscosity": 800,
     "isGas": false,
@@ -16,7 +16,7 @@
     },
     "frequencyOnChunks": 5,
     "spawnWorldTypes": [
-      "Surface"
+      "CUSTOM:Redsa"
     ],
     "restrictionBiomes": []
   }
