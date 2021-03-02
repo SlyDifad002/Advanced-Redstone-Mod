@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "sly_adnanced_redstone:todimention",
+          "name": "sly_adnanced_redstone:redsa",
           "weight": 1,
           "functions": [
             {

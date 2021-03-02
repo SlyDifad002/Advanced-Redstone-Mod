@@ -2,16 +2,13 @@ package net.mcreator.sly_adnanced_redstone.procedures;
 
 import net.minecraftforge.registries.ForgeRegistries;
 
-import net.minecraft.world.server.ServerWorld;
-import net.minecraft.world.gen.feature.template.Template;
-import net.minecraft.world.gen.feature.template.PlacementSettings;
+import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.SoundCategory;
-import net.minecraft.util.Rotation;
 import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.Mirror;
 
+import net.mcreator.sly_adnanced_redstone.world.dimension.RedsaDimension;
 import net.mcreator.sly_adnanced_redstone.SlyAdnancedRedstoneModElements;
 
 import java.util.Map;
@@ -56,13 +53,7 @@ public class TODimentionOnBlockRightClickedProcedure extends SlyAdnancedRedstone
 					(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("sly_adnanced_redstone:portalspawn")),
 					SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
 		}
-		if (!world.getWorld().isRemote) {
-			Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
-					.getTemplateDefaulted(new ResourceLocation("sly_adnanced_redstone", "redportal"));
-			if (template != null) {
-				template.addBlocksToWorld(world, new BlockPos((int) x, (int) y, (int) z),
-						new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
-			}
-		}
+		if (world instanceof World)
+			RedsaDimension.portal.portalSpawn(world.getWorld(), new BlockPos((int) x, (int) y, (int) z));
 	}
 }
