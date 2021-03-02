@@ -1,0 +1,39 @@
+{
+  "group": "sly_adnanced_redstone",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "sly_adnanced_redstone:advancedredstone"
+    },
+    "1": {
+      "item": "sly_adnanced_redstone:cobbleredston"
+    },
+    "2": {
+      "item": "sly_adnanced_redstone:advancedredstone"
+    },
+    "3": {
+      "item": "sly_adnanced_redstone:cobbleredston"
+    },
+    "5": {
+      "item": "sly_adnanced_redstone:cobbleredston"
+    },
+    "6": {
+      "item": "sly_adnanced_redstone:advancedredstone"
+    },
+    "7": {
+      "item": "sly_adnanced_redstone:cobbleredston"
+    },
+    "8": {
+      "item": "sly_adnanced_redstone:advancedredstone"
+    }
+  },
+  "result": {
+    "item": "sly_adnanced_redstone:furn",
+    "count": 1
+  }
+}
