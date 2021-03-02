@@ -82,7 +82,7 @@ public class MCreatorRedstoned extends Elementssly_adnanced_redstone.ModElement 
 		RenderingRegistry.registerEntityRenderingHandler(CustomEntity.class, renderManager -> {
 			return new MobRenderer(renderManager, new CreeperModel(), 0.5f) {
 				protected ResourceLocation getEntityTexture(Entity entity) {
-					return new ResourceLocation("sly_adnanced_redstone:textures/adva.png");
+					return new ResourceLocation("sly_adnanced_redstone:textures/mob.png");
 				}
 			};
 		});

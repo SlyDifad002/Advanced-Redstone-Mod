@@ -4,7 +4,7 @@
   "definition": {
     "mobName": "Red Stoned",
     "mobLabel": "",
-    "mobModelTexture": "adva.png",
+    "mobModelTexture": "mob.png",
     "mobModelName": "Creeper",
     "modelWidth": 0.6,
     "modelHeight": 1.7,
