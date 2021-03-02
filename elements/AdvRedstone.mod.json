@@ -7,11 +7,11 @@
     "achievementIcon": {
       "value": "CUSTOM:Adc"
     },
-    "background": "2.png",
+    "background": "red.png",
     "disableDisplay": false,
     "showPopup": true,
     "announceToChat": true,
-    "hideIfNotCompleted": true,
+    "hideIfNotCompleted": false,
     "rewardLoot": [],
     "rewardRecipes": [
       "Tpo"

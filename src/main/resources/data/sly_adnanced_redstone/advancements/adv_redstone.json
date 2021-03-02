@@ -1,6 +1,6 @@
 {
   "display": {
-    "background": "sly_adnanced_redstone:textures/2.png",
+    "background": "sly_adnanced_redstone:textures/red.png",
     "icon": {
       "item": "sly_adnanced_redstone:adc"
     },
@@ -13,7 +13,7 @@
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
-    "hidden": true
+    "hidden": false
   },
   "criteria": {
     "adv_redstone": {
