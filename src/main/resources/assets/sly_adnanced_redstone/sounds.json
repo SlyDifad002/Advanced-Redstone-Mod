@@ -25,5 +25,23 @@
         "stream": false
       }
     ]
+  },
+  "thedubstep": {
+    "category": "record",
+    "sounds": [
+      {
+        "name": "sly_adnanced_redstone:the_dubstep_game",
+        "stream": true
+      }
+    ]
+  },
+  "dubremix": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "sly_adnanced_redstone:the_dubstep_game_remix",
+        "stream": true
+      }
+    ]
   }
 }

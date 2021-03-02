@@ -54,6 +54,10 @@ public class SlyAdnancedRedstoneModElements {
 				new net.minecraft.util.SoundEvent(new ResourceLocation("sly_adnanced_redstone", "fragile")));
 		sounds.put(new ResourceLocation("sly_adnanced_redstone", "portalspawn"),
 				new net.minecraft.util.SoundEvent(new ResourceLocation("sly_adnanced_redstone", "portalspawn")));
+		sounds.put(new ResourceLocation("sly_adnanced_redstone", "thedubstep"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("sly_adnanced_redstone", "thedubstep")));
+		sounds.put(new ResourceLocation("sly_adnanced_redstone", "dubremix"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("sly_adnanced_redstone", "dubremix")));
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("sly_adnanced_redstone").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();

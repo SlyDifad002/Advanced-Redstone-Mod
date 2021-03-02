@@ -1,0 +1,17 @@
+{
+  "_fv": 13,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "thedubstep",
+    "name": "The Dubstep Game",
+    "description": "By Difad002 Slyfalco",
+    "creativeTab": {
+      "value": "CUSTOM:RWE"
+    },
+    "music": {
+      "value": "CUSTOM:thedubstep"
+    },
+    "specialInfo": [],
+    "hasGlow": false
+  }
+}
