@@ -1949,6 +1949,86 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "RedstonedPlayerCollidesWithThisEntity",
+      "type": "procedure",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RedstonedOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RedstonedEntityDies",
+      "type": "procedure",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Redstoned",
+      "type": "mob",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [
@@ -2071,8 +2151,8 @@
       "block.sly_advnanced_redstone.redsc": "Redstone dust block",
       "block.sly_adnanced_redstone.redston": "Redstone",
       "block.sly_adnanced_redstone.tococ": "To convertable",
-      "item.sly_adnanced_redstone.redstonearmorhelmet": "Redstone Helmet",
       "item.sly_adnanced_redstone.concretebreaker": "Concretebreaker",
+      "item.sly_adnanced_redstone.redstonearmorhelmet": "Redstone Helmet",
       "item.sly_advnanced_redstone.redstonearmorboots": "Redstone Boots",
       "item.sly_adnanced_redstone.advancedredstonhoe": "Advancedredston Hoe",
       "item.sly_advnanced_redstone.adc": "Advanced redstone dust",
@@ -2081,8 +2161,8 @@
       "biome.sly_adnanced_redstone.resda": "Resda",
       "item.sly_advnanced_redstone.redstonearmorlegs": "Redstone Leggings",
       "block.sly_adnanced_redstone.uncraftable": "Uncraftable",
-      "item.sly_adnanced_redstone.adc": "Advanced redstone dust",
       "item.sly_adnanced_redstone.mulred": "Mulred",
+      "item.sly_adnanced_redstone.adc": "Advanced redstone dust",
       "item.sly_adnanced_redstone.redstone_fluid_bucket": "Sada Bucket",
       "item.sly_adnanced_redstone.redstonearmorboots": "Redstone Boots",
       "tile.advancedredstone.name": "Advanced redstone block",
@@ -2091,6 +2171,7 @@
       "item.sly_adnanced_redstone.redsa": "Redstone Igniter",
       "block.sly_adnanced_redstone.advancedredstone": "Advanced redstone block",
       "block.sly_adnanced_redstone.advancedore": "Advanced Ore",
+      "item.sly_adnanced_redstone.redstoned": "Red Stoned Spawn Egg",
       "item.sly_adnanced_redstone.whiteroadpaint": "White Road Paint",
       "block.sly_adnanced_redstone.roadfourway": "Roadline",
       "item.sly_advnanced_redstone.mulred": "Ultimate redstone multitool",
@@ -2105,6 +2186,7 @@
       "item.sly_adnanced_redstone.restick": "Redstick",
       "block.sly_adnanced_redstone.todimention": "Redstone Dimention Portal Spawner",
       "block.sly_adnanced_redstone.teleblock2": "Teleblock 2-1",
+      "entity.sly_adnanced_redstone.redstoned": "Red Stoned",
       "biome.sly_advnanced_redstone.resda": "Resda",
       "item.sly_adnanced_redstone.advancedredstonsword": "Advancedredston Sword",
       "block.sly_advnanced_redstone.advancedredstone": "Advanced wireless redstone 1",
@@ -2136,8 +2218,8 @@
       "block.sly_advnanced_redstone.redsc": "Redstone dust block",
       "block.sly_adnanced_redstone.redston": "Redstone",
       "block.sly_adnanced_redstone.tococ": "To convertable",
-      "item.sly_adnanced_redstone.redstonearmorhelmet": "Redstone Helmet",
       "item.sly_adnanced_redstone.concretebreaker": "Concrete Breaker",
+      "item.sly_adnanced_redstone.redstonearmorhelmet": "Redstone Helmet",
       "item.sly_advnanced_redstone.redstonearmorboots": "Redstone Boots",
       "item.sly_adnanced_redstone.advancedredstonhoe": "Advanced Redstone Hoe",
       "item.sly_advnanced_redstone.adc": "Advanced redstone dust",
@@ -2146,8 +2228,8 @@
       "biome.sly_adnanced_redstone.resda": "Resda",
       "item.sly_advnanced_redstone.redstonearmorlegs": "Redstone Leggings",
       "block.sly_adnanced_redstone.uncraftable": "Uncraftable",
-      "item.sly_adnanced_redstone.adc": "Advanced redstone dust",
       "item.sly_adnanced_redstone.mulred": "Ultimate redstone multitool",
+      "item.sly_adnanced_redstone.adc": "Advanced redstone dust",
       "item.sly_adnanced_redstone.redstone_fluid_bucket": "Redstone_Fluid Bucket",
       "item.sly_adnanced_redstone.redstonearmorboots": "Redstone Boots",
       "tile.advancedredstone.name": "Advanced redstone block",
@@ -2156,6 +2238,7 @@
       "item.sly_adnanced_redstone.redsa": "Redstone Igniter",
       "block.sly_adnanced_redstone.advancedredstone": "Advanced redstone block",
       "block.sly_adnanced_redstone.advancedore": "Advanced Ore",
+      "item.sly_adnanced_redstone.redstoned": "Red Stoned Spawn Egg",
       "item.sly_adnanced_redstone.whiteroadpaint": "White Road Paint",
       "block.sly_adnanced_redstone.roadfourway": "Roadline",
       "item.sly_advnanced_redstone.mulred": "Ultimate redstone multitool",
@@ -2170,6 +2253,7 @@
       "item.sly_adnanced_redstone.restick": "Redstick",
       "block.sly_adnanced_redstone.todimention": "Redstone Dimention Portal Spawner",
       "block.sly_adnanced_redstone.teleblock2": "Teleblock 1-1",
+      "entity.sly_adnanced_redstone.redstoned": "Red Stoned",
       "biome.sly_advnanced_redstone.resda": "Resda",
       "item.sly_adnanced_redstone.advancedredstonsword": "Advanced Redstone Sword",
       "block.sly_advnanced_redstone.advancedredstone": "Advanced wireless redstone 1",
