@@ -12,15 +12,15 @@
     "treeType": 1,
     "vanillaTreeType": "Default",
     "minHeight": 5,
-    "spawnVines": true,
+    "spawnVines": false,
     "treeVines": {
       "value": "Blocks.REDSTONE_BLOCK"
     },
     "treeStem": {
-      "value": "Blocks.REDSTONE_BLOCK"
+      "value": "CUSTOM:RedstoLog"
     },
     "treeBranch": {
-      "value": "Blocks.REDSTONE_BLOCK"
+      "value": "CUSTOM:RedstoLeaves"
     },
     "treeFruits": {
       "value": "Blocks.REDSTONE_BLOCK"

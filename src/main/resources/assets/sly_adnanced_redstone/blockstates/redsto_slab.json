@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "sly_adnanced_redstone:block/redsto_slab"
+    },
+    "type=top": {
+      "model": "sly_adnanced_redstone:block/redsto_slab_top"
+    },
+    "type=double": {
+      "model": "sly_adnanced_redstone:block/redsto_slab_full"
+    }
+  }
+}

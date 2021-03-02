@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "sly_adnanced_redstone:blocks/redsto_log_side",
+    "particle": "sly_adnanced_redstone:blocks/redsto_log_side"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "group": "sly_adnanced_redstone",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "sly_adnanced_redstone:redsto_log"
+    },
+    "1": {
+      "item": "sly_adnanced_redstone:redsto_log"
+    },
+    "2": {
+      "item": "sly_adnanced_redstone:redsto_log"
+    },
+    "3": {
+      "item": "sly_adnanced_redstone:redsto_log"
+    }
+  },
+  "result": {
+    "item": "sly_adnanced_redstone:redsto_wood",
+    "count": 3
+  }
+}

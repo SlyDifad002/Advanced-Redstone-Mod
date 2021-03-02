@@ -126,7 +126,7 @@ public class RedstonedEntity extends SlyAdnancedRedstoneModElements.ModElement {
 			this.goalSelector.addGoal(1, new RandomWalkingGoal(this, 1));
 			this.goalSelector.addGoal(2, new LookRandomlyGoal(this));
 			this.goalSelector.addGoal(3, new SwimGoal(this));
-			this.goalSelector.addGoal(4, new LeapAtTargetGoal(this, (float) 0.4));
+			this.goalSelector.addGoal(4, new LeapAtTargetGoal(this, (float) 0.3));
 			this.targetSelector.addGoal(5, new HurtByTargetGoal(this));
 			this.targetSelector.addGoal(6, new NearestAttackableTargetGoal(this, PlayerEntity.class, true, false));
 			this.targetSelector.addGoal(7, new NearestAttackableTargetGoal(this, PlayerEntity.class, false, true));
@@ -205,7 +205,7 @@ public class RedstonedEntity extends SlyAdnancedRedstoneModElements.ModElement {
 		protected void registerAttributes() {
 			super.registerAttributes();
 			if (this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED) != null)
-				this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.4);
+				this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.3);
 			if (this.getAttribute(SharedMonsterAttributes.MAX_HEALTH) != null)
 				this.getAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(35);
 			if (this.getAttribute(SharedMonsterAttributes.ARMOR) != null)

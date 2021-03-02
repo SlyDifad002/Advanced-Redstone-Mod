@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "sly_adnanced_redstone:blocks/redsto_planks",
+    "top": "sly_adnanced_redstone:blocks/redsto_planks",
+    "side": "sly_adnanced_redstone:blocks/redsto_planks"
+  }
+}

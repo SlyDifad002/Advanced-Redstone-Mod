@@ -1,0 +1,22 @@
+{
+  "group": "sly_adnanced_redstone",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "sly_adnanced_redstone:redsto_planks"
+    },
+    "1": {
+      "item": "sly_adnanced_redstone:redsto_planks"
+    },
+    "2": {
+      "item": "sly_adnanced_redstone:redsto_planks"
+    }
+  },
+  "result": {
+    "item": "sly_adnanced_redstone:redsto_slab",
+    "count": 6
+  }
+}

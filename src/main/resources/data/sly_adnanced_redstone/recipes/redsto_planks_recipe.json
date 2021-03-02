@@ -1,0 +1,13 @@
+{
+  "group": "sly_adnanced_redstone",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:redsto_log"
+    }
+  ],
+  "result": {
+    "item": "sly_adnanced_redstone:redsto_planks",
+    "count": 4
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "group": "sly_adnanced_redstone",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "sly_adnanced_redstone:restick"
+    },
+    "1": {
+      "item": "sly_adnanced_redstone:redsto_planks"
+    },
+    "2": {
+      "item": "sly_adnanced_redstone:restick"
+    },
+    "3": {
+      "item": "sly_adnanced_redstone:restick"
+    },
+    "4": {
+      "item": "sly_adnanced_redstone:redsto_planks"
+    },
+    "5": {
+      "item": "sly_adnanced_redstone:restick"
+    }
+  },
+  "result": {
+    "item": "sly_adnanced_redstone:redsto_fence_gate",
+    "count": 1
+  }
+}

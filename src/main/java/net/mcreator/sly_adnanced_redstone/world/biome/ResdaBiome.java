@@ -34,6 +34,8 @@ import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
+import net.mcreator.sly_adnanced_redstone.block.RedstoLogBlock;
+import net.mcreator.sly_adnanced_redstone.block.RedstoLeavesBlock;
 import net.mcreator.sly_adnanced_redstone.block.RedgarsBlock;
 import net.mcreator.sly_adnanced_redstone.block.DirterBlock;
 import net.mcreator.sly_adnanced_redstone.SlyAdnancedRedstoneModElements;
@@ -154,8 +156,8 @@ public class ResdaBiome extends SlyAdnancedRedstoneModElements.ModElement {
 										if (state.getBlock().isAir(state, world, blockpos) || state.getMaterial().blocksMovement()
 												|| state.isIn(BlockTags.LEAVES)
 												|| state.getBlock() == Blocks.REDSTONE_BLOCK.getDefaultState().getBlock()
-												|| state.getBlock() == Blocks.REDSTONE_BLOCK.getDefaultState().getBlock()) {
-											setTreeBlockState(changedBlocks, world, blockpos, Blocks.REDSTONE_BLOCK.getDefaultState(), bbox);
+												|| state.getBlock() == RedstoLeavesBlock.block.getDefaultState().getBlock()) {
+											setTreeBlockState(changedBlocks, world, blockpos, RedstoLeavesBlock.block.getDefaultState(), bbox);
 										}
 									}
 								}
@@ -164,47 +166,10 @@ public class ResdaBiome extends SlyAdnancedRedstoneModElements.ModElement {
 						for (int genh = 0; genh < height; genh++) {
 							BlockPos genhPos = position.up(genh);
 							state = world.getBlockState(genhPos);
-							setTreeBlockState(changedBlocks, world, genhPos, Blocks.REDSTONE_BLOCK.getDefaultState(), bbox);
+							setTreeBlockState(changedBlocks, world, genhPos, RedstoLogBlock.block.getDefaultState(), bbox);
 							if (state.getBlock().isAir(state, world, genhPos) || state.getMaterial().blocksMovement() || state.isIn(BlockTags.LEAVES)
 									|| state.getBlock() == Blocks.REDSTONE_BLOCK.getDefaultState().getBlock()
-									|| state.getBlock() == Blocks.REDSTONE_BLOCK.getDefaultState().getBlock()) {
-								if (genh > 0) {
-									if (rand.nextInt(3) > 0 && world.isAirBlock(position.add(-1, genh, 0)))
-										setTreeBlockState(changedBlocks, world, position.add(-1, genh, 0), Blocks.REDSTONE_BLOCK.getDefaultState(),
-												bbox);
-									if (rand.nextInt(3) > 0 && world.isAirBlock(position.add(1, genh, 0)))
-										setTreeBlockState(changedBlocks, world, position.add(1, genh, 0), Blocks.REDSTONE_BLOCK.getDefaultState(),
-												bbox);
-									if (rand.nextInt(3) > 0 && world.isAirBlock(position.add(0, genh, -1)))
-										setTreeBlockState(changedBlocks, world, position.add(0, genh, -1), Blocks.REDSTONE_BLOCK.getDefaultState(),
-												bbox);
-									if (rand.nextInt(3) > 0 && world.isAirBlock(position.add(0, genh, 1)))
-										setTreeBlockState(changedBlocks, world, position.add(0, genh, 1), Blocks.REDSTONE_BLOCK.getDefaultState(),
-												bbox);
-								}
-							}
-						}
-						for (int genh = position.getY() - 3 + height; genh <= position.getY() + height; genh++) {
-							int k4 = (int) (1 - (genh - (position.getY() + height)) * 0.5);
-							for (int genx = position.getX() - k4; genx <= position.getX() + k4; genx++) {
-								for (int genz = position.getZ() - k4; genz <= position.getZ() + k4; genz++) {
-									BlockPos bpos = new BlockPos(genx, genh, genz);
-									state = world.getBlockState(bpos);
-									if (state.isIn(BlockTags.LEAVES) || state.getBlock() == Blocks.REDSTONE_BLOCK.getDefaultState().getBlock()) {
-										BlockPos blockpos1 = bpos.south();
-										BlockPos blockpos2 = bpos.west();
-										BlockPos blockpos3 = bpos.east();
-										BlockPos blockpos4 = bpos.north();
-										if (rand.nextInt(4) == 0 && world.isAirBlock(blockpos2))
-											this.addVines(world, blockpos2, changedBlocks, bbox);
-										if (rand.nextInt(4) == 0 && world.isAirBlock(blockpos3))
-											this.addVines(world, blockpos3, changedBlocks, bbox);
-										if (rand.nextInt(4) == 0 && world.isAirBlock(blockpos4))
-											this.addVines(world, blockpos4, changedBlocks, bbox);
-										if (rand.nextInt(4) == 0 && world.isAirBlock(blockpos1))
-											this.addVines(world, blockpos1, changedBlocks, bbox);
-									}
-								}
+									|| state.getBlock() == RedstoLeavesBlock.block.getDefaultState().getBlock()) {
 							}
 						}
 						if (rand.nextInt(4) == 0 && height > 5) {
@@ -238,9 +203,9 @@ public class ResdaBiome extends SlyAdnancedRedstoneModElements.ModElement {
 		}
 
 		private boolean canGrowInto(Block blockType) {
-			return blockType.getDefaultState().getMaterial() == Material.AIR || blockType == Blocks.REDSTONE_BLOCK.getDefaultState().getBlock()
-					|| blockType == Blocks.REDSTONE_BLOCK.getDefaultState().getBlock() || blockType == RedgarsBlock.block.getDefaultState().getBlock()
-					|| blockType == DirterBlock.block.getDefaultState().getBlock();
+			return blockType.getDefaultState().getMaterial() == Material.AIR || blockType == RedstoLogBlock.block.getDefaultState().getBlock()
+					|| blockType == RedstoLeavesBlock.block.getDefaultState().getBlock()
+					|| blockType == RedgarsBlock.block.getDefaultState().getBlock() || blockType == DirterBlock.block.getDefaultState().getBlock();
 		}
 
 		private boolean isReplaceable(IWorld world, BlockPos pos) {
