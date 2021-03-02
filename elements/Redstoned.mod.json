@@ -1,15 +1,15 @@
 {
-  "_fv": 5,
+  "_fv": 13,
   "_type": "mob",
   "definition": {
     "mobName": "Red Stoned",
     "mobLabel": "",
-    "mobModelTexture": "mob.png",
     "mobModelName": "Creeper",
+    "mobModelTexture": "mob.png",
     "modelWidth": 0.6,
     "modelHeight": 1.7,
     "modelShadowSize": 0.5,
-    "armorBaseValue": 0.0,
+    "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
       "value": -3407872,
@@ -46,12 +46,17 @@
     "mobBehaviourType": "Mob",
     "mobCreatureType": "UNDEFINED",
     "attackStrength": 3,
+    "attackKnockback": 0.0,
+    "knockbackResistance": 0.0,
     "movementSpeed": 0.3,
+    "armorBaseValue": 0.0,
     "trackingRange": 64,
     "health": 10,
     "xpAmount": 5,
     "waterMob": false,
     "flyingMob": false,
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
     "disableCollisions": false,
     "ridable": false,
     "canControlForward": false,
@@ -83,7 +88,6 @@
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
-    "particleSpawningCondition": "ALWAYS",
     "whenMobDies": {
       "name": "RedstonedEntityDies"
     },
@@ -97,11 +101,13 @@
     "aiBase": "(none)",
     "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"wander\"><field name=\"speed\">1</field><next><block type=\"look_around\"><next><block type=\"swim_in_water\"><next><block type=\"leap_at_target\"><field name=\"speed\">0.8</field><next><block type=\"panic_when_attacked\"><field name=\"speed\">1.2</field><next><block type=\"attack_action\"><field name=\"callhelp\">TRUE</field><next><block type=\"doors_open\"><next><block type=\"follow_item_in_hands\"><field name=\"speed\">5</field><field name=\"scared\">FALSE</field><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">CUSTOM:Adc</field></block></value></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
     "breedable": false,
+    "tameable": false,
     "breedTriggerItems": [],
     "ranged": false,
     "rangedAttackItem": {
       "value": ""
     },
+    "rangedItemType": "Default item",
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
     "spawningProbability": 20,

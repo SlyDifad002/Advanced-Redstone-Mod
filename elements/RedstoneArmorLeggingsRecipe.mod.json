@@ -1,13 +1,12 @@
 {
-  "_fv": 5,
+  "_fv": 13,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
     "recipeRetstackSize": 1,
     "recipeShapeless": false,
-    "recipeReturnStack": {
-      "value": "CUSTOM:RedstoneArmor.legs"
-    },
     "recipeSlots": [
       {
         "value": "CUSTOM:Adc"
@@ -37,8 +36,9 @@
         "value": "CUSTOM:Adc"
       }
     ],
-    "smeltingXPReward": 0.0,
-    "smeltingRetstackSize": 1,
+    "recipeReturnStack": {
+      "value": "CUSTOM:RedstoneArmor.legs"
+    },
     "name": "redstonearmorleggingsrecipe",
     "namespace": "mod"
   }

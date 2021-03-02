@@ -1,17 +1,22 @@
 {
-  "_fv": 5,
+  "_fv": 13,
   "_type": "structure",
   "definition": {
     "structure": "redportal",
     "randomlyRotateStructure": true,
     "surfaceDetectionType": "First motion blocking block",
     "spawnProbability": 20000,
+    "minCountPerChunk": 1,
+    "maxCountPerChunk": 1,
     "spawnLocation": "Ground",
     "spawnHeightOffset": 0,
+    "spawnXOffset": 0,
+    "spawnZOffset": 0,
     "spawnWorldTypes": [
       "CUSTOM:Redsa"
     ],
     "restrictionBlocks": [],
-    "restrictionBiomes": []
+    "restrictionBiomes": [],
+    "ignoreBlocks": "STRUCTURE_BLOCK"
   }
 }

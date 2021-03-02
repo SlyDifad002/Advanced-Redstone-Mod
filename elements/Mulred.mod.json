@@ -1,11 +1,12 @@
 {
-  "_fv": 5,
+  "_fv": 13,
   "_type": "tool",
   "definition": {
     "renderType": 0,
     "texture": "mighty",
     "customModelName": "Normal",
     "name": "Ultimate redstone multitool",
+    "specialInfo": [],
     "creativeTab": {
       "value": "CUSTOM:RWE"
     },
@@ -23,6 +24,8 @@
         "value": "CUSTOM:Advancedredstone"
       }
     ],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
     "onItemInUseTick": {
       "name": "MulredToolInHandTick"
     }

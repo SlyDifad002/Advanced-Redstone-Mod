@@ -1,5 +1,5 @@
 {
-  "_fv": 5,
+  "_fv": 13,
   "_type": "fluid",
   "definition": {
     "name": "Redstone_Fluid",
@@ -14,8 +14,10 @@
     "creativeTab": {
       "value": "CUSTOM:RWE"
     },
+    "frequencyOnChunks": 5,
     "spawnWorldTypes": [
       "Surface"
-    ]
+    ],
+    "restrictionBiomes": []
   }
 }

@@ -1,5 +1,5 @@
 {
-  "_fv": 5,
+  "_fv": 13,
   "_type": "block",
   "definition": {
     "texture": "tele21",
@@ -11,7 +11,10 @@
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,
+    "emissiveRendering": false,
+    "displayFluidOverlay": false,
     "hasTransparency": false,
+    "connectedSides": false,
     "transparencyType": "SOLID",
     "mx": 0.0,
     "my": 0.0,
@@ -19,21 +22,21 @@
     "Mx": 1.0,
     "My": 1.0,
     "Mz": 1.0,
-    "faceShape": "SOLID",
     "name": "Teleblock 1-2",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
     "hasGravity": false,
+    "isWaterloggable": false,
     "creativeTab": {
       "value": "CUSTOM:RWE"
     },
     "destroyTool": "Not specified",
-    "affectedBySilkTouch": true,
     "customDrop": {
       "value": ""
     },
     "dropAmount": 1,
+    "useLootTableForDrops": false,
     "isBeaconBase": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
@@ -43,12 +46,19 @@
       "value": "IRON"
     },
     "tickRate": 10,
+    "tickRandomly": false,
     "isReplaceable": false,
-    "isFlammable": false,
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
       "value": ""
     },
+    "offsetType": "NONE",
+    "aiPathNodeType": "DEFAULT",
+    "flammability": 0,
+    "fireSpreadSpeed": 0,
+    "isLadder": false,
+    "slipperiness": 0.6,
+    "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "soundOnStep": {
       "value": "METAL"
@@ -63,13 +73,21 @@
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
-    "particleSpawningCondition": "ALWAYS",
     "hasInventory": false,
+    "openGUIOnRightClick": false,
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
     "inventoryOutSlotIDs": [],
+    "inventoryInSlotIDs": [],
+    "hasEnergyStorage": false,
+    "energyInitial": 0,
+    "energyCapacity": 400000,
+    "energyMaxReceive": 200,
+    "energyMaxExtract": 200,
+    "isFluidTank": false,
+    "fluidCapacity": 8000,
     "onRightClicked": {
       "name": "Teleblock21OnBlockRightClicked"
     },

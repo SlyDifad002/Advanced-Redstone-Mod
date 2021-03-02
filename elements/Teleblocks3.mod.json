@@ -1,13 +1,12 @@
 {
-  "_fv": 5,
+  "_fv": 13,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
     "recipeRetstackSize": 1,
     "recipeShapeless": false,
-    "recipeReturnStack": {
-      "value": "CUSTOM:Teleblock2"
-    },
     "recipeSlots": [
       {
         "value": "Items.DIAMOND"
@@ -37,8 +36,9 @@
         "value": "Items.DIAMOND"
       }
     ],
-    "smeltingXPReward": 0.0,
-    "smeltingRetstackSize": 1,
+    "recipeReturnStack": {
+      "value": "CUSTOM:Teleblock2"
+    },
     "name": "teleblocks3",
     "namespace": "mod"
   }

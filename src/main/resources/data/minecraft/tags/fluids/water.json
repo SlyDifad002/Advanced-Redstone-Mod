@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "sly_adnanced_redstone:redstone_fluid",
+    "sly_adnanced_redstone:redstone_fluid_flowing"
+  ]
+}

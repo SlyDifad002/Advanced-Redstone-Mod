@@ -1,11 +1,12 @@
 {
-  "_fv": 5,
+  "_fv": 13,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "restick",
     "customModelName": "Normal",
     "name": "Redstick",
+    "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:RWE"
     },
@@ -16,9 +17,12 @@
     "damageCount": 0,
     "destroyAnyBlock": false,
     "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [],
-    "hasGlow": false
+    "hasGlow": false,
+    "inventorySize": 9,
+    "inventoryStackSize": 64
   }
 }

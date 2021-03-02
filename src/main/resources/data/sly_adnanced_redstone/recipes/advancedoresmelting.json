@@ -1,7 +1,8 @@
 {
   "group": "sly_adnanced_redstone",
   "type": "minecraft:smelting",
-  "experience": 0.7,
+  "experience": 0,
+  "cookingtime": 200,
   "ingredient": {
     "item": "sly_adnanced_redstone:advancedore"
   },

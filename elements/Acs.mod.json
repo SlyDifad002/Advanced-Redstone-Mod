@@ -1,25 +1,28 @@
 {
-  "_fv": 5,
+  "_fv": 13,
   "_type": "gui",
   "definition": {
     "type": 1,
-    "width": 353,
-    "height": 332,
+    "width": 177,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
     "renderBgLayer": true,
-    "containerBlock": "Furn",
+    "doesPauseGame": false,
     "components": [
       {
         "type": "outputslot",
         "data": {
-          "inventory": "inherited",
           "color": {
             "value": -10092544,
             "falpha": 0.0
           },
           "id": 1,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
           "name": "Slot #1",
-          "x": 530,
-          "y": 143
+          "x": 245,
+          "y": 77
         }
       },
       {
@@ -28,18 +31,19 @@
           "inputLimit": {
             "value": ""
           },
-          "inventory": "inherited",
           "color": {
             "value": -10092544,
             "falpha": 0.0
           },
           "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
           "onSlotChanged": {
-            "name": "Input"
+            "name": "ComCommandExecuted"
           },
           "name": "Slot #0",
-          "x": 282,
-          "y": 147
+          "x": 157,
+          "y": 78
         }
       },
       {
@@ -51,25 +55,20 @@
             "falpha": 0.0
           },
           "name": "Instant redstone furnace",
-          "x": 304,
-          "y": 97
+          "x": 153,
+          "y": 50
         }
       },
       {
-        "type": "button",
+        "type": "image",
         "data": {
-          "text": "Activate",
-          "onClick": {
-            "name": "ComCommandExecuted"
-          },
-          "width": 160,
-          "height": 40,
-          "name": "Activate",
-          "x": 338,
-          "y": 185
+          "image": "arrow-clipart-end-2.png",
+          "use1Xscale": true,
+          "name": "arrow-clipart-end-2.png",
+          "x": 185,
+          "y": 61
         }
       }
-    ],
-    "inventories": []
+    ]
   }
 }

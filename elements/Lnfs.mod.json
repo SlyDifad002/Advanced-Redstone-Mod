@@ -1,12 +1,14 @@
 {
-  "_fv": 5,
+  "_fv": 13,
   "_type": "gui",
   "definition": {
     "type": 1,
-    "width": 352,
-    "height": 349,
+    "width": 176,
+    "height": 175,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
     "renderBgLayer": true,
-    "containerBlock": "<none>",
+    "doesPauseGame": false,
     "components": [
       {
         "type": "label",
@@ -17,8 +19,8 @@
             "falpha": 0.0
           },
           "name": "Advanced blocks mod link",
-          "x": 307,
-          "y": 68
+          "x": 154,
+          "y": 34
         }
       },
       {
@@ -27,15 +29,16 @@
           "inputLimit": {
             "value": ""
           },
-          "inventory": "blocklink",
           "color": {
             "value": -3407872,
             "falpha": 0.0
           },
           "id": 1,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
           "name": "Slot #1",
-          "x": 264,
-          "y": 96
+          "x": 132,
+          "y": 48
         }
       },
       {
@@ -44,15 +47,16 @@
           "inputLimit": {
             "value": ""
           },
-          "inventory": "blocklink",
           "color": {
             "value": -3407872,
             "falpha": 0.0
           },
           "id": 2,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
           "name": "Slot #2",
-          "x": 318,
-          "y": 96
+          "x": 159,
+          "y": 48
         }
       },
       {
@@ -61,15 +65,16 @@
           "inputLimit": {
             "value": ""
           },
-          "inventory": "blocklink",
           "color": {
             "value": -3407872,
             "falpha": 0.0
           },
           "id": 3,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
           "name": "Slot #3",
-          "x": 372,
-          "y": 96
+          "x": 186,
+          "y": 48
         }
       },
       {
@@ -78,15 +83,16 @@
           "inputLimit": {
             "value": ""
           },
-          "inventory": "blocklink",
           "color": {
             "value": -3407872,
             "falpha": 0.0
           },
           "id": 4,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
           "name": "Slot #4",
-          "x": 264,
-          "y": 150
+          "x": 132,
+          "y": 75
         }
       },
       {
@@ -95,15 +101,16 @@
           "inputLimit": {
             "value": ""
           },
-          "inventory": "blocklink",
           "color": {
             "value": -3407872,
             "falpha": 0.0
           },
           "id": 5,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
           "name": "Slot #5",
-          "x": 318,
-          "y": 150
+          "x": 159,
+          "y": 75
         }
       },
       {
@@ -112,15 +119,16 @@
           "inputLimit": {
             "value": ""
           },
-          "inventory": "blocklink",
           "color": {
             "value": -3407872,
             "falpha": 0.0
           },
           "id": 6,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
           "name": "Slot #6",
-          "x": 372,
-          "y": 150
+          "x": 186,
+          "y": 75
         }
       },
       {
@@ -129,15 +137,16 @@
           "inputLimit": {
             "value": ""
           },
-          "inventory": "blocklink",
           "color": {
             "value": -3407872,
             "falpha": 0.0
           },
           "id": 7,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
           "name": "Slot #7",
-          "x": 264,
-          "y": 204
+          "x": 132,
+          "y": 102
         }
       },
       {
@@ -146,15 +155,16 @@
           "inputLimit": {
             "value": ""
           },
-          "inventory": "blocklink",
           "color": {
             "value": -3407872,
             "falpha": 0.0
           },
           "id": 8,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
           "name": "Slot #8",
-          "x": 318,
-          "y": 204
+          "x": 159,
+          "y": 102
         }
       },
       {
@@ -163,43 +173,38 @@
           "inputLimit": {
             "value": ""
           },
-          "inventory": "blocklink",
           "color": {
             "value": -3407872,
             "falpha": 0.0
           },
           "id": 9,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
           "name": "Slot #9",
-          "x": 372,
-          "y": 204
+          "x": 186,
+          "y": 102
         }
       },
       {
         "type": "button",
         "data": {
           "text": "Craft",
-          "width": 74,
-          "height": 40,
+          "width": 37,
+          "height": 20,
           "name": "Craft",
-          "x": 516,
-          "y": 183
+          "x": 258,
+          "y": 92
         }
       },
       {
         "type": "image",
         "data": {
           "image": "crasa - copy.png",
+          "use1Xscale": false,
           "name": "crasa - copy.png",
-          "x": 406,
-          "y": 101
+          "x": 203,
+          "y": 51
         }
-      }
-    ],
-    "inventories": [
-      {
-        "slotAmount": 9,
-        "name": "blocklink",
-        "dropOnClose": true
       }
     ]
   }
