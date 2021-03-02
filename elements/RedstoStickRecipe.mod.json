@@ -38,7 +38,7 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "Items.STICK"
+      "value": "CUSTOM:Restick"
     },
     "name": "redsto_stick_recipe",
     "namespace": "mod"
