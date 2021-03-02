@@ -2,12 +2,12 @@
   "_fv": 13,
   "_type": "block",
   "definition": {
-    "texture": "quicktop",
-    "textureTop": "quicktop",
-    "textureLeft": "quick",
-    "textureFront": "quickside",
-    "textureRight": "quick",
-    "textureBack": "quick",
+    "texture": "in",
+    "textureTop": "in",
+    "textureLeft": "in",
+    "textureFront": "in",
+    "textureRight": "in",
+    "textureBack": "in",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 1,
@@ -24,7 +24,7 @@
     "Mx": 1.0,
     "My": 1.0,
     "Mz": 1.0,
-    "name": "Instant redstone furnace",
+    "name": "Energy",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
@@ -70,26 +70,22 @@
     "breakHarvestLevel": 1,
     "spawnParticles": false,
     "particleToSpawn": {
-      "value": "EXPLOSION_NORMAL"
+      "value": "CUSTOM:Red"
     },
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
     "hasInventory": true,
-    "guiBoundTo": "Acs",
-    "openGUIOnRightClick": true,
-    "inventorySize": 2,
+    "guiBoundTo": "<NONE>",
+    "openGUIOnRightClick": false,
+    "inventorySize": 9,
     "inventoryStackSize": 64,
-    "inventoryDropWhenDestroyed": true,
+    "inventoryDropWhenDestroyed": false,
     "inventoryComparatorPower": true,
-    "inventoryOutSlotIDs": [
-      1
-    ],
-    "inventoryInSlotIDs": [
-      0
-    ],
+    "inventoryOutSlotIDs": [],
+    "inventoryInSlotIDs": [],
     "hasEnergyStorage": true,
-    "energyInitial": 0,
+    "energyInitial": 400000,
     "energyCapacity": 400000,
     "energyMaxReceive": 200,
     "energyMaxExtract": 200,
@@ -97,11 +93,15 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "onTickUpdate": {
-      "name": "FurnUpdateTick"
+      "name": "EnergyUpdateTick"
     },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
-    "blocksToReplace": [],
+    "blocksToReplace": [
+      {
+        "value": "Blocks.STONE"
+      }
+    ],
     "frequencyPerChunks": 10,
     "frequencyOnChunk": 16,
     "minGenerateHeight": 0,

@@ -2,7 +2,7 @@
   "_fv": 13,
   "_type": "fluid",
   "definition": {
-    "name": "Redstone_Fluid",
+    "name": "Redstone",
     "textureStill": "dersa",
     "textureFlowing": "redflow",
     "luminosity": 10,

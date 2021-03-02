@@ -4,14 +4,16 @@
   "definition": {
     "texture": "thedubstep",
     "name": "The Dubstep Game",
-    "description": "By Difad002 Slyfalco",
+    "description": "The Dubstep Game By Difad002 Slyfalco",
     "creativeTab": {
       "value": "CUSTOM:RWE"
     },
     "music": {
       "value": "CUSTOM:thedubstep"
     },
-    "specialInfo": [],
+    "specialInfo": [
+      "By Difad002 Slyfalco"
+    ],
     "hasGlow": false
   }
 }

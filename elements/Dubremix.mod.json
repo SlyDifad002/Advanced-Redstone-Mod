@@ -4,14 +4,16 @@
   "definition": {
     "texture": "dubremix",
     "name": "The Dubstep Game Remix",
-    "description": "By Difad002 Slyfalco",
+    "description": "The Dubstep Game  Remix By Difad002 Slyfalco",
     "creativeTab": {
       "value": "CUSTOM:RWE"
     },
     "music": {
       "value": "CUSTOM:dubremix"
     },
-    "specialInfo": [],
+    "specialInfo": [
+      "By Difad002 Slyfalco"
+    ],
     "hasGlow": false
   }
 }
