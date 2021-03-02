@@ -1,0 +1,43 @@
+{
+  "display": {
+    "icon": {
+      "item": "sly_adnanced_redstone:todimention"
+    },
+    "title": {
+      "translate": "advancements.portalactivater.title"
+    },
+    "description": {
+      "translate": "advancements.portalactivater.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "portalactivater": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "sly_adnanced_redstone:todimention",
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 50,
+    "loot": [
+      "sly_adnanced_redstone:reward"
+    ],
+    "recipes": [
+      "sly_adnanced_redstone:ingnite"
+    ]
+  },
+  "parent": "sly_adnanced_redstone:adv_redstone"
+}
