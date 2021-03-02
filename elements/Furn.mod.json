@@ -10,7 +10,7 @@
     "textureBack": "quick",
     "renderType": 10,
     "customModelName": "Normal",
-    "rotationMode": 3,
+    "rotationMode": 1,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
