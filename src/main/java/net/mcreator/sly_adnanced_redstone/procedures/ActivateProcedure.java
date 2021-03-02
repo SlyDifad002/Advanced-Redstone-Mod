@@ -1,8 +1,10 @@
 package net.mcreator.sly_adnanced_redstone.procedures;
 
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.entity.EntityJoinWorldEvent;
 import net.minecraftforge.common.MinecraftForge;
 
+import net.minecraft.world.World;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.entity.player.ServerPlayerEntity;
@@ -14,7 +16,7 @@ import net.mcreator.sly_adnanced_redstone.SlyAdnancedRedstoneModElements;
 
 import java.util.Map;
 import java.util.Iterator;
-import java.util.Collections;
+import java.util.HashMap;
 
 @SlyAdnancedRedstoneModElements.ModElement.Tag
 public class ActivateProcedure extends SlyAdnancedRedstoneModElements.ModElement {
@@ -44,8 +46,20 @@ public class ActivateProcedure extends SlyAdnancedRedstoneModElements.ModElement
 		}
 	}
 
-	@Override
-	public void init(FMLCommonSetupEvent event) {
-		this.executeProcedure(Collections.emptyMap());
+	@SubscribeEvent
+	public void onEntityJoin(EntityJoinWorldEvent event) {
+		World world = event.getWorld();
+		Entity entity = event.getEntity();
+		double i = entity.posX;
+		double j = entity.posY;
+		double k = entity.posZ;
+		Map<String, Object> dependencies = new HashMap<>();
+		dependencies.put("x", i);
+		dependencies.put("y", j);
+		dependencies.put("z", k);
+		dependencies.put("world", world);
+		dependencies.put("entity", entity);
+		dependencies.put("event", event);
+		this.executeProcedure(dependencies);
 	}
 }
