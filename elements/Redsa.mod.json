@@ -42,9 +42,12 @@
     "doesWaterVaporize": false,
     "sleepResult": "ALLOW",
     "hasSkyLight": true,
-    "imitateOverworldBehaviour": false,
+    "imitateOverworldBehaviour": true,
     "whenPortaTriggerlUsed": {
       "name": "SadaPortalTriggerUsed"
+    },
+    "onPlayerEntersDimension": {
+      "name": "RedsaPlayerEntersDimension"
     }
   }
 }

@@ -1957,6 +1957,35 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "adv_redstone"
+    },
+    {
+      "name": "RedsaPlayerEntersDimension",
+      "type": "procedure",
+      "sortid": 123,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "redsa_player_enters_dimension",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -2082,11 +2111,11 @@
   ],
   "language_map": {
     "en_gb": {
-      "block.sly_advnanced_redstone.redsc": "Redstone dust block",
-      "block.sly_adnanced_redstone.redston": "Redstone",
       "block.sly_adnanced_redstone.tococ": "To convertable",
-      "item.sly_adnanced_redstone.redstonearmorhelmet": "Redstone Helmet",
+      "block.sly_adnanced_redstone.redston": "Redstone",
+      "block.sly_advnanced_redstone.redsc": "Redstone dust block",
       "item.sly_adnanced_redstone.concretebreaker": "Concretebreaker",
+      "item.sly_adnanced_redstone.redstonearmorhelmet": "Redstone Helmet",
       "item.sly_advnanced_redstone.redstonearmorboots": "Redstone Boots",
       "item.sly_adnanced_redstone.advancedredstonhoe": "Advancedredston Hoe",
       "item.sly_advnanced_redstone.adc": "Advanced redstone dust",
@@ -2097,8 +2126,8 @@
       "advancements.portalactivater.descr": "Craft the Portal Creater",
       "item.sly_advnanced_redstone.redstonearmorlegs": "Redstone Leggings",
       "block.sly_adnanced_redstone.uncraftable": "Uncraftable",
-      "item.sly_adnanced_redstone.adc": "Advanced redstone dust",
       "item.sly_adnanced_redstone.mulred": "Mulred",
+      "item.sly_adnanced_redstone.adc": "Advanced redstone dust",
       "advancements.portalactivater.title": "Portal Activater",
       "item.sly_adnanced_redstone.redstonearmorboots": "Redstone Boots",
       "tile.advancedredstone.name": "Advanced redstone block",
@@ -2159,11 +2188,11 @@
       "block.sly_adnanced_redstone.roadthreeway": "Roadline"
     },
     "en_us": {
-      "block.sly_advnanced_redstone.redsc": "Redstone dust block",
-      "block.sly_adnanced_redstone.redston": "Redstone",
       "block.sly_adnanced_redstone.tococ": "To convertable",
-      "item.sly_adnanced_redstone.redstonearmorhelmet": "Redstone Helmet",
+      "block.sly_adnanced_redstone.redston": "Redstone",
+      "block.sly_advnanced_redstone.redsc": "Redstone dust block",
       "item.sly_adnanced_redstone.concretebreaker": "Concrete Breaker",
+      "item.sly_adnanced_redstone.redstonearmorhelmet": "Redstone Helmet",
       "item.sly_advnanced_redstone.redstonearmorboots": "Redstone Boots",
       "item.sly_adnanced_redstone.advancedredstonhoe": "Advanced Redstone Hoe",
       "item.sly_advnanced_redstone.adc": "Advanced redstone dust",
@@ -2174,8 +2203,8 @@
       "advancements.portalactivater.descr": "Craft the Portal Creater",
       "item.sly_advnanced_redstone.redstonearmorlegs": "Redstone Leggings",
       "block.sly_adnanced_redstone.uncraftable": "Uncraftable",
-      "item.sly_adnanced_redstone.adc": "Advanced redstone dust",
       "item.sly_adnanced_redstone.mulred": "Ultimate redstone multitool",
+      "item.sly_adnanced_redstone.adc": "Advanced redstone dust",
       "advancements.portalactivater.title": "Portal Activater",
       "item.sly_adnanced_redstone.redstonearmorboots": "Redstone Boots",
       "tile.advancedredstone.name": "Advanced redstone block",

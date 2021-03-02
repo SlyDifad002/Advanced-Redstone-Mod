@@ -109,7 +109,7 @@ public class RedstonedEntity extends SlyAdnancedRedstoneModElements.ModElement {
 
 		public CustomEntity(EntityType<CustomEntity> type, World world) {
 			super(type, world);
-			experienceValue = 5;
+			experienceValue = 10;
 			setNoAI(false);
 		}
 
@@ -126,7 +126,7 @@ public class RedstonedEntity extends SlyAdnancedRedstoneModElements.ModElement {
 			this.goalSelector.addGoal(3, new SwimGoal(this));
 			this.goalSelector.addGoal(4, new LeapAtTargetGoal(this, (float) 0.8));
 			this.targetSelector.addGoal(5, new HurtByTargetGoal(this).setCallsForHelp(this.getClass()));
-			this.targetSelector.addGoal(6, new NearestAttackableTargetGoal(this, PlayerEntity.class, true, true));
+			this.targetSelector.addGoal(6, new NearestAttackableTargetGoal(this, PlayerEntity.class, false, false));
 			this.goalSelector.addGoal(7, new OpenDoorGoal(this, true));
 			this.goalSelector.addGoal(8, new TemptGoal(this, 5, Ingredient.fromItems(new ItemStack(AdcItem.block, (int) (1)).getItem()), false));
 		}
@@ -156,13 +156,6 @@ public class RedstonedEntity extends SlyAdnancedRedstoneModElements.ModElement {
 		public net.minecraft.util.SoundEvent getDeathSound() {
 			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
 					.getValue(new ResourceLocation("block.metal_pressure_plate.click_off"));
-		}
-
-		@Override
-		public boolean attackEntityFrom(DamageSource source, float amount) {
-			if (source.getImmediateSource() instanceof PlayerEntity)
-				return false;
-			return super.attackEntityFrom(source, amount);
 		}
 
 		@Override
@@ -206,14 +199,17 @@ public class RedstonedEntity extends SlyAdnancedRedstoneModElements.ModElement {
 		protected void registerAttributes() {
 			super.registerAttributes();
 			if (this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED) != null)
-				this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.3);
+				this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(1);
 			if (this.getAttribute(SharedMonsterAttributes.MAX_HEALTH) != null)
-				this.getAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(10);
+				this.getAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(35);
 			if (this.getAttribute(SharedMonsterAttributes.ARMOR) != null)
 				this.getAttribute(SharedMonsterAttributes.ARMOR).setBaseValue(0);
 			if (this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE) == null)
 				this.getAttributes().registerAttribute(SharedMonsterAttributes.ATTACK_DAMAGE);
-			this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(3);
+			this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(5);
+			if (this.getAttribute(SharedMonsterAttributes.ATTACK_KNOCKBACK) == null)
+				this.getAttributes().registerAttribute(SharedMonsterAttributes.ATTACK_KNOCKBACK);
+			this.getAttribute(SharedMonsterAttributes.ATTACK_KNOCKBACK).setBaseValue(1D);
 		}
 
 		public void livingTick() {
