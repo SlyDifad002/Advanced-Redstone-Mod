@@ -10,37 +10,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": ""
+        "value": "CUSTOM:Advancedredstone"
       },
       {
-        "value": "CUSTOM:Infused"
+        "value": "CUSTOM:Energy"
       },
       {
-        "value": ""
+        "value": "CUSTOM:Advancedredstone"
       },
       {
-        "value": ""
+        "value": "CUSTOM:Energy"
       },
       {
-        "value": "CUSTOM:Infused"
+        "value": "Items.NETHER_STAR"
       },
       {
-        "value": ""
+        "value": "CUSTOM:Energy"
       },
       {
-        "value": ""
+        "value": "CUSTOM:Advancedredstone"
       },
       {
-        "value": "CUSTOM:Restick"
+        "value": "CUSTOM:Energy"
       },
       {
-        "value": ""
+        "value": "CUSTOM:Advancedredstone"
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:AdvancedredstonSword"
+      "value": "CUSTOM:Itemdupe"
     },
-    "name": "advancedredstonswordrecipe",
+    "name": "itembute",
     "namespace": "mod"
   }
 }

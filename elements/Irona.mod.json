@@ -10,37 +10,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": ""
+        "value": "CUSTOM:Adc"
       },
       {
-        "value": "CUSTOM:Infused"
+        "value": "CUSTOM:Adc"
       },
       {
-        "value": ""
+        "value": "CUSTOM:Adc"
       },
       {
-        "value": ""
+        "value": "CUSTOM:Adc"
       },
       {
-        "value": "CUSTOM:Infused"
+        "value": "Items.IRON_INGOT"
       },
       {
-        "value": ""
+        "value": "CUSTOM:Adc"
       },
       {
-        "value": ""
+        "value": "CUSTOM:Adc"
       },
       {
-        "value": "CUSTOM:Restick"
+        "value": "CUSTOM:Adc"
       },
       {
-        "value": ""
+        "value": "CUSTOM:Adc"
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:AdvancedredstonSword"
+      "value": "CUSTOM:Infused"
     },
-    "name": "advancedredstonswordrecipe",
+    "name": "irona",
     "namespace": "mod"
   }
 }

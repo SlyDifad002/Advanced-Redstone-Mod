@@ -3,15 +3,15 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "slystone",
+    "texture": "infusediron",
     "customModelName": "Normal",
-    "name": "Advanced Redstone Dust",
-    "rarity": "COMMON",
+    "name": "Advanced Redstone Iron",
+    "rarity": "EPIC",
     "creativeTab": {
       "value": "CUSTOM:RWE"
     },
     "stackSize": 64,
-    "enchantability": 1,
+    "enchantability": 0,
     "useDuration": 0,
     "toolType": 1.0,
     "damageCount": 0,
@@ -19,17 +19,16 @@
       "value": ""
     },
     "destroyAnyBlock": false,
-    "stayInGridWhenCrafting": true,
+    "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
-    "damageVsEntity": 5.0,
-    "specialInfo": [],
-    "hasGlow": true,
+    "damageVsEntity": 0.0,
+    "specialInfo": [
+      "Advanced Redstone Iron"
+    ],
+    "hasGlow": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
-    "inventoryStackSize": 64,
-    "onRightClickedOnBlock": {
-      "name": "AdcRightClickedOnBlock"
-    }
+    "inventoryStackSize": 64
   }
 }

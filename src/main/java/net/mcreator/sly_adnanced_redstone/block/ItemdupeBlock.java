@@ -9,78 +9,66 @@ import net.minecraftforge.fml.network.NetworkHooks;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.RegistryEvent;
-import net.minecraftforge.energy.EnergyStorage;
-import net.minecraftforge.energy.CapabilityEnergy;
 import net.minecraftforge.common.util.LazyOptional;
 import net.minecraftforge.common.capabilities.Capability;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.storage.loot.LootContext;
 import net.minecraft.world.World;
+import net.minecraft.world.IEnviromentBlockReader;
 import net.minecraft.world.IBlockReader;
-import net.minecraft.world.Explosion;
 import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.Rotation;
 import net.minecraft.util.NonNullList;
-import net.minecraft.util.Mirror;
 import net.minecraft.util.Hand;
 import net.minecraft.util.Direction;
+import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.tileentity.TileEntityType;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.tileentity.LockableLootTileEntity;
-import net.minecraft.state.StateContainer;
-import net.minecraft.state.DirectionProperty;
 import net.minecraft.network.play.server.SUpdateTileEntityPacket;
 import net.minecraft.network.PacketBuffer;
 import net.minecraft.network.NetworkManager;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
-import net.minecraft.item.BlockItemUseContext;
 import net.minecraft.item.BlockItem;
 import net.minecraft.inventory.container.INamedContainerProvider;
 import net.minecraft.inventory.container.Container;
 import net.minecraft.inventory.ItemStackHelper;
 import net.minecraft.inventory.InventoryHelper;
 import net.minecraft.inventory.ISidedInventory;
-import net.minecraft.fluid.IFluidState;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
-import net.minecraft.block.HorizontalBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.sly_adnanced_redstone.procedures.FurnUpdateTickProcedure;
-import net.mcreator.sly_adnanced_redstone.procedures.FurnBlockDestroyedByPlayerProcedure;
-import net.mcreator.sly_adnanced_redstone.procedures.FurnBlockDestroyedByExplosionProcedure;
 import net.mcreator.sly_adnanced_redstone.itemgroup.RWEItemGroup;
-import net.mcreator.sly_adnanced_redstone.gui.AcsGui;
+import net.mcreator.sly_adnanced_redstone.gui.DuplicatorGui;
 import net.mcreator.sly_adnanced_redstone.SlyAdnancedRedstoneModElements;
 
 import javax.annotation.Nullable;
 
 import java.util.stream.IntStream;
-import java.util.Random;
-import java.util.Map;
 import java.util.List;
-import java.util.HashMap;
 import java.util.Collections;
 
 import io.netty.buffer.Unpooled;
 
 @SlyAdnancedRedstoneModElements.ModElement.Tag
-public class FurnBlock extends SlyAdnancedRedstoneModElements.ModElement {
-	@ObjectHolder("sly_adnanced_redstone:furn")
+public class ItemdupeBlock extends SlyAdnancedRedstoneModElements.ModElement {
+	@ObjectHolder("sly_adnanced_redstone:itemdupe")
 	public static final Block block = null;
-	@ObjectHolder("sly_adnanced_redstone:furn")
+	@ObjectHolder("sly_adnanced_redstone:itemdupe")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
-	public FurnBlock(SlyAdnancedRedstoneModElements instance) {
-		super(instance, 4);
+	public ItemdupeBlock(SlyAdnancedRedstoneModElements instance) {
+		super(instance, 149);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
@@ -92,33 +80,29 @@ public class FurnBlock extends SlyAdnancedRedstoneModElements.ModElement {
 
 	@SubscribeEvent
 	public void registerTileEntity(RegistryEvent.Register<TileEntityType<?>> event) {
-		event.getRegistry().register(TileEntityType.Builder.create(CustomTileEntity::new, block).build(null).setRegistryName("furn"));
+		event.getRegistry().register(TileEntityType.Builder.create(CustomTileEntity::new, block).build(null).setRegistryName("itemdupe"));
 	}
 	public static class CustomBlock extends Block {
-		public static final DirectionProperty FACING = HorizontalBlock.HORIZONTAL_FACING;
 		public CustomBlock() {
 			super(Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(1f, 10f).lightValue(0));
-			this.setDefaultState(this.stateContainer.getBaseState().with(FACING, Direction.NORTH));
-			setRegistryName("furn");
+			setRegistryName("itemdupe");
+		}
+
+		@OnlyIn(Dist.CLIENT)
+		@Override
+		public BlockRenderLayer getRenderLayer() {
+			return BlockRenderLayer.CUTOUT;
 		}
 
 		@Override
-		protected void fillStateContainer(StateContainer.Builder<Block, BlockState> builder) {
-			builder.add(FACING);
+		public boolean isNormalCube(BlockState state, IBlockReader worldIn, BlockPos pos) {
+			return false;
 		}
 
-		public BlockState rotate(BlockState state, Rotation rot) {
-			return state.with(FACING, rot.rotate(state.get(FACING)));
-		}
-
-		public BlockState mirror(BlockState state, Mirror mirrorIn) {
-			return state.rotate(mirrorIn.toRotation(state.get(FACING)));
-		}
-
+		@OnlyIn(Dist.CLIENT)
 		@Override
-		public BlockState getStateForPlacement(BlockItemUseContext context) {
-			;
-			return this.getDefaultState().with(FACING, context.getPlacementHorizontalFacing().getOpposite());
+		public int getPackedLightmapCoords(BlockState state, IEnviromentBlockReader worldIn, BlockPos pos) {
+			return 15728880;
 		}
 
 		@Override
@@ -127,57 +111,6 @@ public class FurnBlock extends SlyAdnancedRedstoneModElements.ModElement {
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
 			return Collections.singletonList(new ItemStack(this, 1));
-		}
-
-		@Override
-		public void onBlockAdded(BlockState state, World world, BlockPos pos, BlockState oldState, boolean moving) {
-			super.onBlockAdded(state, world, pos, oldState, moving);
-			int x = pos.getX();
-			int y = pos.getY();
-			int z = pos.getZ();
-			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, this.tickRate(world));
-		}
-
-		@Override
-		public void tick(BlockState state, World world, BlockPos pos, Random random) {
-			super.tick(state, world, pos, random);
-			int x = pos.getX();
-			int y = pos.getY();
-			int z = pos.getZ();
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				FurnUpdateTickProcedure.executeProcedure($_dependencies);
-			}
-			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, this.tickRate(world));
-		}
-
-		@Override
-		public boolean removedByPlayer(BlockState state, World world, BlockPos pos, PlayerEntity entity, boolean willHarvest, IFluidState fluid) {
-			boolean retval = super.removedByPlayer(state, world, pos, entity, willHarvest, fluid);
-			int x = pos.getX();
-			int y = pos.getY();
-			int z = pos.getZ();
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				FurnBlockDestroyedByPlayerProcedure.executeProcedure($_dependencies);
-			}
-			return retval;
-		}
-
-		@Override
-		public void onExplosionDestroy(World world, BlockPos pos, Explosion e) {
-			super.onExplosionDestroy(world, pos, e);
-			int x = pos.getX();
-			int y = pos.getY();
-			int z = pos.getZ();
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				FurnBlockDestroyedByExplosionProcedure.executeProcedure($_dependencies);
-			}
 		}
 
 		@Override
@@ -190,12 +123,13 @@ public class FurnBlock extends SlyAdnancedRedstoneModElements.ModElement {
 				NetworkHooks.openGui((ServerPlayerEntity) entity, new INamedContainerProvider() {
 					@Override
 					public ITextComponent getDisplayName() {
-						return new StringTextComponent("Instant redstone furnace");
+						return new StringTextComponent("Item Duplicator");
 					}
 
 					@Override
 					public Container createMenu(int id, PlayerInventory inventory, PlayerEntity player) {
-						return new AcsGui.GuiContainerMod(id, inventory, new PacketBuffer(Unpooled.buffer()).writeBlockPos(new BlockPos(x, y, z)));
+						return new DuplicatorGui.GuiContainerMod(id, inventory,
+								new PacketBuffer(Unpooled.buffer()).writeBlockPos(new BlockPos(x, y, z)));
 					}
 				}, new BlockPos(x, y, z));
 			}
@@ -265,8 +199,6 @@ public class FurnBlock extends SlyAdnancedRedstoneModElements.ModElement {
 			if (!this.checkLootAndRead(compound)) {
 				ItemStackHelper.loadAllItems(compound, this.stacks);
 			}
-			if (compound.get("energyStorage") != null)
-				CapabilityEnergy.ENERGY.readNBT(energyStorage, null, compound.get("energyStorage"));
 		}
 
 		@Override
@@ -275,7 +207,6 @@ public class FurnBlock extends SlyAdnancedRedstoneModElements.ModElement {
 			if (!this.checkLootAndWrite(compound)) {
 				ItemStackHelper.saveAllItems(compound, this.stacks);
 			}
-			compound.put("energyStorage", CapabilityEnergy.ENERGY.writeNBT(energyStorage, null));
 			return compound;
 		}
 
@@ -309,7 +240,7 @@ public class FurnBlock extends SlyAdnancedRedstoneModElements.ModElement {
 
 		@Override
 		public ITextComponent getDefaultName() {
-			return new StringTextComponent("furn");
+			return new StringTextComponent("itemdupe");
 		}
 
 		@Override
@@ -319,12 +250,12 @@ public class FurnBlock extends SlyAdnancedRedstoneModElements.ModElement {
 
 		@Override
 		public Container createMenu(int id, PlayerInventory player) {
-			return new AcsGui.GuiContainerMod(id, player, new PacketBuffer(Unpooled.buffer()).writeBlockPos(this.getPos()));
+			return new DuplicatorGui.GuiContainerMod(id, player, new PacketBuffer(Unpooled.buffer()).writeBlockPos(this.getPos()));
 		}
 
 		@Override
 		public ITextComponent getDisplayName() {
-			return new StringTextComponent("Instant redstone furnace");
+			return new StringTextComponent("Item Duplicator");
 		}
 
 		@Override
@@ -361,33 +292,10 @@ public class FurnBlock extends SlyAdnancedRedstoneModElements.ModElement {
 			return true;
 		}
 		private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
-		private final EnergyStorage energyStorage = new EnergyStorage(400000, 200, 200, 0) {
-			@Override
-			public int receiveEnergy(int maxReceive, boolean simulate) {
-				int retval = super.receiveEnergy(maxReceive, simulate);
-				if (!simulate) {
-					markDirty();
-					world.notifyBlockUpdate(pos, world.getBlockState(pos), world.getBlockState(pos), 2);
-				}
-				return retval;
-			}
-
-			@Override
-			public int extractEnergy(int maxExtract, boolean simulate) {
-				int retval = super.extractEnergy(maxExtract, simulate);
-				if (!simulate) {
-					markDirty();
-					world.notifyBlockUpdate(pos, world.getBlockState(pos), world.getBlockState(pos), 2);
-				}
-				return retval;
-			}
-		};
 		@Override
 		public <T> LazyOptional<T> getCapability(Capability<T> capability, @Nullable Direction facing) {
 			if (!this.removed && facing != null && capability == CapabilityItemHandler.ITEM_HANDLER_CAPABILITY)
 				return handlers[facing.ordinal()].cast();
-			if (!this.removed && capability == CapabilityEnergy.ENERGY)
-				return LazyOptional.of(() -> energyStorage).cast();
 			return super.getCapability(capability, facing);
 		}
 

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "sly_adnanced_redstone:blocks/dup",
+    "up": "sly_adnanced_redstone:blocks/dup",
+    "north": "sly_adnanced_redstone:blocks/dup",
+    "east": "sly_adnanced_redstone:blocks/dup",
+    "south": "sly_adnanced_redstone:blocks/dup",
+    "west": "sly_adnanced_redstone:blocks/dup",
+    "particle": "sly_adnanced_redstone:blocks/dup"
+  }
+}

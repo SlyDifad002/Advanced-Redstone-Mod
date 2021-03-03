@@ -20,7 +20,8 @@ public class SlyAdnancedRedstoneModVariables {
 		elements.addNetworkMessage(WorldSavedDataSyncMessage.class, WorldSavedDataSyncMessage::buffer, WorldSavedDataSyncMessage::new,
 				WorldSavedDataSyncMessage::handler);
 	}
-
+	public static double Energy2 = 0;
+	public static double Energy1 = 0;
 	@SubscribeEvent
 	public void onPlayerLoggedIn(PlayerEvent.PlayerLoggedInEvent event) {
 		if (!event.getPlayer().world.isRemote) {

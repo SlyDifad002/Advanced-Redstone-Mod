@@ -3,37 +3,37 @@ package net.mcreator.sly_adnanced_redstone.procedures;
 import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
 
-import net.mcreator.sly_adnanced_redstone.block.EnergyBlock;
+import net.mcreator.sly_adnanced_redstone.block.ItemdupeBlock;
 import net.mcreator.sly_adnanced_redstone.SlyAdnancedRedstoneModVariables;
 import net.mcreator.sly_adnanced_redstone.SlyAdnancedRedstoneModElements;
 
 import java.util.Map;
 
 @SlyAdnancedRedstoneModElements.ModElement.Tag
-public class FurnUpdateTickProcedure extends SlyAdnancedRedstoneModElements.ModElement {
-	public FurnUpdateTickProcedure(SlyAdnancedRedstoneModElements instance) {
-		super(instance, 148);
+public class ItemdupeUpdateTickProcedure extends SlyAdnancedRedstoneModElements.ModElement {
+	public ItemdupeUpdateTickProcedure(SlyAdnancedRedstoneModElements instance) {
+		super(instance, 150);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
-				System.err.println("Failed to load dependency x for procedure FurnUpdateTick!");
+				System.err.println("Failed to load dependency x for procedure ItemdupeUpdateTick!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
-				System.err.println("Failed to load dependency y for procedure FurnUpdateTick!");
+				System.err.println("Failed to load dependency y for procedure ItemdupeUpdateTick!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
-				System.err.println("Failed to load dependency z for procedure FurnUpdateTick!");
+				System.err.println("Failed to load dependency z for procedure ItemdupeUpdateTick!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				System.err.println("Failed to load dependency world for procedure FurnUpdateTick!");
+				System.err.println("Failed to load dependency world for procedure ItemdupeUpdateTick!");
 			return;
 		}
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
@@ -51,7 +51,7 @@ public class FurnUpdateTickProcedure extends SlyAdnancedRedstoneModElements.ModE
 			for (int index1 = 0; index1 < (int) (6); index1++) {
 				sz = (double) (-3);
 				for (int index2 = 0; index2 < (int) (6); index2++) {
-					if (((world.getBlockState(new BlockPos((int) (x + (sx)), (int) (y + (sy)), (int) (z + (sz))))).getBlock() == EnergyBlock.block
+					if (((world.getBlockState(new BlockPos((int) (x + (sx)), (int) (y + (sy)), (int) (z + (sz))))).getBlock() == ItemdupeBlock.block
 							.getDefaultState().getBlock())) {
 						found = (boolean) (true);
 					}
@@ -62,9 +62,9 @@ public class FurnUpdateTickProcedure extends SlyAdnancedRedstoneModElements.ModE
 			sx = (double) ((sx) + 1);
 		}
 		if (((found) == (true))) {
-			SlyAdnancedRedstoneModVariables.Energy1 = (double) 1;
+			SlyAdnancedRedstoneModVariables.Energy2 = (double) 1;
 		} else {
-			SlyAdnancedRedstoneModVariables.Energy1 = (double) 0;
+			SlyAdnancedRedstoneModVariables.Energy2 = (double) 0;
 		}
 	}
 }

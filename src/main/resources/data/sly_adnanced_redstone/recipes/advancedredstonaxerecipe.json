@@ -8,19 +8,19 @@
   ],
   "key": {
     "0": {
-      "item": "sly_adnanced_redstone:adc"
+      "item": "sly_adnanced_redstone:infused"
     },
     "1": {
-      "item": "sly_adnanced_redstone:adc"
+      "item": "sly_adnanced_redstone:infused"
     },
     "2": {
-      "item": "sly_adnanced_redstone:adc"
+      "item": "sly_adnanced_redstone:infused"
     },
     "3": {
-      "item": "minecraft:stick"
+      "item": "sly_adnanced_redstone:restick"
     },
     "5": {
-      "item": "minecraft:stick"
+      "item": "sly_adnanced_redstone:restick"
     }
   },
   "result": {

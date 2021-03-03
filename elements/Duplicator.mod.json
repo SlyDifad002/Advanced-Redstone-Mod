@@ -1,0 +1,45 @@
+{
+  "_fv": 13,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "Duplicator1"
+          },
+          "name": "Slot #0",
+          "x": 203,
+          "y": 76
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Item Duplicator",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Item Duplicator",
+          "x": 173,
+          "y": 55
+        }
+      }
+    ]
+  }
+}

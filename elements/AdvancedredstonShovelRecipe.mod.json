@@ -6,13 +6,14 @@
     "xpReward": 0.0,
     "cookingTime": 200,
     "recipeRetstackSize": 1,
+    "group": "",
     "recipeShapeless": false,
     "recipeSlots": [
       {
         "value": ""
       },
       {
-        "value": "CUSTOM:Adc"
+        "value": "CUSTOM:Infused"
       },
       {
         "value": ""
@@ -21,7 +22,7 @@
         "value": ""
       },
       {
-        "value": "Items.STICK"
+        "value": "CUSTOM:Restick"
       },
       {
         "value": ""
@@ -30,7 +31,7 @@
         "value": ""
       },
       {
-        "value": "Items.STICK"
+        "value": "CUSTOM:Restick"
       },
       {
         "value": ""

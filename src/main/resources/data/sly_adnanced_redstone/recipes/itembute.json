@@ -1,0 +1,42 @@
+{
+  "group": "sly_adnanced_redstone",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "sly_adnanced_redstone:advancedredstone"
+    },
+    "1": {
+      "item": "sly_adnanced_redstone:energy"
+    },
+    "2": {
+      "item": "sly_adnanced_redstone:advancedredstone"
+    },
+    "3": {
+      "item": "sly_adnanced_redstone:energy"
+    },
+    "4": {
+      "item": "minecraft:nether_star"
+    },
+    "5": {
+      "item": "sly_adnanced_redstone:energy"
+    },
+    "6": {
+      "item": "sly_adnanced_redstone:advancedredstone"
+    },
+    "7": {
+      "item": "sly_adnanced_redstone:energy"
+    },
+    "8": {
+      "item": "sly_adnanced_redstone:advancedredstone"
+    }
+  },
+  "result": {
+    "item": "sly_adnanced_redstone:itemdupe",
+    "count": 1
+  }
+}
