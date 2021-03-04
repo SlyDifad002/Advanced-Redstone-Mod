@@ -1,0 +1,46 @@
+{
+  "_fv": 13,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "storage",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Items.ENDER_PEARL"
+      },
+      {
+        "value": "CUSTOM:Infused"
+      },
+      {
+        "value": "Items.ENDER_PEARL"
+      },
+      {
+        "value": "CUSTOM:Infused"
+      },
+      {
+        "value": "CUSTOM:Chest"
+      },
+      {
+        "value": "CUSTOM:Infused"
+      },
+      {
+        "value": "Items.ENDER_PEARL"
+      },
+      {
+        "value": "CUSTOM:Infused"
+      },
+      {
+        "value": "Items.ENDER_PEARL"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Telechest"
+    },
+    "name": "endachest",
+    "namespace": "mod"
+  }
+}

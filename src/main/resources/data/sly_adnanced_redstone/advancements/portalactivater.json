@@ -36,7 +36,9 @@
       "sly_adnanced_redstone:reward"
     ],
     "recipes": [
-      "sly_adnanced_redstone:ingnite"
+      "sly_adnanced_redstone:ingnite",
+      "sly_adnanced_redstone:furnace",
+      "sly_adnanced_redstone:energe"
     ]
   },
   "parent": "sly_adnanced_redstone:adv_redstone"

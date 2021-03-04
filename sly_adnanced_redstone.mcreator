@@ -791,14 +791,6 @@
       "ids": {}
     },
     {
-      "name": "Mew",
-      "type": "tag",
-      "sortid": 53,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
-    },
-    {
       "name": "TococOnBlockRightClicked",
       "type": "procedure",
       "sortid": 54,
@@ -2488,6 +2480,246 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "craft"
+    },
+    {
+      "name": "Dew",
+      "type": "tag",
+      "sortid": 162,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dew"
+    },
+    {
+      "name": "Mew",
+      "type": "tag",
+      "sortid": 163,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mew"
+    },
+    {
+      "name": "Sote",
+      "type": "recipe",
+      "sortid": 164,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sote"
+    },
+    {
+      "name": "Reds",
+      "type": "enchantment",
+      "sortid": 165,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "reds"
+    },
+    {
+      "name": "Storage2",
+      "type": "gui",
+      "sortid": 166,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "storage_2"
+    },
+    {
+      "name": "Storage3",
+      "type": "gui",
+      "sortid": 167,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "storage_3"
+    },
+    {
+      "name": "BackpackRightClickedInAir",
+      "type": "procedure",
+      "sortid": 168,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "backpack_right_clicked_in_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Backpack",
+      "type": "item",
+      "sortid": 168,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "backpack"
+    },
+    {
+      "name": "ChestOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 169,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chest_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Chest",
+      "type": "block",
+      "sortid": 169,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chest"
+    },
+    {
+      "name": "Telechest",
+      "type": "block",
+      "sortid": 170,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "telechest"
+    },
+    {
+      "name": "Back",
+      "type": "recipe",
+      "sortid": 171,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "back"
+    },
+    {
+      "name": "Chesta",
+      "type": "recipe",
+      "sortid": 172,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chesta"
+    },
+    {
+      "name": "Endachest",
+      "type": "recipe",
+      "sortid": 173,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "endachest"
+    },
+    {
+      "name": "Redstake",
+      "type": "food",
+      "sortid": 174,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "redstake"
+    },
+    {
+      "name": "Redster",
+      "type": "mob",
+      "sortid": 174,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "redster"
+    },
+    {
+      "name": "StakeFoodEaten",
+      "type": "procedure",
+      "sortid": 175,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stake_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Stake",
+      "type": "food",
+      "sortid": 175,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stake"
+    },
+    {
+      "name": "Stke",
+      "type": "recipe",
+      "sortid": 175,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stke"
+    },
+    {
+      "name": "RedstakeFoodEaten",
+      "type": "procedure",
+      "sortid": 176,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "redstake_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -2647,21 +2879,23 @@
       "item.sly_adnanced_redstone.concretebreaker": "Concretebreaker",
       "block.sly_adnanced_redstone.redsto_fence_gate": "Redsto Fence Gate",
       "item.sly_adnanced_redstone.advancedredstonhoe": "Advancedredston Hoe",
+      "item.sly_adnanced_redstone.redstake": "Red Meat",
       "itemGroup.tabrwe": "Advanced redstone",
       "biome.sly_adnanced_redstone.resda": "Resda",
       "advancements.portalactivater.descr": "Craft the Portal Creater",
-      "block.sly_adnanced_redstone.uncraftable": "Uncraftable",
       "block.sly_adnanced_redstone.energy": "Energy",
+      "block.sly_adnanced_redstone.uncraftable": "Uncraftable",
       "item.sly_adnanced_redstone.adc": "Advanced redstone dust",
       "block.sly_adnanced_redstone.redsto_stairs": "Redsto Stairs",
+      "item.sly_adnanced_redstone.stake": "Red Stake",
       "item.sly_adnanced_redstone.infused": "Advanced Redstone Iron",
       "item.sly_adnanced_redstone.the_dubstep": "The Dubstep Game",
       "tile.advancedredstone.name": "Advanced redstone block",
       "block.sly_adnanced_redstone.redsc": "Redstone dust block",
       "item.sly_advnanced_redstone.redstonearmorbody": "Redstone Chestplate",
       "subtitles.dubremix": "",
-      "block.sly_adnanced_redstone.advancedredstone": "Advanced redstone block",
       "item.sly_adnanced_redstone.redstoned": "Red Stoned Spawn Egg",
+      "block.sly_adnanced_redstone.advancedredstone": "Advanced redstone block",
       "item.sly_adnanced_redstone.whiteroadpaint": "White Road Paint",
       "item.sly_advnanced_redstone.mulred": "Ultimate redstone multitool",
       "tile.litred.name": "Redstone dust block",
@@ -2670,20 +2904,22 @@
       "block.sly_adnanced_redstone.todimention": "Redstone Dimention Portal Spawner",
       "entity.sly_adnanced_redstone.redstoned": "Red Stoned",
       "biome.sly_advnanced_redstone.resda": "Resda",
-      "block.sly_advnanced_redstone.advancedore": "Advanced Ore",
-      "block.sly_advnanced_redstone.advancedredstone": "Advanced wireless redstone 1",
-      "item.sly_adnanced_redstone.advancedredstonaxe": "Advancedredston Axe",
       "item.sly_adnanced_redstone.redstonearmor_helmet": "Redstone Helmet",
+      "item.sly_adnanced_redstone.advancedredstonaxe": "Advancedredston Axe",
+      "block.sly_advnanced_redstone.advancedredstone": "Advanced wireless redstone 1",
+      "block.sly_advnanced_redstone.advancedore": "Advanced Ore",
       "item.sly_adnanced_redstone.advancedredstonshovel": "Advancedredston Shovel",
       "block.sly_adnanced_redstone.redsto_fence": "Redsto Fence",
       "item.adc.name": "Advanced redstone dust",
-      "tile.redsc.name": "Redstone dust block",
       "item.sly_adnanced_redstone.redstonearmor_boots": "Redstone Boots",
+      "tile.redsc.name": "Redstone dust block",
       "block.sly_adnanced_redstone.redgars": "Redstone grass block",
       "block.sly_adnanced_redstone.redsto_slab": "Redsto Slab",
       "block.sly_adnanced_redstone.roadcorner": "Roadline",
       "block.sly_adnanced_redstone.furn": "Instant redstone furnace",
+      "enchantment.sly_adnanced_redstone.reds": "Redstoney",
       "item.sly_advnanced_redstone.redsa": "Redstone Igniter",
+      "entity.sly_adnanced_redstone.redster": "Red Pig",
       "item.sly_adnanced_redstone.redstonearmorlegs": "Redstone Leggings",
       "item.sly_adnanced_redstone.advancedredstonpickaxe": "Advancedredston Pickaxe",
       "block.sly_adnanced_redstone.redsto_planks": "Redsto Planks",
@@ -2703,6 +2939,7 @@
       "item.sly_adnanced_redstone.mulred": "Mulred",
       "block.sly_adnanced_redstone.itemdupe": "Item Duplicator",
       "advancements.portalactivater.title": "Portal Activater",
+      "block.sly_adnanced_redstone.chest": "Big Chest",
       "item.sly_adnanced_redstone.redstonearmorboots": "Redstone Boots",
       "item.sly_adnanced_redstone.redsa": "Redstone Igniter",
       "block.sly_adnanced_redstone.advancedore": "Advanced Ore",
@@ -2714,6 +2951,7 @@
       "block.sly_adnanced_redstone.roadline": "Roadline",
       "advancements.adv_redstone.descr": "You Installed The Advanced Redstone Mod",
       "item.sly_adnanced_redstone.redstone_bucket": "Redstone_Fluid Bucket",
+      "item.sly_adnanced_redstone.backpack": "Backpack",
       "advancements.adv_redstone.title": "Advanced Redstone",
       "block.sly_adnanced_redstone.litred": "Redstone dust block",
       "advancements.energ.descr": "Craft The Energy Block",
@@ -2729,6 +2967,7 @@
       "block.sly_advnanced_redstone.redston": "Redstone",
       "block.sly_adnanced_redstone.cobbleredston": "Cobbleredstone",
       "item.sly_adnanced_redstone.redstonearmorbody": "Redstone Chestplate",
+      "block.sly_adnanced_redstone.telechest": "Big Chest",
       "item.sly_adnanced_redstone.dubremix": "The Dubstep Game Remix",
       "item.sly_advnanced_redstone.redstonearmorhelmet": "Redstone Helmet",
       "fluid.redstone": "Redstone_Fluid",
@@ -2738,7 +2977,8 @@
       "item.sly_advnanced_redstone.sada_bucket": "Sada Bucket",
       "item.sly_adnanced_redstone.dubremix.desc": "By Difad002 Slyfalco",
       "item.sly_adnanced_redstone.the_dubstep.desc": "By Difad002 Slyfalco",
-      "block.sly_adnanced_redstone.roadthreeway": "Roadline"
+      "block.sly_adnanced_redstone.roadthreeway": "Roadline",
+      "item.sly_adnanced_redstone.redster_spawn_egg": "Red Pig Spawn Egg"
     },
     "en_us": {
       "block.sly_adnanced_redstone.redsto_leaves": "Redstone Leaves",
@@ -2747,21 +2987,23 @@
       "item.sly_adnanced_redstone.concretebreaker": "Concrete Breaker",
       "block.sly_adnanced_redstone.redsto_fence_gate": "Redstone Fence Gate",
       "item.sly_adnanced_redstone.advancedredstonhoe": "Advanced Redstone Hoe",
+      "item.sly_adnanced_redstone.redstake": "Red Meat",
       "itemGroup.tabrwe": "Advanced redstone",
       "biome.sly_adnanced_redstone.resda": "Resda",
       "advancements.portalactivater.descr": "Craft the Portal Creator",
-      "block.sly_adnanced_redstone.uncraftable": "Uncraftable",
       "block.sly_adnanced_redstone.energy": "Energy",
+      "block.sly_adnanced_redstone.uncraftable": "Uncraftable",
       "item.sly_adnanced_redstone.adc": "Advanced Redstone Dust",
       "block.sly_adnanced_redstone.redsto_stairs": "Redstone Stairs",
+      "item.sly_adnanced_redstone.stake": "Red Steak",
       "item.sly_adnanced_redstone.infused": "Advanced Redstone Iron",
       "item.sly_adnanced_redstone.the_dubstep": "The Dubstep Game",
       "tile.advancedredstone.name": "Advanced redstone block",
       "block.sly_adnanced_redstone.redsc": "Redstone dust block",
       "item.sly_advnanced_redstone.redstonearmorbody": "Redstone Chestplate",
       "subtitles.dubremix": "",
-      "block.sly_adnanced_redstone.advancedredstone": "Advanced redstone block",
       "item.sly_adnanced_redstone.redstoned": "Red Stoned Spawn Egg",
+      "block.sly_adnanced_redstone.advancedredstone": "Advanced redstone block",
       "item.sly_adnanced_redstone.whiteroadpaint": "White Road Paint",
       "item.sly_advnanced_redstone.mulred": "Ultimate redstone multitool",
       "tile.litred.name": "Redstone dust block",
@@ -2770,20 +3012,22 @@
       "block.sly_adnanced_redstone.todimention": "Redstone Dimention Portal Spawner",
       "entity.sly_adnanced_redstone.redstoned": "Red Stoned",
       "biome.sly_advnanced_redstone.resda": "Resda",
-      "block.sly_advnanced_redstone.advancedore": "Advanced Ore",
-      "block.sly_advnanced_redstone.advancedredstone": "Advanced wireless redstone 1",
-      "item.sly_adnanced_redstone.advancedredstonaxe": "Advanced Redstone Axe",
       "item.sly_adnanced_redstone.redstonearmor_helmet": "Redstone Helmet",
+      "item.sly_adnanced_redstone.advancedredstonaxe": "Advanced Redstone Axe",
+      "block.sly_advnanced_redstone.advancedredstone": "Advanced wireless redstone 1",
+      "block.sly_advnanced_redstone.advancedore": "Advanced Ore",
       "item.sly_adnanced_redstone.advancedredstonshovel": "Advanced Redstone Shovel",
       "block.sly_adnanced_redstone.redsto_fence": "Redstone Fence",
       "item.adc.name": "Advanced redstone dust",
-      "tile.redsc.name": "Redstone dust block",
       "item.sly_adnanced_redstone.redstonearmor_boots": "Redstone Boots",
+      "tile.redsc.name": "Redstone dust block",
       "block.sly_adnanced_redstone.redgars": "Redstone grass block",
       "block.sly_adnanced_redstone.redsto_slab": "Redstone Slab",
       "block.sly_adnanced_redstone.roadcorner": "Roadline",
       "block.sly_adnanced_redstone.furn": "Instant redstone furnace",
+      "enchantment.sly_adnanced_redstone.reds": "Redstoney",
       "item.sly_advnanced_redstone.redsa": "Redstone Igniter",
+      "entity.sly_adnanced_redstone.redster": "Red Pig",
       "item.sly_adnanced_redstone.redstonearmorlegs": "Redstone Leggings",
       "item.sly_adnanced_redstone.advancedredstonpickaxe": "Advanced Redstone Pickaxe",
       "block.sly_adnanced_redstone.redsto_planks": "Redstone Planks",
@@ -2803,6 +3047,7 @@
       "item.sly_adnanced_redstone.mulred": "Ultimate redstone multitool",
       "block.sly_adnanced_redstone.itemdupe": "Item Duplicator",
       "advancements.portalactivater.title": "Portal Creator",
+      "block.sly_adnanced_redstone.chest": "Big Chest",
       "item.sly_adnanced_redstone.redstonearmorboots": "Redstone Boots",
       "item.sly_adnanced_redstone.redsa": "Redstone Igniter",
       "block.sly_adnanced_redstone.advancedore": "Advanced Ore",
@@ -2814,6 +3059,7 @@
       "block.sly_adnanced_redstone.roadline": "Roadline",
       "advancements.adv_redstone.descr": "You Installed The Advanced Redstone Mod",
       "item.sly_adnanced_redstone.redstone_bucket": "Redstone Bucket",
+      "item.sly_adnanced_redstone.backpack": "Backpack",
       "advancements.adv_redstone.title": "Advanced Redstone",
       "block.sly_adnanced_redstone.litred": "Redstone dust block",
       "advancements.energ.descr": "Craft The Energy Block",
@@ -2829,6 +3075,7 @@
       "block.sly_advnanced_redstone.redston": "Redstone",
       "block.sly_adnanced_redstone.cobbleredston": "Cobbleredstone",
       "item.sly_adnanced_redstone.redstonearmorbody": "Redstone Chestplate",
+      "block.sly_adnanced_redstone.telechest": "Big Ender Chest",
       "item.sly_adnanced_redstone.dubremix": "The Dubstep Game Remix",
       "item.sly_advnanced_redstone.redstonearmorhelmet": "Redstone Helmet",
       "fluid.redstone": "Redstone",
@@ -2838,7 +3085,8 @@
       "item.sly_advnanced_redstone.sada_bucket": "Sada Bucket",
       "item.sly_adnanced_redstone.dubremix.desc": "The Dubstep Game  Remix By Difad002 Slyfalco",
       "item.sly_adnanced_redstone.the_dubstep.desc": "The Dubstep Game By Difad002 Slyfalco",
-      "block.sly_adnanced_redstone.roadthreeway": "Roadline"
+      "block.sly_adnanced_redstone.roadthreeway": "Roadline",
+      "item.sly_adnanced_redstone.redster_spawn_egg": "Red Pig Spawn Egg"
     }
   },
   "workspaceSettings": {

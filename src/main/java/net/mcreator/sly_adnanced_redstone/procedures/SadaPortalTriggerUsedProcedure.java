@@ -40,7 +40,7 @@ public class SadaPortalTriggerUsedProcedure extends SlyAdnancedRedstoneModElemen
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
 		if (world instanceof ServerWorld) {
-			((ServerWorld) world).spawnParticle(ParticleTypes.PORTAL, x, y, z, (int) 5, 3, 3, 3, 1);
+			((ServerWorld) world).spawnParticle(ParticleTypes.PORTAL, x, y, z, (int) 10, 3, 3, 3, 2);
 		}
 	}
 }

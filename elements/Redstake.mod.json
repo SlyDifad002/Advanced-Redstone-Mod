@@ -1,0 +1,31 @@
+{
+  "_fv": 13,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "stack",
+    "customModelName": "Normal",
+    "name": "Red Meat",
+    "rarity": "COMMON",
+    "specialInfo": [
+      "Not Cooked"
+    ],
+    "creativeTab": {
+      "value": "FOOD"
+    },
+    "stackSize": 64,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
+    "eatingSpeed": 32,
+    "resultItem": {
+      "value": "CUSTOM:Adc"
+    },
+    "forDogs": true,
+    "isAlwaysEdible": true,
+    "animation": "eat",
+    "hasGlow": false,
+    "onEaten": {
+      "name": "RedstakeFoodEaten"
+    }
+  }
+}

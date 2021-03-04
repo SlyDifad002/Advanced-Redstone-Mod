@@ -1,0 +1,12 @@
+{
+  "group": "food",
+  "type": "minecraft:smelting",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "sly_adnanced_redstone:redstake"
+  },
+  "result": {
+    "item": "sly_adnanced_redstone:stake"
+  }
+}

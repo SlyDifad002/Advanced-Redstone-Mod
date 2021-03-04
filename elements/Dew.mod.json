@@ -1,0 +1,16 @@
+{
+  "_fv": 13,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Advancedredstone"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "name": "category/dew",
+    "namespace": "forge"
+  }
+}

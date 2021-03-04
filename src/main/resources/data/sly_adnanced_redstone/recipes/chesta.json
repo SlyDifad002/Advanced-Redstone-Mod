@@ -1,0 +1,39 @@
+{
+  "group": "storage",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:chest"
+    },
+    "1": {
+      "item": "minecraft:chest"
+    },
+    "2": {
+      "item": "minecraft:chest"
+    },
+    "3": {
+      "item": "minecraft:chest"
+    },
+    "5": {
+      "item": "minecraft:chest"
+    },
+    "6": {
+      "item": "minecraft:chest"
+    },
+    "7": {
+      "item": "minecraft:chest"
+    },
+    "8": {
+      "item": "minecraft:chest"
+    }
+  },
+  "result": {
+    "item": "sly_adnanced_redstone:chest",
+    "count": 1
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "_fv": 13,
+  "_type": "enchantment",
+  "definition": {
+    "name": "Redstoney",
+    "type": "ALL",
+    "rarity": "VERY_RARE",
+    "minLevel": 1,
+    "maxLevel": 6,
+    "damageModifier": 4,
+    "compatibleEnchantments": [
+      {
+        "value": "CUSTOM:Reds"
+      }
+    ],
+    "compatibleItems": [],
+    "isTreasureEnchantment": false,
+    "isCurse": false,
+    "isAllowedOnBooks": true
+  }
+}

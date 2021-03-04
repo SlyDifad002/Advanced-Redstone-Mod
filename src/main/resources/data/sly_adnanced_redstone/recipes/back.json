@@ -1,0 +1,36 @@
+{
+  "group": "storage",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "sly_adnanced_redstone:restick"
+    },
+    "1": {
+      "item": "sly_adnanced_redstone:infused"
+    },
+    "2": {
+      "item": "sly_adnanced_redstone:restick"
+    },
+    "3": {
+      "item": "sly_adnanced_redstone:infused"
+    },
+    "4": {
+      "item": "sly_adnanced_redstone:chest"
+    },
+    "5": {
+      "item": "sly_adnanced_redstone:infused"
+    },
+    "7": {
+      "item": "sly_adnanced_redstone:infused"
+    }
+  },
+  "result": {
+    "item": "sly_adnanced_redstone:backpack",
+    "count": 1
+  }
+}

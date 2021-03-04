@@ -329,6 +329,7 @@ public class RedswGui extends SlyAdnancedRedstoneModElements.ModElement {
 
 		@Override
 		protected void drawGuiContainerForegroundLayer(int mouseX, int mouseY) {
+			this.font.drawString("To Advanced Redstone Mod", 25, 11, -3407872);
 		}
 
 		@Override

@@ -3,14 +3,10 @@
   "_type": "tag",
   "definition": {
     "type": "Items",
-    "items": [
-      {
-        "value": "CUSTOM:Advancedredstone"
-      }
-    ],
+    "items": [],
     "blocks": [],
     "functions": [],
-    "name": "mew",
+    "name": "category/mew",
     "namespace": "forge"
   }
 }

@@ -16,7 +16,9 @@
       "Reward"
     ],
     "rewardRecipes": [
-      "Ingnite"
+      "Ingnite",
+      "Furnace",
+      "Energe"
     ],
     "rewardFunction": "No function",
     "rewardXP": 50,

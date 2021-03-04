@@ -56,6 +56,19 @@
           "x": 175,
           "y": 94
         }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "To Advanced Redstone Mod",
+          "color": {
+            "value": -3407872,
+            "falpha": 0.0
+          },
+          "name": "To Advanced Redstone Mod",
+          "x": 151,
+          "y": 48
+        }
       }
     ]
   }

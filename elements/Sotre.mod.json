@@ -13,6 +13,8 @@
     "rotationMode": 0,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
+    "itemTexture": "",
+    "particleTexture": "",
     "hasTransparency": true,
     "connectedSides": false,
     "transparencyType": "CUTOUT",
@@ -74,7 +76,8 @@
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
     "hasInventory": true,
-    "openGUIOnRightClick": false,
+    "guiBoundTo": "Redsw",
+    "openGUIOnRightClick": true,
     "inventorySize": 2,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
@@ -88,6 +91,7 @@
     "energyMaxExtract": 200,
     "isFluidTank": false,
     "fluidCapacity": 8000,
+    "fluidRestrictions": [],
     "onRightClicked": {
       "name": "SotreOnBlockRightClicked"
     },

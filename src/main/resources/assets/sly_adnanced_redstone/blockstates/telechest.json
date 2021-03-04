@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "sly_adnanced_redstone:block/telechest"
+    },
+    "facing=east": {
+      "model": "sly_adnanced_redstone:block/telechest",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "sly_adnanced_redstone:block/telechest",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "sly_adnanced_redstone:block/telechest",
+      "y": 270
+    }
+  }
+}
