@@ -111,10 +111,14 @@
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
     "spawningProbability": 20,
-    "mobSpawningType": "monster",
+    "mobSpawningType": "ambient",
     "minNumberOfMobsPerGroup": 4,
     "maxNumberOfMobsPerGroup": 4,
-    "restrictionBiomes": [],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:Resda"
+      }
+    ],
     "spawnInDungeons": false
   }
 }

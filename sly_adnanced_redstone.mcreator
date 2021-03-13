@@ -2720,6 +2720,15 @@
           }
         ]
       }
+    },
+    {
+      "name": "Redpotion",
+      "type": "potion",
+      "sortid": 177,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "redpotion"
     }
   ],
   "variable_elements": [
@@ -2891,12 +2900,14 @@
       "item.sly_adnanced_redstone.infused": "Advanced Redstone Iron",
       "item.sly_adnanced_redstone.the_dubstep": "The Dubstep Game",
       "tile.advancedredstone.name": "Advanced redstone block",
+      "item.minecraft.lingering_potion.effect.redpotion": "Lingering Redstone Potion",
       "block.sly_adnanced_redstone.redsc": "Redstone dust block",
       "item.sly_advnanced_redstone.redstonearmorbody": "Redstone Chestplate",
       "subtitles.dubremix": "",
       "item.sly_adnanced_redstone.redstoned": "Red Stoned Spawn Egg",
       "block.sly_adnanced_redstone.advancedredstone": "Advanced redstone block",
       "item.sly_adnanced_redstone.whiteroadpaint": "White Road Paint",
+      "item.minecraft.potion.effect.redpotion": "Redstone Potion",
       "item.sly_advnanced_redstone.mulred": "Ultimate redstone multitool",
       "tile.litred.name": "Redstone dust block",
       "block.sly_advnanced_redstone.dirter": "Redstone dirt block",
@@ -2919,7 +2930,9 @@
       "block.sly_adnanced_redstone.furn": "Instant redstone furnace",
       "enchantment.sly_adnanced_redstone.reds": "Redstoney",
       "item.sly_advnanced_redstone.redsa": "Redstone Igniter",
+      "item.minecraft.splash_potion.effect.redpotion": "Splash Redstone Potion",
       "entity.sly_adnanced_redstone.redster": "Red Pig",
+      "effect.redpotion": "Redstone Power",
       "item.sly_adnanced_redstone.redstonearmorlegs": "Redstone Leggings",
       "item.sly_adnanced_redstone.advancedredstonpickaxe": "Advancedredston Pickaxe",
       "block.sly_adnanced_redstone.redsto_planks": "Redsto Planks",
@@ -2977,6 +2990,7 @@
       "item.sly_advnanced_redstone.sada_bucket": "Sada Bucket",
       "item.sly_adnanced_redstone.dubremix.desc": "By Difad002 Slyfalco",
       "item.sly_adnanced_redstone.the_dubstep.desc": "By Difad002 Slyfalco",
+      "item.minecraft.tipped_arrow.effect.redpotion": "Arrow of Redstone Potion",
       "block.sly_adnanced_redstone.roadthreeway": "Roadline",
       "item.sly_adnanced_redstone.redster_spawn_egg": "Red Pig Spawn Egg"
     },
@@ -2999,12 +3013,14 @@
       "item.sly_adnanced_redstone.infused": "Advanced Redstone Iron",
       "item.sly_adnanced_redstone.the_dubstep": "The Dubstep Game",
       "tile.advancedredstone.name": "Advanced redstone block",
+      "item.minecraft.lingering_potion.effect.redpotion": "Lingering Redstone Potion",
       "block.sly_adnanced_redstone.redsc": "Redstone dust block",
       "item.sly_advnanced_redstone.redstonearmorbody": "Redstone Chestplate",
       "subtitles.dubremix": "",
       "item.sly_adnanced_redstone.redstoned": "Red Stoned Spawn Egg",
       "block.sly_adnanced_redstone.advancedredstone": "Advanced redstone block",
       "item.sly_adnanced_redstone.whiteroadpaint": "White Road Paint",
+      "item.minecraft.potion.effect.redpotion": "Redstone Potion",
       "item.sly_advnanced_redstone.mulred": "Ultimate redstone multitool",
       "tile.litred.name": "Redstone dust block",
       "block.sly_advnanced_redstone.dirter": "Redstone dirt block",
@@ -3027,7 +3043,9 @@
       "block.sly_adnanced_redstone.furn": "Instant redstone furnace",
       "enchantment.sly_adnanced_redstone.reds": "Redstoney",
       "item.sly_advnanced_redstone.redsa": "Redstone Igniter",
+      "item.minecraft.splash_potion.effect.redpotion": "Splash Redstone Potion",
       "entity.sly_adnanced_redstone.redster": "Red Pig",
+      "effect.redpotion": "Redstone Power",
       "item.sly_adnanced_redstone.redstonearmorlegs": "Redstone Leggings",
       "item.sly_adnanced_redstone.advancedredstonpickaxe": "Advanced Redstone Pickaxe",
       "block.sly_adnanced_redstone.redsto_planks": "Redstone Planks",
@@ -3085,6 +3103,7 @@
       "item.sly_advnanced_redstone.sada_bucket": "Sada Bucket",
       "item.sly_adnanced_redstone.dubremix.desc": "The Dubstep Game  Remix By Difad002 Slyfalco",
       "item.sly_adnanced_redstone.the_dubstep.desc": "The Dubstep Game By Difad002 Slyfalco",
+      "item.minecraft.tipped_arrow.effect.redpotion": "Arrow of Redstone Potion",
       "block.sly_adnanced_redstone.roadthreeway": "Roadline",
       "item.sly_adnanced_redstone.redster_spawn_egg": "Red Pig Spawn Egg"
     }
