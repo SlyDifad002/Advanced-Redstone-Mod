@@ -21,6 +21,9 @@
     "hasGlow": false,
     "repairItems": [],
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false
+    "damageOnCrafting": false,
+    "onRightClickedOnBlock": {
+      "name": "AdvancedredstonAxeRightClickedOnBlock"
+    }
   }
 }

@@ -2765,6 +2765,48 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "resonowd"
+    },
+    {
+      "name": "Log",
+      "type": "block",
+      "sortid": 181,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "log"
+    },
+    {
+      "name": "AdvancedredstonAxeRightClickedOnBlock",
+      "type": "procedure",
+      "sortid": 181,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "advancedredston_axe_right_clicked_on_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -2918,8 +2960,8 @@
   ],
   "language_map": {
     "en_gb": {
-      "block.sly_adnanced_redstone.redsto_leaves": "Redsto Leaves",
       "item.sly_adnanced_redstone.resonowd_spawn_egg": "Red snowman Spawn Egg",
+      "block.sly_adnanced_redstone.redsto_leaves": "Redsto Leaves",
       "advancements.craft.title": "Item Duplicator",
       "advancements.instant.title": "Instant Furnace",
       "block.sly_adnanced_redstone.redsnow": "Redstone Snow",
@@ -2930,8 +2972,8 @@
       "itemGroup.tabrwe": "Advanced redstone",
       "biome.sly_adnanced_redstone.resda": "Resda",
       "advancements.portalactivater.descr": "Craft the Portal Creater",
-      "block.sly_adnanced_redstone.uncraftable": "Uncraftable",
       "block.sly_adnanced_redstone.energy": "Energy",
+      "block.sly_adnanced_redstone.uncraftable": "Uncraftable",
       "item.sly_adnanced_redstone.adc": "Advanced redstone dust",
       "block.sly_adnanced_redstone.redsto_stairs": "Redsto Stairs",
       "item.sly_adnanced_redstone.stake": "Red Stake",
@@ -2942,8 +2984,8 @@
       "block.sly_adnanced_redstone.redsc": "Redstone dust block",
       "item.sly_advnanced_redstone.redstonearmorbody": "Redstone Chestplate",
       "subtitles.dubremix": "",
-      "block.sly_adnanced_redstone.advancedredstone": "Advanced redstone block",
       "item.sly_adnanced_redstone.redstoned": "Red Stoned Spawn Egg",
+      "block.sly_adnanced_redstone.advancedredstone": "Advanced redstone block",
       "item.sly_adnanced_redstone.whiteroadpaint": "White Road Paint",
       "item.minecraft.potion.effect.redpotion": "Redstone Potion",
       "item.sly_advnanced_redstone.mulred": "Ultimate redstone multitool",
@@ -2953,11 +2995,11 @@
       "block.sly_adnanced_redstone.todimention": "Redstone Dimention Portal Spawner",
       "entity.sly_adnanced_redstone.redstoned": "Red Stoned",
       "biome.sly_advnanced_redstone.resda": "Resda",
-      "block.sly_advnanced_redstone.advancedore": "Advanced Ore",
-      "block.sly_advnanced_redstone.advancedredstone": "Advanced wireless redstone 1",
-      "item.sly_adnanced_redstone.advancedredstonaxe": "Advancedredston Axe",
-      "item.sly_adnanced_redstone.redstonearmor_helmet": "Redstone Helmet",
       "biome.sly_adnanced_redstone.snowy_red": "Snowy Red",
+      "item.sly_adnanced_redstone.redstonearmor_helmet": "Redstone Helmet",
+      "item.sly_adnanced_redstone.advancedredstonaxe": "Advancedredston Axe",
+      "block.sly_advnanced_redstone.advancedredstone": "Advanced wireless redstone 1",
+      "block.sly_advnanced_redstone.advancedore": "Advanced Ore",
       "item.sly_adnanced_redstone.advancedredstonshovel": "Advancedredston Shovel",
       "block.sly_adnanced_redstone.redsto_fence": "Redsto Fence",
       "item.adc.name": "Advanced redstone dust",
@@ -2971,6 +3013,7 @@
       "item.sly_advnanced_redstone.redsa": "Redstone Igniter",
       "item.minecraft.splash_potion.effect.redpotion": "Splash Redstone Potion",
       "entity.sly_adnanced_redstone.redster": "Red Pig",
+      "block.sly_adnanced_redstone.log": "Log",
       "effect.redpotion": "Redstone Power",
       "item.sly_adnanced_redstone.redstonearmorlegs": "Redstone Leggings",
       "item.sly_adnanced_redstone.advancedredstonpickaxe": "Advancedredston Pickaxe",
@@ -3036,8 +3079,8 @@
       "item.sly_adnanced_redstone.redster_spawn_egg": "Red Pig Spawn Egg"
     },
     "en_us": {
-      "block.sly_adnanced_redstone.redsto_leaves": "Redstone Leaves",
       "item.sly_adnanced_redstone.resonowd_spawn_egg": "Red snowman Spawn Egg",
+      "block.sly_adnanced_redstone.redsto_leaves": "Redstone Leaves",
       "advancements.craft.title": "Item Duplicator",
       "advancements.instant.title": "Instant Furnace",
       "block.sly_adnanced_redstone.redsnow": "Redstone Snow",
@@ -3048,8 +3091,8 @@
       "itemGroup.tabrwe": "Advanced redstone",
       "biome.sly_adnanced_redstone.resda": "Resda",
       "advancements.portalactivater.descr": "Craft the Portal Creator",
-      "block.sly_adnanced_redstone.uncraftable": "Uncraftable",
       "block.sly_adnanced_redstone.energy": "Energy",
+      "block.sly_adnanced_redstone.uncraftable": "Uncraftable",
       "item.sly_adnanced_redstone.adc": "Advanced Redstone Dust",
       "block.sly_adnanced_redstone.redsto_stairs": "Redstone Stairs",
       "item.sly_adnanced_redstone.stake": "Red Steak",
@@ -3060,8 +3103,8 @@
       "block.sly_adnanced_redstone.redsc": "Redstone dust block",
       "item.sly_advnanced_redstone.redstonearmorbody": "Redstone Chestplate",
       "subtitles.dubremix": "",
-      "block.sly_adnanced_redstone.advancedredstone": "Advanced redstone block",
       "item.sly_adnanced_redstone.redstoned": "Red Stoned Spawn Egg",
+      "block.sly_adnanced_redstone.advancedredstone": "Advanced redstone block",
       "item.sly_adnanced_redstone.whiteroadpaint": "White Road Paint",
       "item.minecraft.potion.effect.redpotion": "Redstone Potion",
       "item.sly_advnanced_redstone.mulred": "Ultimate redstone multitool",
@@ -3071,11 +3114,11 @@
       "block.sly_adnanced_redstone.todimention": "Redstone Dimention Portal Spawner",
       "entity.sly_adnanced_redstone.redstoned": "Red Stoned",
       "biome.sly_advnanced_redstone.resda": "Resda",
-      "block.sly_advnanced_redstone.advancedore": "Advanced Ore",
-      "block.sly_advnanced_redstone.advancedredstone": "Advanced wireless redstone 1",
-      "item.sly_adnanced_redstone.advancedredstonaxe": "Advanced Redstone Axe",
-      "item.sly_adnanced_redstone.redstonearmor_helmet": "Redstone Helmet",
       "biome.sly_adnanced_redstone.snowy_red": "Snowy Red",
+      "item.sly_adnanced_redstone.redstonearmor_helmet": "Redstone Helmet",
+      "item.sly_adnanced_redstone.advancedredstonaxe": "Advanced Redstone Axe",
+      "block.sly_advnanced_redstone.advancedredstone": "Advanced wireless redstone 1",
+      "block.sly_advnanced_redstone.advancedore": "Advanced Ore",
       "item.sly_adnanced_redstone.advancedredstonshovel": "Advanced Redstone Shovel",
       "block.sly_adnanced_redstone.redsto_fence": "Redstone Fence",
       "item.adc.name": "Advanced redstone dust",
@@ -3089,6 +3132,7 @@
       "item.sly_advnanced_redstone.redsa": "Redstone Igniter",
       "item.minecraft.splash_potion.effect.redpotion": "Splash Redstone Potion",
       "entity.sly_adnanced_redstone.redster": "Red Pig",
+      "block.sly_adnanced_redstone.log": "Striped Redstone Log",
       "effect.redpotion": "Redstone Power",
       "item.sly_adnanced_redstone.redstonearmorlegs": "Redstone Leggings",
       "item.sly_adnanced_redstone.advancedredstonpickaxe": "Advanced Redstone Pickaxe",

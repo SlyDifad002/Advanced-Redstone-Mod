@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "sly_adnanced_redstone:blocks/strip",
+    "up": "sly_adnanced_redstone:blocks/strip",
+    "north": "sly_adnanced_redstone:blocks/striped",
+    "east": "sly_adnanced_redstone:blocks/striped",
+    "south": "sly_adnanced_redstone:blocks/striped",
+    "west": "sly_adnanced_redstone:blocks/striped",
+    "particle": "sly_adnanced_redstone:blocks/strip"
+  }
+}
