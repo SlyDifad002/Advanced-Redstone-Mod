@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=upper": {
+      "model": "sly_adnanced_redstone:block/redplant"
+    },
+    "half=lower": {
+      "model": "sly_adnanced_redstone:block/redplant_bottom"
+    }
+  }
+}

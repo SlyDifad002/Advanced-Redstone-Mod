@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "sly_adnanced_redstone:blocks/stems",
+    "particle": "sly_adnanced_redstone:blocks/stems"
+  }
+}

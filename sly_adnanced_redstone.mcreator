@@ -2729,6 +2729,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "redpotion"
+    },
+    {
+      "name": "Redplant",
+      "type": "plant",
+      "sortid": 178,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "redplant"
     }
   ],
   "variable_elements": [
@@ -2969,6 +2978,7 @@
       "block.sly_adnanced_redstone.litred": "Redstone dust block",
       "advancements.energ.descr": "Craft The Energy Block",
       "item.sly_adnanced_redstone.restick": "Redstick",
+      "block.sly_adnanced_redstone.redplant": "Red Plant",
       "block.sly_adnanced_redstone.teleblock2": "Teleblock 2-1",
       "item.sly_adnanced_redstone.advancedredstonsword": "Advancedredston Sword",
       "block.sly_adnanced_redstone.teleblock21": "Teleblock 2-1",
@@ -3082,6 +3092,7 @@
       "block.sly_adnanced_redstone.litred": "Redstone dust block",
       "advancements.energ.descr": "Craft The Energy Block",
       "item.sly_adnanced_redstone.restick": "Redstick",
+      "block.sly_adnanced_redstone.redplant": "Red Plant",
       "block.sly_adnanced_redstone.teleblock2": "Teleblock 1-1",
       "item.sly_adnanced_redstone.advancedredstonsword": "Advanced Redstone Sword",
       "block.sly_adnanced_redstone.teleblock21": "Teleblock 1-2",
