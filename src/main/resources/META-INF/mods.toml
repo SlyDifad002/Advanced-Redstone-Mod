@@ -3,12 +3,15 @@ loaderVersion="[28,)"
 
 [[mods]]
 modId="sly_adnanced_redstone"
-version="1.0.0"
+version="9.4"
 displayName="Sly Advanced redstone"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
 displayURL="https://mcreator.net"
 logoFile="logo.png"
 authors="Slyfalco"
+description='''
+I knew there was more to redstone
+'''
 
 [[dependencies.sly_adnanced_redstone]]
     modId="minecraft"
