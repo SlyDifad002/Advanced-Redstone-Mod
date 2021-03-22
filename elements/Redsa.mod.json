@@ -22,6 +22,9 @@
     "biomesInDimension": [
       {
         "value": "CUSTOM:Resda"
+      },
+      {
+        "value": "CUSTOM:SnowyRed"
       }
     ],
     "worldGenType": "Normal world gen",

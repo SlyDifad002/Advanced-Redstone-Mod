@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "sly_adnanced_redstone:blocks/redsnow",
+    "up": "sly_adnanced_redstone:blocks/redsnow",
+    "north": "sly_adnanced_redstone:blocks/redsnow",
+    "east": "sly_adnanced_redstone:blocks/redsnow",
+    "south": "sly_adnanced_redstone:blocks/redsnow",
+    "west": "sly_adnanced_redstone:blocks/redsnow",
+    "particle": "sly_adnanced_redstone:blocks/redsnow"
+  }
+}

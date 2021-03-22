@@ -131,7 +131,8 @@ public class RedsaDimension extends SlyAdnancedRedstoneModElements.ModElement {
 
 	@Override
 	public void init(FMLCommonSetupEvent event) {
-		dimensionBiomes = new Biome[]{ForgeRegistries.BIOMES.getValue(new ResourceLocation("sly_adnanced_redstone:resda")),};
+		dimensionBiomes = new Biome[]{ForgeRegistries.BIOMES.getValue(new ResourceLocation("sly_adnanced_redstone:resda")),
+				ForgeRegistries.BIOMES.getValue(new ResourceLocation("sly_adnanced_redstone:snowy_red")),};
 	}
 
 	@Override
