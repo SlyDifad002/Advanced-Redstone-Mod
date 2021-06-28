@@ -24,7 +24,7 @@ public class RedsEnchantment extends SlyAdnancedRedstoneModElements.ModElement {
 	}
 	public static class CustomEnchantment extends Enchantment {
 		public CustomEnchantment(EquipmentSlotType... slots) {
-			super(Enchantment.Rarity.VERY_RARE, EnchantmentType.ALL, slots);
+			super(Enchantment.Rarity.VERY_RARE, EnchantmentType.DIGGER, slots);
 		}
 
 		@Override

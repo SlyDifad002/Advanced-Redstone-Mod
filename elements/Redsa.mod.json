@@ -1,24 +1,7 @@
 {
-  "_fv": 13,
+  "_fv": 18,
   "_type": "dimension",
   "definition": {
-    "portalFrame": {
-      "value": "CUSTOM:Uncraftable"
-    },
-    "portalParticles": {
-      "value": "CUSTOM:Red"
-    },
-    "portalLuminance": 0.0,
-    "portalSound": {
-      "value": "block.note_block.bit"
-    },
-    "igniterName": "Redstone Igniter",
-    "igniterTab": {
-      "value": "CUSTOM:RWE"
-    },
-    "texture": "r",
-    "portalTexture": "advas",
-    "enablePortal": true,
     "biomesInDimension": [
       {
         "value": "CUSTOM:Resda"
@@ -40,17 +23,33 @@
     },
     "canRespawnHere": true,
     "hasFog": false,
-    "hasWeather": false,
     "isDark": false,
     "doesWaterVaporize": false,
     "sleepResult": "ALLOW",
     "hasSkyLight": true,
     "imitateOverworldBehaviour": true,
-    "whenPortaTriggerlUsed": {
-      "name": "SadaPortalTriggerUsed"
-    },
     "onPlayerEntersDimension": {
       "name": "RedsaPlayerEntersDimension"
+    },
+    "portalFrame": {
+      "value": "CUSTOM:Uncraftable"
+    },
+    "portalParticles": {
+      "value": "CUSTOM:Red"
+    },
+    "portalLuminance": 0,
+    "portalSound": {
+      "value": "block.note_block.bit"
+    },
+    "igniterName": "Redstone Igniter",
+    "igniterTab": {
+      "value": "CUSTOM:RWE"
+    },
+    "texture": "r",
+    "portalTexture": "advas",
+    "enablePortal": true,
+    "whenPortaTriggerlUsed": {
+      "name": "SadaPortalTriggerUsed"
     }
   }
 }

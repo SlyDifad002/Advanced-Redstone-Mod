@@ -38,6 +38,7 @@ import net.minecraft.block.BlockState;
 
 import net.mcreator.sly_adnanced_redstone.procedures.BackpackRightClickedInAirProcedure;
 import net.mcreator.sly_adnanced_redstone.itemgroup.RWEItemGroup;
+import net.mcreator.sly_adnanced_redstone.gui.StorageGuiWindow;
 import net.mcreator.sly_adnanced_redstone.gui.StorageGui;
 import net.mcreator.sly_adnanced_redstone.SlyAdnancedRedstoneModElements;
 
@@ -63,7 +64,7 @@ public class BackpackItem extends SlyAdnancedRedstoneModElements.ModElement {
 	@OnlyIn(Dist.CLIENT)
 	public void onItemDropped(ItemTossEvent event) {
 		if (event.getEntityItem().getItem().getItem() == block) {
-			if (Minecraft.getInstance().currentScreen instanceof StorageGui.GuiWindow) {
+			if (Minecraft.getInstance().currentScreen instanceof StorageGuiWindow) {
 				Minecraft.getInstance().player.closeScreen();
 			}
 		}
@@ -104,9 +105,9 @@ public class BackpackItem extends SlyAdnancedRedstoneModElements.ModElement {
 		public ActionResult<ItemStack> onItemRightClick(World world, PlayerEntity entity, Hand hand) {
 			ActionResult<ItemStack> ar = super.onItemRightClick(world, entity, hand);
 			ItemStack itemstack = ar.getResult();
-			double x = entity.posX;
-			double y = entity.posY;
-			double z = entity.posZ;
+			double x = entity.getPosX();
+			double y = entity.getPosY();
+			double z = entity.getPosZ();
 			if (entity instanceof ServerPlayerEntity) {
 				NetworkHooks.openGui((ServerPlayerEntity) entity, new INamedContainerProvider() {
 					@Override

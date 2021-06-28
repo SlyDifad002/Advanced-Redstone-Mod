@@ -14,6 +14,7 @@ import net.mcreator.sly_adnanced_redstone.block.RoadfourwayBlock;
 import net.mcreator.sly_adnanced_redstone.block.RoadcornerBlock;
 import net.mcreator.sly_adnanced_redstone.block.RoadconcreteBlock;
 import net.mcreator.sly_adnanced_redstone.SlyAdnancedRedstoneModElements;
+import net.mcreator.sly_adnanced_redstone.SlyAdnancedRedstoneMod;
 
 import java.util.Map;
 
@@ -26,27 +27,27 @@ public class WhiteroadpaintRightClickedOnBlockProcedure extends SlyAdnancedRedst
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure WhiteroadpaintRightClickedOnBlock!");
+				SlyAdnancedRedstoneMod.LOGGER.warn("Failed to load dependency entity for procedure WhiteroadpaintRightClickedOnBlock!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
-				System.err.println("Failed to load dependency x for procedure WhiteroadpaintRightClickedOnBlock!");
+				SlyAdnancedRedstoneMod.LOGGER.warn("Failed to load dependency x for procedure WhiteroadpaintRightClickedOnBlock!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
-				System.err.println("Failed to load dependency y for procedure WhiteroadpaintRightClickedOnBlock!");
+				SlyAdnancedRedstoneMod.LOGGER.warn("Failed to load dependency y for procedure WhiteroadpaintRightClickedOnBlock!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
-				System.err.println("Failed to load dependency z for procedure WhiteroadpaintRightClickedOnBlock!");
+				SlyAdnancedRedstoneMod.LOGGER.warn("Failed to load dependency z for procedure WhiteroadpaintRightClickedOnBlock!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				System.err.println("Failed to load dependency world for procedure WhiteroadpaintRightClickedOnBlock!");
+				SlyAdnancedRedstoneMod.LOGGER.warn("Failed to load dependency world for procedure WhiteroadpaintRightClickedOnBlock!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -58,35 +59,39 @@ public class WhiteroadpaintRightClickedOnBlockProcedure extends SlyAdnancedRedst
 			world.setBlockState(new BlockPos((int) x, (int) y, (int) z), RoadlineBlock.block.getDefaultState(), 3);
 			if (entity instanceof PlayerEntity) {
 				ItemStack _stktoremove = new ItemStack(WhiteroadpaintItem.block, (int) (1));
-				((PlayerEntity) entity).inventory.clearMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (int) 1);
+				((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
+						((PlayerEntity) entity).container.func_234641_j_());
 			}
 		} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == RoadlineBlock.block.getDefaultState().getBlock())) {
 			world.setBlockState(new BlockPos((int) x, (int) y, (int) z), RoadcornerBlock.block.getDefaultState(), 3);
 			if (entity instanceof PlayerEntity) {
 				ItemStack _stktoremove = new ItemStack(WhiteroadpaintItem.block, (int) (1));
-				((PlayerEntity) entity).inventory.clearMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (int) 1);
+				((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
+						((PlayerEntity) entity).container.func_234641_j_());
 			}
 		} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == RoadcornerBlock.block.getDefaultState()
 				.getBlock())) {
 			world.setBlockState(new BlockPos((int) x, (int) y, (int) z), RoadthreewayBlock.block.getDefaultState(), 3);
 			if (entity instanceof PlayerEntity) {
 				ItemStack _stktoremove = new ItemStack(WhiteroadpaintItem.block, (int) (1));
-				((PlayerEntity) entity).inventory.clearMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (int) 1);
+				((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
+						((PlayerEntity) entity).container.func_234641_j_());
 			}
 		} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == RoadthreewayBlock.block.getDefaultState()
 				.getBlock())) {
 			world.setBlockState(new BlockPos((int) x, (int) y, (int) z), RoadfourwayBlock.block.getDefaultState(), 3);
 			if (entity instanceof PlayerEntity) {
 				ItemStack _stktoremove = new ItemStack(WhiteroadpaintItem.block, (int) (1));
-				((PlayerEntity) entity).inventory.clearMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (int) 1);
+				((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
+						((PlayerEntity) entity).container.func_234641_j_());
 			}
 		} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == RoadfourwayBlock.block.getDefaultState()
 				.getBlock())) {
-			if (entity instanceof PlayerEntity && !entity.world.isRemote) {
+			if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
 				((PlayerEntity) entity).sendStatusMessage(new StringTextComponent("Replace the Concrete First"), (true));
 			}
 		} else {
-			if (entity instanceof PlayerEntity && !entity.world.isRemote) {
+			if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
 				((PlayerEntity) entity).sendStatusMessage(new StringTextComponent("Place ON Road Concrete"), (true));
 			}
 		}

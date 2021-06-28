@@ -646,7 +646,10 @@
       "sortid": 38,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "metadata": {
+        "ep": true
+      }
     },
     {
       "name": "Fuel",
@@ -3198,6 +3201,10 @@
       "item.sly_adnanced_redstone.redster_spawn_egg": "Red Pig Spawn Egg"
     }
   },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
   "workspaceSettings": {
     "modid": "sly_adnanced_redstone",
     "modName": "Sly Advanced redstone",
@@ -3212,10 +3219,10 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
-    "currentGenerator": "forge-1.14.4",
+    "currentGenerator": "forge-1.16.5",
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.sly_adnanced_redstone",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202000547520
+  "mcreatorVersion": 202100118117
 }

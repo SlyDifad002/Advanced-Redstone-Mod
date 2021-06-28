@@ -9,6 +9,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.Entity;
 
 import net.mcreator.sly_adnanced_redstone.SlyAdnancedRedstoneModElements;
+import net.mcreator.sly_adnanced_redstone.SlyAdnancedRedstoneMod;
 
 import java.util.Map;
 
@@ -21,7 +22,7 @@ public class LitredBlockAddedProcedure extends SlyAdnancedRedstoneModElements.Mo
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure LitredBlockAdded!");
+				SlyAdnancedRedstoneMod.LOGGER.warn("Failed to load dependency entity for procedure LitredBlockAdded!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");

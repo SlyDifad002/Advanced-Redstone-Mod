@@ -1,5 +1,6 @@
 package net.mcreator.sly_adnanced_redstone.procedures;
 
+import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
 import net.minecraft.item.crafting.IRecipeType;
 import net.minecraft.item.ItemStack;
@@ -11,6 +12,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.Entity;
 
 import net.mcreator.sly_adnanced_redstone.SlyAdnancedRedstoneModElements;
+import net.mcreator.sly_adnanced_redstone.SlyAdnancedRedstoneMod;
 
 import java.util.function.Supplier;
 import java.util.Map;
@@ -24,17 +26,17 @@ public class ComCommandExecutedProcedure extends SlyAdnancedRedstoneModElements.
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure ComCommandExecuted!");
+				SlyAdnancedRedstoneMod.LOGGER.warn("Failed to load dependency entity for procedure ComCommandExecuted!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				System.err.println("Failed to load dependency world for procedure ComCommandExecuted!");
+				SlyAdnancedRedstoneMod.LOGGER.warn("Failed to load dependency world for procedure ComCommandExecuted!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
 		IWorld world = (IWorld) dependencies.get("world");
-		if (((world.getWorld().getRecipeManager().getRecipe(IRecipeType.SMELTING, new Inventory((new Object() {
+		if ((((world instanceof World) ? ((World) world).getRecipeManager().getRecipe(IRecipeType.SMELTING, new Inventory((new Object() {
 			public ItemStack getItemStack(int sltid) {
 				Entity _ent = entity;
 				if (_ent instanceof ServerPlayerEntity) {
@@ -48,28 +50,14 @@ public class ComCommandExecutedProcedure extends SlyAdnancedRedstoneModElements.
 				}
 				return ItemStack.EMPTY;
 			}
-		}.getItemStack((int) (0)))), world.getWorld()).isPresent()) == (true))) {
+		}.getItemStack((int) (0)))), (World) world).isPresent() : false) == (true))) {
 			if (entity instanceof PlayerEntity) {
 				Container _current = ((PlayerEntity) entity).openContainer;
 				if (_current instanceof Supplier) {
 					Object invobj = ((Supplier) _current).get();
 					if (invobj instanceof Map) {
-						ItemStack _setstack = (world.getWorld().getRecipeManager().getRecipe(IRecipeType.SMELTING, new Inventory((new Object() {
-							public ItemStack getItemStack(int sltid) {
-								Entity _ent = entity;
-								if (_ent instanceof ServerPlayerEntity) {
-									Container _current = ((ServerPlayerEntity) _ent).openContainer;
-									if (_current instanceof Supplier) {
-										Object invobj = ((Supplier) _current).get();
-										if (invobj instanceof Map) {
-											return ((Slot) ((Map) invobj).get(sltid)).getStack();
-										}
-									}
-								}
-								return ItemStack.EMPTY;
-							}
-						}.getItemStack((int) (0)))), world.getWorld()).isPresent()
-								? world.getWorld().getRecipeManager().getRecipe(IRecipeType.SMELTING, new Inventory((new Object() {
+						ItemStack _setstack = ((world instanceof World
+								&& ((World) world).getRecipeManager().getRecipe(IRecipeType.SMELTING, new Inventory((new Object() {
 									public ItemStack getItemStack(int sltid) {
 										Entity _ent = entity;
 										if (_ent instanceof ServerPlayerEntity) {
@@ -83,8 +71,23 @@ public class ComCommandExecutedProcedure extends SlyAdnancedRedstoneModElements.
 										}
 										return ItemStack.EMPTY;
 									}
-								}.getItemStack((int) (0)))), world.getWorld()).get().getRecipeOutput().copy()
-								: ItemStack.EMPTY);
+								}.getItemStack((int) (0)))), ((World) world)).isPresent())
+										? ((World) world).getRecipeManager().getRecipe(IRecipeType.SMELTING, new Inventory((new Object() {
+											public ItemStack getItemStack(int sltid) {
+												Entity _ent = entity;
+												if (_ent instanceof ServerPlayerEntity) {
+													Container _current = ((ServerPlayerEntity) _ent).openContainer;
+													if (_current instanceof Supplier) {
+														Object invobj = ((Supplier) _current).get();
+														if (invobj instanceof Map) {
+															return ((Slot) ((Map) invobj).get(sltid)).getStack();
+														}
+													}
+												}
+												return ItemStack.EMPTY;
+											}
+										}.getItemStack((int) (0)))), (World) world).get().getRecipeOutput().copy()
+										: ItemStack.EMPTY);
 						_setstack.setCount((int) (new Object() {
 							public int getAmount(int sltid) {
 								if (entity instanceof ServerPlayerEntity) {

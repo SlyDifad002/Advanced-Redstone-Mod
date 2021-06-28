@@ -45,7 +45,7 @@ public class AdvancedredstonHoeItem extends SlyAdnancedRedstoneModElements.ModEl
 			public Ingredient getRepairMaterial() {
 				return Ingredient.EMPTY;
 			}
-		}, -3f, new Item.Properties().group(ItemGroup.TOOLS)) {
+		}, 0, -3f, new Item.Properties().group(ItemGroup.TOOLS)) {
 		}.setRegistryName("advancedredstonhoe"));
 	}
 }

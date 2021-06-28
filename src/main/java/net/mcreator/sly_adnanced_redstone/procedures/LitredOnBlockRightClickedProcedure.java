@@ -6,6 +6,7 @@ import net.minecraft.util.math.BlockPos;
 import net.mcreator.sly_adnanced_redstone.block.RedscBlock;
 import net.mcreator.sly_adnanced_redstone.block.LitredBlock;
 import net.mcreator.sly_adnanced_redstone.SlyAdnancedRedstoneModElements;
+import net.mcreator.sly_adnanced_redstone.SlyAdnancedRedstoneMod;
 
 import java.util.Map;
 
@@ -18,22 +19,22 @@ public class LitredOnBlockRightClickedProcedure extends SlyAdnancedRedstoneModEl
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
-				System.err.println("Failed to load dependency x for procedure LitredOnBlockRightClicked!");
+				SlyAdnancedRedstoneMod.LOGGER.warn("Failed to load dependency x for procedure LitredOnBlockRightClicked!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
-				System.err.println("Failed to load dependency y for procedure LitredOnBlockRightClicked!");
+				SlyAdnancedRedstoneMod.LOGGER.warn("Failed to load dependency y for procedure LitredOnBlockRightClicked!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
-				System.err.println("Failed to load dependency z for procedure LitredOnBlockRightClicked!");
+				SlyAdnancedRedstoneMod.LOGGER.warn("Failed to load dependency z for procedure LitredOnBlockRightClicked!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				System.err.println("Failed to load dependency world for procedure LitredOnBlockRightClicked!");
+				SlyAdnancedRedstoneMod.LOGGER.warn("Failed to load dependency world for procedure LitredOnBlockRightClicked!");
 			return;
 		}
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");

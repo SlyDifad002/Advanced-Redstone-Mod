@@ -7,6 +7,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.tileentity.TileEntity;
 
 import net.mcreator.sly_adnanced_redstone.SlyAdnancedRedstoneModElements;
+import net.mcreator.sly_adnanced_redstone.SlyAdnancedRedstoneMod;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.Map;
@@ -20,22 +21,22 @@ public class EnergyUpdateTickProcedure extends SlyAdnancedRedstoneModElements.Mo
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
-				System.err.println("Failed to load dependency x for procedure EnergyUpdateTick!");
+				SlyAdnancedRedstoneMod.LOGGER.warn("Failed to load dependency x for procedure EnergyUpdateTick!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
-				System.err.println("Failed to load dependency y for procedure EnergyUpdateTick!");
+				SlyAdnancedRedstoneMod.LOGGER.warn("Failed to load dependency y for procedure EnergyUpdateTick!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
-				System.err.println("Failed to load dependency z for procedure EnergyUpdateTick!");
+				SlyAdnancedRedstoneMod.LOGGER.warn("Failed to load dependency z for procedure EnergyUpdateTick!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				System.err.println("Failed to load dependency world for procedure EnergyUpdateTick!");
+				SlyAdnancedRedstoneMod.LOGGER.warn("Failed to load dependency world for procedure EnergyUpdateTick!");
 			return;
 		}
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
@@ -43,14 +44,14 @@ public class EnergyUpdateTickProcedure extends SlyAdnancedRedstoneModElements.Mo
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
 		if ((new Object() {
-			public boolean canReceiveEnergy(BlockPos pos) {
+			public boolean canReceiveEnergy(IWorld world, BlockPos pos) {
 				AtomicBoolean _retval = new AtomicBoolean(false);
 				TileEntity _ent = world.getTileEntity(pos);
 				if (_ent != null)
 					_ent.getCapability(CapabilityEnergy.ENERGY, null).ifPresent(capability -> _retval.set(capability.canReceive()));
 				return _retval.get();
 			}
-		}.canReceiveEnergy(new BlockPos((int) (x + 1), (int) y, (int) z)))) {
+		}.canReceiveEnergy(world, new BlockPos((int) (x + 1), (int) y, (int) z)))) {
 			{
 				TileEntity _ent = world.getTileEntity(new BlockPos((int) (x + 1), (int) y, (int) z));
 				int _amount = (int) 1000;
@@ -59,14 +60,14 @@ public class EnergyUpdateTickProcedure extends SlyAdnancedRedstoneModElements.Mo
 			}
 		}
 		if ((new Object() {
-			public boolean canReceiveEnergy(BlockPos pos) {
+			public boolean canReceiveEnergy(IWorld world, BlockPos pos) {
 				AtomicBoolean _retval = new AtomicBoolean(false);
 				TileEntity _ent = world.getTileEntity(pos);
 				if (_ent != null)
 					_ent.getCapability(CapabilityEnergy.ENERGY, null).ifPresent(capability -> _retval.set(capability.canReceive()));
 				return _retval.get();
 			}
-		}.canReceiveEnergy(new BlockPos((int) x, (int) y, (int) z)))) {
+		}.canReceiveEnergy(world, new BlockPos((int) x, (int) y, (int) z)))) {
 			{
 				TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
 				int _amount = (int) 1000;
@@ -75,14 +76,14 @@ public class EnergyUpdateTickProcedure extends SlyAdnancedRedstoneModElements.Mo
 			}
 		}
 		if ((new Object() {
-			public boolean canReceiveEnergy(BlockPos pos) {
+			public boolean canReceiveEnergy(IWorld world, BlockPos pos) {
 				AtomicBoolean _retval = new AtomicBoolean(false);
 				TileEntity _ent = world.getTileEntity(pos);
 				if (_ent != null)
 					_ent.getCapability(CapabilityEnergy.ENERGY, null).ifPresent(capability -> _retval.set(capability.canReceive()));
 				return _retval.get();
 			}
-		}.canReceiveEnergy(new BlockPos((int) (x - 1), (int) y, (int) z)))) {
+		}.canReceiveEnergy(world, new BlockPos((int) (x - 1), (int) y, (int) z)))) {
 			{
 				TileEntity _ent = world.getTileEntity(new BlockPos((int) (x - 1), (int) y, (int) z));
 				int _amount = (int) 1000;
@@ -91,14 +92,14 @@ public class EnergyUpdateTickProcedure extends SlyAdnancedRedstoneModElements.Mo
 			}
 		}
 		if ((new Object() {
-			public boolean canReceiveEnergy(BlockPos pos) {
+			public boolean canReceiveEnergy(IWorld world, BlockPos pos) {
 				AtomicBoolean _retval = new AtomicBoolean(false);
 				TileEntity _ent = world.getTileEntity(pos);
 				if (_ent != null)
 					_ent.getCapability(CapabilityEnergy.ENERGY, null).ifPresent(capability -> _retval.set(capability.canReceive()));
 				return _retval.get();
 			}
-		}.canReceiveEnergy(new BlockPos((int) x, (int) y, (int) (z + 1))))) {
+		}.canReceiveEnergy(world, new BlockPos((int) x, (int) y, (int) (z + 1))))) {
 			{
 				TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) (z + 1)));
 				int _amount = (int) 1000;
@@ -107,14 +108,14 @@ public class EnergyUpdateTickProcedure extends SlyAdnancedRedstoneModElements.Mo
 			}
 		}
 		if ((new Object() {
-			public boolean canReceiveEnergy(BlockPos pos) {
+			public boolean canReceiveEnergy(IWorld world, BlockPos pos) {
 				AtomicBoolean _retval = new AtomicBoolean(false);
 				TileEntity _ent = world.getTileEntity(pos);
 				if (_ent != null)
 					_ent.getCapability(CapabilityEnergy.ENERGY, null).ifPresent(capability -> _retval.set(capability.canReceive()));
 				return _retval.get();
 			}
-		}.canReceiveEnergy(new BlockPos((int) x, (int) y, (int) (z - 1))))) {
+		}.canReceiveEnergy(world, new BlockPos((int) x, (int) y, (int) (z - 1))))) {
 			{
 				TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) (z - 1)));
 				int _amount = (int) 1000;

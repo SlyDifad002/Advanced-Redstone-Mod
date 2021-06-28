@@ -30,9 +30,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.client.model.obj.OBJLoader;
 
-import net.minecraft.world.biome.Biome;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraft.entity.EntityType;
@@ -51,24 +49,18 @@ public class SlyAdnancedRedstoneMod {
 	public SlyAdnancedRedstoneModElements elements;
 	public SlyAdnancedRedstoneMod() {
 		elements = new SlyAdnancedRedstoneModElements();
-		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::init);
-		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::clientSetup);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
-		MinecraftForge.EVENT_BUS.register(this);
+		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::init);
+		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::clientLoad);
+		MinecraftForge.EVENT_BUS.register(new SlyAdnancedRedstoneModFMLBusEvents(this));
 	}
 
 	private void init(FMLCommonSetupEvent event) {
 		elements.getElements().forEach(element -> element.init(event));
 	}
 
-	private void clientSetup(FMLClientSetupEvent event) {
-		OBJLoader.INSTANCE.addDomain("sly_adnanced_redstone");
+	public void clientLoad(FMLClientSetupEvent event) {
 		elements.getElements().forEach(element -> element.clientLoad(event));
-	}
-
-	@SubscribeEvent
-	public void serverLoad(FMLServerStartingEvent event) {
-		elements.getElements().forEach(element -> element.serverLoad(event));
 	}
 
 	@SubscribeEvent
@@ -79,11 +71,6 @@ public class SlyAdnancedRedstoneMod {
 	@SubscribeEvent
 	public void registerItems(RegistryEvent.Register<Item> event) {
 		event.getRegistry().registerAll(elements.getItems().stream().map(Supplier::get).toArray(Item[]::new));
-	}
-
-	@SubscribeEvent
-	public void registerBiomes(RegistryEvent.Register<Biome> event) {
-		event.getRegistry().registerAll(elements.getBiomes().stream().map(Supplier::get).toArray(Biome[]::new));
 	}
 
 	@SubscribeEvent
@@ -99,5 +86,16 @@ public class SlyAdnancedRedstoneMod {
 	@SubscribeEvent
 	public void registerSounds(RegistryEvent.Register<net.minecraft.util.SoundEvent> event) {
 		elements.registerSounds(event);
+	}
+	private static class SlyAdnancedRedstoneModFMLBusEvents {
+		private final SlyAdnancedRedstoneMod parent;
+		SlyAdnancedRedstoneModFMLBusEvents(SlyAdnancedRedstoneMod parent) {
+			this.parent = parent;
+		}
+
+		@SubscribeEvent
+		public void serverLoad(FMLServerStartingEvent event) {
+			this.parent.elements.getElements().forEach(element -> element.serverLoad(event));
+		}
 	}
 }

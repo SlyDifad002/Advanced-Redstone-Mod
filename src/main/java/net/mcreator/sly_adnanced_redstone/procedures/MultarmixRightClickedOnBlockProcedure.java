@@ -9,6 +9,7 @@ import net.minecraft.entity.Entity;
 import net.mcreator.sly_adnanced_redstone.item.MultarmixItem;
 import net.mcreator.sly_adnanced_redstone.block.RoadconcreteBlock;
 import net.mcreator.sly_adnanced_redstone.SlyAdnancedRedstoneModElements;
+import net.mcreator.sly_adnanced_redstone.SlyAdnancedRedstoneMod;
 
 import java.util.Map;
 
@@ -21,27 +22,27 @@ public class MultarmixRightClickedOnBlockProcedure extends SlyAdnancedRedstoneMo
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure MultarmixRightClickedOnBlock!");
+				SlyAdnancedRedstoneMod.LOGGER.warn("Failed to load dependency entity for procedure MultarmixRightClickedOnBlock!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
-				System.err.println("Failed to load dependency x for procedure MultarmixRightClickedOnBlock!");
+				SlyAdnancedRedstoneMod.LOGGER.warn("Failed to load dependency x for procedure MultarmixRightClickedOnBlock!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
-				System.err.println("Failed to load dependency y for procedure MultarmixRightClickedOnBlock!");
+				SlyAdnancedRedstoneMod.LOGGER.warn("Failed to load dependency y for procedure MultarmixRightClickedOnBlock!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
-				System.err.println("Failed to load dependency z for procedure MultarmixRightClickedOnBlock!");
+				SlyAdnancedRedstoneMod.LOGGER.warn("Failed to load dependency z for procedure MultarmixRightClickedOnBlock!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				System.err.println("Failed to load dependency world for procedure MultarmixRightClickedOnBlock!");
+				SlyAdnancedRedstoneMod.LOGGER.warn("Failed to load dependency world for procedure MultarmixRightClickedOnBlock!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -52,7 +53,8 @@ public class MultarmixRightClickedOnBlockProcedure extends SlyAdnancedRedstoneMo
 		world.setBlockState(new BlockPos((int) x, (int) y, (int) z), RoadconcreteBlock.block.getDefaultState(), 3);
 		if (entity instanceof PlayerEntity) {
 			ItemStack _stktoremove = new ItemStack(MultarmixItem.block, (int) (1));
-			((PlayerEntity) entity).inventory.clearMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (int) 1);
+			((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
+					((PlayerEntity) entity).container.func_234641_j_());
 		}
 	}
 }

@@ -1,5 +1,6 @@
 modLoader="javafml"
-loaderVersion="[28,)"
+loaderVersion="[36,)"
+license="Not specified"
 
 [[mods]]
 modId="sly_adnanced_redstone"
@@ -16,7 +17,7 @@ I knew there was more to redstone
 [[dependencies.sly_adnanced_redstone]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.14.4]"
+    versionRange="[1.16.5]"
     ordering="NONE"
     side="BOTH"
 

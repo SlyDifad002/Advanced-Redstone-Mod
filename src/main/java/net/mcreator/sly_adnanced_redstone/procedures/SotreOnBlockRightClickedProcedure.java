@@ -16,6 +16,7 @@ import net.minecraft.entity.Entity;
 
 import net.mcreator.sly_adnanced_redstone.gui.RedswGui;
 import net.mcreator.sly_adnanced_redstone.SlyAdnancedRedstoneModElements;
+import net.mcreator.sly_adnanced_redstone.SlyAdnancedRedstoneMod;
 
 import java.util.Map;
 
@@ -30,27 +31,27 @@ public class SotreOnBlockRightClickedProcedure extends SlyAdnancedRedstoneModEle
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure SotreOnBlockRightClicked!");
+				SlyAdnancedRedstoneMod.LOGGER.warn("Failed to load dependency entity for procedure SotreOnBlockRightClicked!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
-				System.err.println("Failed to load dependency x for procedure SotreOnBlockRightClicked!");
+				SlyAdnancedRedstoneMod.LOGGER.warn("Failed to load dependency x for procedure SotreOnBlockRightClicked!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
-				System.err.println("Failed to load dependency y for procedure SotreOnBlockRightClicked!");
+				SlyAdnancedRedstoneMod.LOGGER.warn("Failed to load dependency y for procedure SotreOnBlockRightClicked!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
-				System.err.println("Failed to load dependency z for procedure SotreOnBlockRightClicked!");
+				SlyAdnancedRedstoneMod.LOGGER.warn("Failed to load dependency z for procedure SotreOnBlockRightClicked!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				System.err.println("Failed to load dependency world for procedure SotreOnBlockRightClicked!");
+				SlyAdnancedRedstoneMod.LOGGER.warn("Failed to load dependency world for procedure SotreOnBlockRightClicked!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");

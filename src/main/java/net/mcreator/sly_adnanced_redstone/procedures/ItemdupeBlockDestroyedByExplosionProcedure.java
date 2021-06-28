@@ -4,6 +4,7 @@ import net.minecraft.world.IWorld;
 
 import net.mcreator.sly_adnanced_redstone.SlyAdnancedRedstoneModVariables;
 import net.mcreator.sly_adnanced_redstone.SlyAdnancedRedstoneModElements;
+import net.mcreator.sly_adnanced_redstone.SlyAdnancedRedstoneMod;
 
 import java.util.Map;
 
@@ -16,7 +17,7 @@ public class ItemdupeBlockDestroyedByExplosionProcedure extends SlyAdnancedRedst
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				System.err.println("Failed to load dependency world for procedure ItemdupeBlockDestroyedByExplosion!");
+				SlyAdnancedRedstoneMod.LOGGER.warn("Failed to load dependency world for procedure ItemdupeBlockDestroyedByExplosion!");
 			return;
 		}
 		IWorld world = (IWorld) dependencies.get("world");

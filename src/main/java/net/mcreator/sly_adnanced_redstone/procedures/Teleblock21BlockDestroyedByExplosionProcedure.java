@@ -4,6 +4,7 @@ import net.minecraft.world.IWorld;
 
 import net.mcreator.sly_adnanced_redstone.SlyAdnancedRedstoneModVariables;
 import net.mcreator.sly_adnanced_redstone.SlyAdnancedRedstoneModElements;
+import net.mcreator.sly_adnanced_redstone.SlyAdnancedRedstoneMod;
 
 import java.util.Map;
 
@@ -16,7 +17,7 @@ public class Teleblock21BlockDestroyedByExplosionProcedure extends SlyAdnancedRe
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				System.err.println("Failed to load dependency world for procedure Teleblock21BlockDestroyedByExplosion!");
+				SlyAdnancedRedstoneMod.LOGGER.warn("Failed to load dependency world for procedure Teleblock21BlockDestroyedByExplosion!");
 			return;
 		}
 		IWorld world = (IWorld) dependencies.get("world");

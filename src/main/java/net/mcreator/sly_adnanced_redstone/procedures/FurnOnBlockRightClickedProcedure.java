@@ -16,6 +16,7 @@ import net.minecraft.entity.Entity;
 
 import net.mcreator.sly_adnanced_redstone.gui.AcsGui;
 import net.mcreator.sly_adnanced_redstone.SlyAdnancedRedstoneModElements;
+import net.mcreator.sly_adnanced_redstone.SlyAdnancedRedstoneMod;
 
 import java.util.Map;
 
@@ -30,27 +31,27 @@ public class FurnOnBlockRightClickedProcedure extends SlyAdnancedRedstoneModElem
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure FurnOnBlockRightClicked!");
+				SlyAdnancedRedstoneMod.LOGGER.warn("Failed to load dependency entity for procedure FurnOnBlockRightClicked!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
-				System.err.println("Failed to load dependency x for procedure FurnOnBlockRightClicked!");
+				SlyAdnancedRedstoneMod.LOGGER.warn("Failed to load dependency x for procedure FurnOnBlockRightClicked!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
-				System.err.println("Failed to load dependency y for procedure FurnOnBlockRightClicked!");
+				SlyAdnancedRedstoneMod.LOGGER.warn("Failed to load dependency y for procedure FurnOnBlockRightClicked!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
-				System.err.println("Failed to load dependency z for procedure FurnOnBlockRightClicked!");
+				SlyAdnancedRedstoneMod.LOGGER.warn("Failed to load dependency z for procedure FurnOnBlockRightClicked!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				System.err.println("Failed to load dependency world for procedure FurnOnBlockRightClicked!");
+				SlyAdnancedRedstoneMod.LOGGER.warn("Failed to load dependency world for procedure FurnOnBlockRightClicked!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");

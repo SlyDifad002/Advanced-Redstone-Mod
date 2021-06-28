@@ -13,6 +13,7 @@ import net.minecraft.advancements.AdvancementProgress;
 import net.minecraft.advancements.Advancement;
 
 import net.mcreator.sly_adnanced_redstone.SlyAdnancedRedstoneModElements;
+import net.mcreator.sly_adnanced_redstone.SlyAdnancedRedstoneMod;
 
 import java.util.Map;
 import java.util.Iterator;
@@ -28,7 +29,7 @@ public class ActivateProcedure extends SlyAdnancedRedstoneModElements.ModElement
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure Activate!");
+				SlyAdnancedRedstoneMod.LOGGER.warn("Failed to load dependency entity for procedure Activate!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -50,9 +51,9 @@ public class ActivateProcedure extends SlyAdnancedRedstoneModElements.ModElement
 	public void onEntityJoin(EntityJoinWorldEvent event) {
 		World world = event.getWorld();
 		Entity entity = event.getEntity();
-		double i = entity.posX;
-		double j = entity.posY;
-		double k = entity.posZ;
+		double i = entity.getPosX();
+		double j = entity.getPosY();
+		double k = entity.getPosZ();
 		Map<String, Object> dependencies = new HashMap<>();
 		dependencies.put("x", i);
 		dependencies.put("y", j);
